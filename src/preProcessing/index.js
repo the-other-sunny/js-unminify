@@ -2,7 +2,7 @@ const t = require('@babel/types');
 const assert = require('node:assert/strict');
 
 /**
- * Turn `Statement`s into `BlockStatement`s whenever possible.
+ * Turn `Statement`s into `BlockStatement`s whenever possible so the `Statement` could be exploded if necessary.
  * @param {Path} path 
  * @returns 
  */

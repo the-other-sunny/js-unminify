@@ -8,18 +8,28 @@ const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 
 const visitor = {
-    ReturnStatement(path) {
-        let str = path.toString();
-        const argument = path.node.argument;
-        if (argument?.type === 'UpdateExpression') {
-            console.log(str + '\n');
-        }
-    },
+    enter(path) {
+        t;
+        debugger;
+    }
+    // ReturnStatement(path) {
+    //     let str = path.toString();
+    //     const argument = path.node.argument;
+    //     if (argument?.type === 'UpdateExpression') {
+    //         console.log(str + '\n');
+    //     }
+    // },
 }
 
 function main() {
     let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\deuglified_script.js`;
-    let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
+    // let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
+    let sourceCode = `
+for (let i = 0; i < 20; ++i) {
+
+}
+`;
+
     const ast = parser.parse(sourceCode);
     traverse(ast, visitor);
 }

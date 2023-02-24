@@ -2,10 +2,6 @@ const isBlock = require('../utils').isBlock;
 const t = require('@babel/types');
 
 function multipleDeclarators(path) {
-    if (!isBlock(path.parent)) {
-        return;
-    }
-
     const node = path.node;
     const newNodes = node.declarations.map((variableDeclarator) => {
         return t.variableDeclaration(node.kind, [variableDeclarator])
@@ -15,9 +11,6 @@ function multipleDeclarators(path) {
 }
 
 function singleDeclaratorWithSequenceExpression(path) {
-    if (!isBlock(path.parent))
-        return;
-
     const node = path.node;
     const kind = node.kind;
     const variableDeclarator = node.declarations[0];
@@ -46,6 +39,10 @@ function singleDeclaratorWithSequenceExpression(path) {
  * @param {Path} path 
  */
 function VariableDeclaration(path) {
+    if (!isBlock(path.parent)) {
+        return;
+    }
+    
     let transform = function() {};
 
     const node = path.node;

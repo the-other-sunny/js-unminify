@@ -1,7 +1,7 @@
 const isBlock = require('../utils').isBlock;
 const t = require('@babel/types');
 
-function expressionIsSequence(path) {
+function sequenceExpression(path) {
     if (!isBlock(path.parent)) {
         return;
     }
@@ -14,7 +14,7 @@ function expressionIsSequence(path) {
     path.replaceWithMultiple(newNodes);
 }
 
-function expressionIsConditional(path) {
+function conditionalExpression(path) {
     const conditionalExpression = path.node.expression;
     const { test, consequent, alternate } = conditionalExpression;
     const newNode = t.ifStatement(
@@ -25,7 +25,7 @@ function expressionIsConditional(path) {
     path.replaceWith(newNode);
 }
 
-function expressionIsLogical(path) {
+function logicalExpression(path) {
     function logicalAND(path);
     function logicalOR(path);
 

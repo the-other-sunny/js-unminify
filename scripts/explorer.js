@@ -8,19 +8,20 @@ const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 
 const visitor = {
-    ArrowFunctionExpression(path) {
-        debugger;
-    }
+    ReturnStatement(path) {
+        let str = path.toString();
+        const argument = path.node.argument;
+        if (argument?.type === 'UpdateExpression') {
+            console.log(str + '\n');
+        }
+    },
 }
 
-// ------------------
-// const inputPath = './io/input/script_with_spaces.js';
-// const inputPath = 'C:/Users/ryadb/Desktop/Touch Projects/old sources/script.js'
-const inputPath = 'C:\\Users\\Sunny\\OneDrive\\Touch Projects\\touch updates\\Touch_sources\\archives\\2023-01-17_1.57.6_3p3tIkyK\\js\\build\\script.js';
+function main() {
+    let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\deuglified_script.js`;
+    let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
+    const ast = parser.parse(sourceCode);
+    traverse(ast, visitor);
+}
 
-let sourceCode;
-
-sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
-
-const ast = parser.parse(sourceCode);
-traverse(ast, visitor);
+main();

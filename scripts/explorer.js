@@ -25,8 +25,15 @@ function main() {
     let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\deuglified_script.js`;
     // let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
     let sourceCode = `
-for (let i = 0; i < 20; ++i) {
-
+function foo() {
+    'a';
+    'b';
+    for (let i = 0; i < 10; ++i) {
+        0;
+    }
+    1;
+    2;
+    return a;
 }
 `;
 

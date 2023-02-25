@@ -7,7 +7,7 @@ const traverse = require('@babel/traverse').default;
 
 const Statement = require('../../src/preProcessing/index').Statement;
 
-let visitor = {
+const visitor = {
     Statement: Statement
 };
 

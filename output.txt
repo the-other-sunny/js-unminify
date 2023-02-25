@@ -1,4 +1,0 @@
-return ++R;
-
-return s++;
-

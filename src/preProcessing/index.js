@@ -52,7 +52,7 @@ function Statement(path) {
             break;
         case 'IfStatement':
             // if parent node is an `IfStatement` and the current node is it's alternate child, it should not be turned into a block if it's an `IfStatement` as it would unnecessarily lengthen the code.
-            turnableIntoABlock = (path.type !== 'IfStatement');
+            turnableIntoABlock = !(path.type === 'IfStatement' && path.key === 'alternate');
             break;
         default:
             turnableIntoABlock = false;

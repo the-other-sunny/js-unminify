@@ -3,7 +3,7 @@ const t = require('@babel/types');
 
 function sequenceExpression(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, should throw or warn about that ?
+        return; // TODO: perhaps, we should throw or warn about that ?
     }
     
     const sequenceExpression = path.node.expression;

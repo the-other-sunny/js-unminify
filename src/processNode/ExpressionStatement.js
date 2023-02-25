@@ -1,9 +1,9 @@
-const isBlock = require('../utils').isBlock;
+const isExpandable = require('../utils').isExpandable;
 const t = require('@babel/types');
 
 function sequenceExpression(path) {
-    if (!isBlock(path.parent)) {
-        return;
+    if (!isExpandable(path)) {
+        return; // TODO: perhaps, should throw or warn about that ?
     }
     
     const sequenceExpression = path.node.expression;

@@ -1,4 +1,4 @@
-const isBlock = require('../utils').isBlock;
+const isExpandable = require('../utils').isExpandable;
 const t = require('@babel/types');
 
 function multipleDeclarators(path) {
@@ -39,23 +39,19 @@ function singleDeclaratorWithSequenceExpression(path) {
  * @param {Path} path 
  */
 function VariableDeclaration(path) {
-    if (!isBlock(path.parent)) {
-        return;
+    if (!isExpandable(path)) {
+        return; // it's ok if it's a `ForStatement`'s init... but otherwise??
     }
     
-    let transform = function() {};
-
     const node = path.node;
     if (node.declarations.length > 1) {
-        transform = multipleDeclarators;
+        multipleDeclarators(path);
     } else if (node.declarations.length === 1) {
         const declarator = node.declarations[0];
         if (t.isSequenceExpression(declarator.init)) {
-            transform = singleDeclaratorWithSequenceExpression;
+            singleDeclaratorWithSequenceExpression(path);
         }
     }
-
-    transform(path);
 }
 
 module.exports = VariableDeclaration;

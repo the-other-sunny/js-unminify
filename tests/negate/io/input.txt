@@ -1,0 +1,13 @@
+!1;
+
+!0;
+
+!b;
+
+!(x + "1");
+
+!(foo || bar || baz || baa);
+
+!(a < b) && x;
+
+(function f(x) { return x; });

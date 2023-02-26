@@ -20,5 +20,28 @@ function isExpandable(path) {
     return false;
 }
 
+/**
+ * Negates an expression
+ * @param {Node} expression node 
+ */
+function negate(node) {
+    function simple_negation(node) {
+        return t.unaryExpression('!', node);
+    }
+
+    if (t.isUnaryExpression(node) && node.operator === '!') {
+        return node.argument;
+    } else if (t.isConditionalExpression(node)) {
+        // TODO: implement
+    } else if (t.isSequenceExpression(node)) {
+        // TODO: implement
+    } else if (t.isBinaryExpression(node)) {
+        // TODO: implement
+    }
+
+    return simple_negation(node);
+}
+
 module.exports.isBlock = isBlock;
 module.exports.isExpandable = isExpandable;
+module.exports.negate = negate;

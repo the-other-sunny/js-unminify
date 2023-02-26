@@ -9,7 +9,7 @@ const VariableDeclaration = require('../../src/processNode/VariableDeclarationSt
 
 const visitor = {
     VariableDeclaration: VariableDeclaration,
-}
+};
 
 function main() {
     let inputPath = './tests/variable_declaration/io/input.txt';

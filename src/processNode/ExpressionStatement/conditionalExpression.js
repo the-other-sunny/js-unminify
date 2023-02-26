@@ -5,9 +5,14 @@ function conditionalExpression(path) {
     const { test, consequent, alternate } = conditionalExpression;
     const newNode = t.ifStatement(
         test,
-        t.expressionStatement(consequent),
-        t.expressionStatement(alternate)
+        t.blockStatement(
+            [t.expressionStatement(consequent)]
+        ),
+        t.blockStatement(
+            [t.expressionStatement(alternate)]
+        )
     );
+
     path.replaceWith(newNode);
 }
 

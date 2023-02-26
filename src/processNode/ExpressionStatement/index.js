@@ -1,4 +1,3 @@
-const isExpandable = require('../../utils').isExpandable;
 const t = require('@babel/types');
 
 const sequenceExpression = require('./sequenceExpression');
@@ -7,8 +6,15 @@ const logicalANDExpression = require('./logicalANDExpression');
 const logicalORExpression = require('./logicalORExpression');
 
 function ExpressionStatement(path) {
-    if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+    const expression = path.node.expression;
+    if (t.isSequenceExpression(expression)) {
+        sequenceExpression(path);
+    } else if (t.isConditionalExpression(expression)) {
+        conditionalExpression(path);
+    } else if (t.isLogicalExpression(expression) && (expression.operator === '&&')) {
+        logicalANDExpression(path);
+    } else if (t.isLogicalExpression(expression) && (expression.operator === '||')) {
+        logicalORExpression(path);
     }
 }
 

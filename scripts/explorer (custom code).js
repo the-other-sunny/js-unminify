@@ -17,3 +17,4 @@ let sourceCode = `1 && 2`;
 
 const ast = parser.parse(sourceCode);
 traverse(ast, visitor);
+console.log(generate(ast).code);

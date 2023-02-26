@@ -15,7 +15,7 @@ function isExpandable(path) {
     ) {
         return true;
     } else if (path.parentPath.isSwitchCase()) {
-        return path.inList && path.listKey === 'consequent';
+        return path.inList && (path.listKey === 'consequent');
     }
     return false;
 }

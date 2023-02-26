@@ -1,0 +1,1341 @@
+"object" == typeof _ && _.system && _.system.memory && a.isPhoneGap ? _.system.memory.getInfo(function (e) {
+  a.capacity = e.capacity, n(o);
+}) : n(o)
+
+e ? e(String.prototype, "codePointAt", {
+  value: t,
+  configurable: !0,
+  writable: !0
+}) : String.prototype.codePointAt = t
+
+e ? e(String, "fromCodePoint", {
+  value: n,
+  configurable: !0,
+  writable: !0
+}) : String.fromCodePoint = n
+
+t[n] && t[n].length % 2 === 0 ? i[n] = t[n].concat(e[n]) : i[n] = e[n]
+
+A[e] ? A[e].push(o) : (A[e] = [o], E < M ? c(e) : S.push(e))
+
+n.indexOf(e[a]) !== -1 ? t[a] = o.substr(n.indexOf(e[a]), 1) : t[a] = e[a]
+
+s(n) && "function" == typeof n.then ? n.then(function (e) {
+  d(i, null, e);
+}, function (e) {
+  d(i, e.message ? e : new Error(e));
+}) : i(null, n)
+
+e ? i(e) : ++a !== s && t !== Rt || i(null)
+
+t ? d._tasks.unshift(a) : d._tasks.push(a)
+
+n ? a(n) : e(o) && !s ? (r = !0, s = t(!0, i), a(null, Rt)) : a()
+
+e ? a(e) : a(null, r ? s : t(!1))
+
+n ? pt(function () {
+  i.apply(null, e);
+}) : i.apply(null, e)
+
+i ? n(i) : (a && o.push({
+  index: t,
+  value: e
+}), n())
+
+e ? n(e) : n(null, ee(o.sort(function (e, t) {
+  return e.index - t.index;
+}), De("value")))
+
+ze(i, r) ? pt(function () {
+  s.apply(null, i[r]);
+}) : ze(n, r) ? n[r].push(s) : (n[r] = [s], o.apply(null, e.concat(function () {
+  var e = a(arguments);
+  i[r] = e;
+  var t = n[r];
+  delete n[r];
+  for (var o = 0, s = t.length; o < s; o++) t[o].apply(null, e);
+})))
+
+e && c++ < r.times && ("function" != typeof r.errorFilter || r.errorFilter(e)) ? setTimeout(o, r.intervalFunc(c)) : i.apply(null, arguments)
+
+t.length > 1 ? o(m, n) : o(n)
+
+this.head ? this.insertBefore(this.head, e) : ge(this, e)
+
+this.tail ? this.insertAfter(this.tail, e) : ge(this, e)
+
+o.call(i, s) ? i[s].push(r) : i[s] = [r]
+
+o ? i._tasks.insertBefore(o, r) : i._tasks.push(r)
+
+e ? Je(e, o, n) : Je(o, n)
+
+this._type === s.TIMEOUT ? this._timeout = window.setTimeout(n(this), t) : this._type === s.INTERVAL && (this._timeout = window.setTimeout(a(this), t))
+
+"function" == typeof w[e] ? w["_" + e] = w[e] : "object" == typeof w[e] && (w["_" + e] = Function.prototype.bind.call(w[e], w))
+
+"string" == typeof s ? i[a] = s : i[a] = n(e[a], o)
+
+i.openState ? i === b ? this.close(e) : v.focusWindow(e) : this.open(e, t)
+
+"narrow" === e ? (i = m.screenWidth, n = s.CHAT_BTN_MIN_WIDTH, m.mainControlBarSize = 132, o = s.PING_EMOTE_BTN_NARROW_MIN_WIDTH) : (i = m.screenHeight, n = s.CHAT_BTN_MIN_HEIGHT, m.mainControlBarSize = 72, o = s.PING_EMOTE_BTN_WIDE_MIN_HEIGHT)
+
+L(t, String(s)) ? a.push(h(e, t, i, n, String(s), !0)) : a.push("")
+
+"function" == typeof Object.create ? e.exports = function (e, t) {
+  e.super_ = t, e.prototype = Object.create(t.prototype, {
+    constructor: {
+      value: e,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  });
+} : e.exports = function (e, t) {
+  e.super_ = t;
+  var i = function () {};
+  i.prototype = t.prototype, e.prototype = new i(), e.prototype.constructor = e;
+}
+
+A ? u(A) : e.emit("longtap", w) && r()
+
+l < c ? l = c : l + e > a.screenWidth - c && (l = a.screenWidth - c - e)
+
+L(t, String(s)) ? a.push(h(e, t, i, n, String(s), !0)) : a.push("")
+
+"function" == typeof Object.create ? e.exports = function (e, t) {
+  e.super_ = t, e.prototype = Object.create(t.prototype, {
+    constructor: {
+      value: e,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  });
+} : e.exports = function (e, t) {
+  e.super_ = t;
+  var i = function () {};
+  i.prototype = t.prototype, e.prototype = new i(), e.prototype.constructor = e;
+}
+
+u ? (this.nextLoop && this.nextLoop.cancelOnLoadCallbacks(), this.nextLoop = c.createSound(e, this.id), this.nextLoop.load(function (e) {
+  return e ? (m.nextLoop.unload(), void (m.nextLoop = null)) : (s(m.loopSound), void l());
+})) : (this.nextLoop = c.createSound(e, this.id), s(this.loopSound, l))
+
+s[0].length === a || "#guest" === o.join(n) ? (this._nickname = o.join(n), this._token = s[0]) : this._logger.error(new Error("Wrong format on the nickname:" + this._rawNickname))
+
+t.isRiding && l && l.model ? e.ride_id = l.model : e.ride_id = void 0
+
+t ? n = a - m - t : t = a - m - n
+
+i ? o = l - g - i : i = l - g - o
+
+c ? s[l] = c : n[l] = g.newDummyRecord(f.getKey(e), l)
+
+e.target.result ? o[t] = e.target.result : r.push(t)
+
+n.rows.length > 1 ? (r.__prefetchedData = n.rows, r.__prefetchedIndex = 0, e.DEBUG && console.log("Preloaded " + r.__prefetchedData.length + " records for cursor"), r.__decode(n.rows.item(0), o)) : 1 === n.rows.length ? r.__decode(n.rows.item(0), o) : (e.DEBUG && console.log("Reached end of cursors"), o(t, t))
+
+n.__storeProps ? (idbModules.DEBUG && console.log("Store properties - cached", n.__storeProps), t(n.__storeProps)) : e.executeSql("SELECT * FROM __sys__ where name = ?", [n.name], function (e, i) {
+  1 !== i.rows.length ? t() : (n.__storeProps = {
+    name: i.rows.item(0).name,
+    indexList: i.rows.item(0).indexList,
+    autoInc: i.rows.item(0).autoInc,
+    keyPath: i.rows.item(0).keyPath
+  }, idbModules.DEBUG && console.log("Store properties", n.__storeProps), t(n.__storeProps));
+}, function () {
+  t();
+})
+
+1 !== i.rows.length ? t() : (n.__storeProps = {
+  name: i.rows.item(0).name,
+  indexList: i.rows.item(0).indexList,
+  autoInc: i.rows.item(0).autoInc,
+  keyPath: i.rows.item(0).keyPath
+}, idbModules.DEBUG && console.log("Store properties", n.__storeProps), t(n.__storeProps))
+
+void 0 === primaryKey ? "true" === props.autoInc ? getNextAutoIncKey() : idbModules.util.throwDOMException(0, "Data Error - Could not eval key from keyPath") : callback(primaryKey)
+
+void 0 !== key ? callback(key) : "false" === props.autoInc ? idbModules.util.throwDOMException(0, "Data Error - The object store uses out-of-line keys and has no key generator and the key parameter was not provided. ", props) : getNextAutoIncKey()
+
+0 === t.rows.length ? e.executeSql("INSERT INTO dbVersions VALUES (?,?)", [n, o || 1], function () {
+  s(0);
+}, a) : s(t.rows.item(0).version)
+
+i >= n.length ? t.executeSql("DROP TABLE __sys__", [], function () {
+  a();
+}, o) : t.executeSql("DROP TABLE " + e.util.quote(n.item(i).name), [], function () {
+  s(i + 1);
+}, function () {
+  s(i + 1);
+})
+
+e === b.error ? g[e](new Error(t)) : g[e](t)
+
+"object" == typeof e && e.exports ? e.exports = r(i(153)) : (o = [i(153)], n = r, a = "function" == typeof n ? n.apply(t, o) : n, !(void 0 !== a && (e.exports = a)))
+
+go[n[t]] ? n[t] = go[n[t]] : n[t] = O(n[t])
+
+c(i) ? e._d = new Date(t.now()) : u(i) ? e._d = new Date(i.valueOf()) : "string" == typeof i ? _t(e) : a(i) ? (e._a = h(i.slice(0), function (e) {
+  return parseInt(e, 10);
+}), wt(e)) : s(i) ? It(e) : d(i) ? e._d = new Date(i) : t.createFromInputFallback(e)
+
+null != e ? this.utcOffset(e) : this.utcOffset(0, !0)
+
+"boolean" == typeof e ? (d(t) && (i = t, t = void 0), t = t || "") : (t = e, i = t, e = !1, d(t) && (i = t, t = void 0), t = t || "")
+
+null != o ? t[qo] = o : g(i).invalidMonth = e
+
+null != o ? t.d = o : g(i).invalidWeekday = e
+
+o ? g(i).era = o : g(i).invalidEra = e
+
+1 === l ? e(1) : n.open({
+  min: 1,
+  max: l,
+  x: s.x,
+  y: s.y
+})
+
+this.fightIsUserTurn ? e ? this._displaySpellRange() : window.isoEngine.displayUserMovementZone() : e && this._displaySpellRange()
+
+m.isRoleplayMode ? this.tapOptions.mode = "roleplay" : (delete this.tapOptions.mode, this.hideBorderArrow())
+
+"HumanOptionGuild" === r._type ? n = r.guildInformations : "HumanOptionAlliance" === r._type ? o = r.allianceInformations : "HumanOptionOrnament" === r._type ? i = r.ornamentId : "HumanOptionTitle" === r._type && (t = r.titleId)
+
+"?" === t || "" === t ? a = b("ui.common.houseWithNoOwner") : t === s && (a = b("ui.common.myHouse"))
+
+i === R || s.isBomb ? r.characters.addSummonedBomb() : s.isCreature && r.characters.addSummonedCreature()
+
+i === _.ACTION_CHARACTER_ACTION_POINTS_USE || i === _.ACTION_CHARACTER_ACTION_POINTS_LOST || i === _.ACTION_CHARACTER_ACTION_POINTS_WIN ? C(T.fightActionPointsVariationStep, [H ? H.castingSpellId : -1, t, n, i === _.ACTION_CHARACTER_ACTION_POINTS_USE]) : i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_USE && i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_LOST && i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_WIN || C(T.fightMovementPointsVariationStep, [H ? H.castingSpellId : -1, t, n, i === _.ACTION_CHARACTER_MOVEMENT_POINTS_USE])
+
+t === _.ACTION_FIGHT_SPELL_DODGED_PA ? C(T.fightActionPointsLossDodge, [H ? H.castingSpellId : -1, e.targetId, e.amount, e.effectId]) : t === _.ACTION_FIGHT_SPELL_DODGED_PM && C(T.fightMovementPointsLossDodge, [H ? H.castingSpellId : -1, e.targetId, e.amount, e.effectId])
+
+0 === l.data.teamId ? (n.push({
+  fighter: r,
+  init: d
+}), o += d) : (i.push({
+  fighter: r,
+  init: d
+}), a += d)
+
+d.isActive() ? (o.push(d), g && this.emit("BuffUpdate", d, r)) : (d.remove(), this.emit("BuffRemove", d, r))
+
+h && h.isBomb ? this.aliveSource = this.targetId : this.aliveSource = this.source
+
+i ? (t[0] = i.ItemTypes[t[0]].nameId, e.setDescription(t)) : o("ItemTypes", t[0], e)
+
+i ? (t[0] = i.Monsters[t[0]].nameId, e.setDescription(t)) : o("Monsters", t[0], e)
+
+i ? (t[0] = i.Spells[t[0]].nameId || "[SPELL_NAME_ID#" + t[0] + "]", e.setDescription(t)) : o("Spells", t[0], e)
+
+i ? (t[2] = i.Spells[t[2]].nameId, e.setDescription(t)) : o("Spells", t[2], e)
+
+i ? (t[2] = i.Jobs[t[0]].nameId, e.setDescription(t)) : o("Jobs", t[0], e)
+
+i && i.SpellLevels && i.SpellLevels[t[2]] ? i.Spells && i.Spells[i.SpellLevels[t[2]].spellId] ? (t[2] = i.Spells[i.SpellLevels[t[2]].spellId].nameId, e.setDescription(t)) : o("Spells", i.SpellLevels[t[2]].spellId, e) : o("SpellLevels", t[2], e)
+
+i ? (t[2] = i.Spells[t[0]].nameId, e.setDescription(t)) : o("Spells", t[0], e)
+
+i ? (t[2] = i.Documents[t[0]].titleId, e.setDescription(t)) : o("Documents", t[0], e)
+
+i ? (t[2] = i.Monsters[t[1]].nameId, e.setDescription(t)) : o("Monsters", t[1], e)
+
+i ? (t[2] = i.AlignmentSides[t[0]].titleId, e.setDescription(t)) : o("AlignmentSides", t[0], e)
+
+i ? (t[0] = i.Jobs[t[0]].nameId, e.setDescription(t)) : o("Jobs", t[0], e)
+
+i ? (t[0] = i.MonsterRaces[t[0]].nameId, e.setDescription(t)) : o("MonsterRaces", t[0], e)
+
+i ? (t[2] = i.Ornaments[t[0]].nameId, e.setDescription(t)) : o("Ornaments", t[0], e)
+
+t[0] ? i ? (t[0] = i.Items[t[0]].nameId || "unknown", e.setDescription(t)) : o("Items", t[0], e) : (t[0] = f("ui.common.none"), e.setDescription(t))
+
+b === A ? (t[0] = "missing_item_" + t[0], e.setDescription(t), e.iconId = 15116) : (t[0] = b.nameId, e.setDescription(t), e.iconId = b.iconId)
+
+i ? (t[1] = i.Monsters[t[1]].nameId, e.setDescription(t)) : o("Monsters", t[1], e)
+
+i ? (t[2] = i.Items[t[0]].nameId, e.setDescription(t)) : o("Items", t[0], e)
+
+i ? (t[2] = i.SpellStates[t[2]].nameId, e.setDescription(t)) : o("SpellStates", t[2], e)
+
+i ? (t[0] = i.Companions[t[0]].nameId, e.setDescription(t)) : o("Companions", t[0], e)
+
+s ? a.effect = s : e[o] = null
+
+0 === e ? this.date = Number(t) : 1 === e ? this.modelId = Number(t) : 2 === e && (this.mountId = Number(t))
+
+T.regroupDamages ? (m.lostHP.values.push(c[1]), m.lostHP.actionIds.push(c[2]), m.lostHP.dead = !0) : n = C("ui.fight.lifeLossAndDeath", d.name, r(c[1], [c[2]]))
+
+T.regroupDamages ? (m.lostHP.values.push(c[1]), m.lostHP.actionIds.push(c[2])) : n = C("ui.fight.lifeLoss", d.name, r(c[1], [c[2]]))
+
+T.regroupDamages ? (m.lostSP.values.push(c[1]), m.lostSP.actionIds.push(c[2])) : n = C("ui.fight.lostShieldPoints", d.name, r(c[1], [c[2]]))
+
+T.regroupDamages ? m.gainHP.values.push(c[1]) : n = C("ui.fight.lifeGain", d.name, c[1])
+
+a.canBeDispell(e, Number.MIN_VALUE, i) ? (window.gui.fightManager.emit("BuffRemove", a, this), a.remove()) : n.push(a)
+
+e === r.castingSpell.spell.id && r.canBeDispell(t, Number.MIN_VALUE, n) ? (r.remove(), a.push(r)) : s.push(r)
+
+isNaN(r) ? r = this._scale : r *= .01
+
+null === this._spriteRef ? this._spriteRef = this.displayList.add(this) : this._spriteRef = this.displayList.reposition(this._spriteRef)
+
+u ? s.merge(u, !0) : console.error("onTemplatesLoaded: skinTemplate is missing on index", d, "of", n.length, "for skinIds", i, "and boneId", t, "stack:", g)
+
+l ? (a = new n(c, t.matrices, t.colors), r = u, o = t.symbols) : (a = c, r = h, o = t)
+
+void 0 === D ? (b.push(R), M.push(A), I += 1) : u[A] = D
+
+p ? t(p, u) : (l.push(h), c.push(u))
+
+M.maskStart ? (y.push(new a(M.id)), Array.prototype.push.apply(y, T), y.push(new s(M.id))) : Array.prototype.push.apply(y, T)
+
+e !== -1 && y[e] ^ t ? this.scaleX > 0 && (this.mirrored = !0, this.scaleX *= -1) : this.scaleX < 0 && (this.mirrored = !1, this.scaleX *= -1)
+
+t >= this._duration ? 1 === this._iterations ? (this._time = this._duration, this._update(), null !== this._onUpdate && this._onUpdate(), this._finished()) : (this._time = t % this._duration, this._update(), null !== this._onUpdate && this._onUpdate(), this._iterations -= 1) : (this._time = t, this._update(), null !== this._onUpdate && this._onUpdate())
+
+null === d || null !== u && u.update <= d.update ? (h < u.update && (h = u.update), l.push(u), c += u.nBytes, u = u.nextChunk) : (h < d.update && (h = d.update), l.unshift(d), c += d.nBytes, d = d.prevChunk)
+
+a.ref.container === this.memoryChunksUsed ? (this.memoryChunksUsed.removeByRef(a.ref), delete this.chunksById[a.id]) : this.memoryChunksFree.removeByReference(a.ref)
+
+null === i ? o = 0 : (i.parent = e, o = i.height)
+
+null === i ? n = 0 : (i.parent = e, n = i.height)
+
+null === e ? t.disable(t.SCISSOR_TEST) : (t.enable(t.SCISSOR_TEST), t.scissor(e[0], e[1], e[2], e[3]))
+
+n(e.width) && n(e.height) ? (a = o.LINEAR_MIPMAP_LINEAR, o.generateMipmap(o.TEXTURE_2D)) : console.warn("[WebGLRenderer._setFiltering]", "Cannot build mipmap from image", i, " because its dimensions are not a power of 2.")
+
+void 0 === t && void 0 === e ? (e = this.level, t = e + 1) : void 0 === t && (t = e, e = this.level)
+
+i + r < s ? i = s : i += r
+
+o === C.CAST_INTERVAL ? e.castInterval.setPts(n.value.getAllValues()) : o === C.CAST_INTERVAL_SET && e.castIntervalSet.setPts(n.value.getAllValues())
+
+i > 0 ? W.push(k.FIGHTER_MP_GAINED, [t, i], t, -1, e, !1, 2, a) : i < 0 && (n ? W.push(k.FIGHTER_MP_USED, [t, Math.abs(i)], t, -1, e, !1, 2, a) : W.push(k.FIGHTER_MP_LOST, [t, Math.abs(i)], t, -1, e, !1, 2, a))
+
+i > 0 ? W.push(k.FIGHTER_AP_GAINED, [t, i], t, -1, e, !1, 2, a) : i < 0 && (n ? W.push(k.FIGHTER_AP_USED, [t, Math.abs(i)], t, -1, e, !1, 2, a) : W.push(k.FIGHTER_AP_LOST, [t, Math.abs(i)], t, -1, e, !1, 2, a))
+
+t ? h.loadImage(t.imagePath, function (i) {
+  N(i, t, e._wingsBottomCanvas, e._wingsBottomCtx, !1), e._wingsBottomCanvas.show();
+}) : e._wingsBottomCanvas.hide()
+
+w || b ? (c[y.name] = !0, o.BR.x = a + r, o.BR.y = s + l, o.TL.x = a, o.TL.y = s, h--) : (u = y.name, a = o.TL.x, s = o.TL.y, c = {}, d++, h = -1)
+
+i.target.hidden ? e() : t()
+
+n.isConnected && n.chat.active ? n.chat.deactivate() : h.isOpen() ? h.close() : n.isConnected && !e ? ve["switch"]("global") : e ? ve.getWindow(e).backButtonClose() : n.loginScreen.isVisible() && navigator.app.exitApp()
+
+this.initialized ? this.serversData.onServerList(e) : this.once("initialized", function () {
+  this.serversData.onServerList(e);
+})
+
+1 === e.deltaMode ? (t = -e.deltaX * this.options.mouseWheelSpeed, i = -e.deltaY * this.options.mouseWheelSpeed) : (t = -e.deltaX, i = -e.deltaY)
+
+this.hasHorizontalScroll && !this.hasVerticalScroll ? o += i ? 1 : this.wrapperWidth : a += i ? 1 : this.wrapperHeight
+
+this.hasHorizontalScroll && !this.hasVerticalScroll ? o -= i ? 1 : this.wrapperWidth : a -= i ? 1 : this.wrapperHeight
+
+r._name ? (this.banner.setContent({
+  name: r._name
+}), this._displayHeader(!0)) : this._displayHeader(!1)
+
+n ? (this._guildName.setText(n.guildName), this._guildName.show(), i = n.guildEmblem, i && this._guildEmblem.setValue(i, !0), this._guildEmblem.show()) : (this._guildName.hide(), this._guildEmblem.hide())
+
+o ? (this.addClassNames("alliance"), n ? this._guildName.setText(n.guildName + " - [" + o.allianceTag + "]") : (this._guildName.setText(o.allianceName), this._guildName.show()), i = o.allianceEmblem, i && (i.isAlliance = !0, this._allianceEmblem.setValue(i, !0), this._allianceEmblem.show())) : (this.delClassNames("alliance"), this._allianceEmblem.hide())
+
+t ? o = t.filter(function (e) {
+  return e._parentJobId && (e.skillId === w || e._parentJobId !== _);
+}) : n && (o = n.disabledSkills.length > 0 ? n.disabledSkills.filter(function (e) {
+  return e._parentJobId && e._parentJobId === y;
+}) : n.enabledSkills.filter(function (e) {
+  return e._parentJobId && e._parentJobId === y;
+}))
+
+0 === e.itemCount ? (this.bidHouseCatList.toggleBreadcrumb(!1), this.bidHouseCatList.setPlaceholder(v("tablet.bidHouse.noCatHasMatchingItem", this.currentSearchText)), this.shopViewer.setPlaceholder(v("tablet.bidHouse.noMatchingItem", this.currentSearchText)), this._resetShopViewerHeader()) : this.bidHouseCatList.setPlaceholder(null)
+
+t ? this._selectItemType(t, !0) : this.bidHouseCatList.collapseAll()
+
+this.subitemFilterFunc(e, o, a) ? (i++, 1 === i && (t = a), a.show()) : a.hide()
+
+this.itemFilterFunc(o) ? (t++, 1 === t && (e = o), this.isItemDeployed(o) && this.subitemFilterFunc && this._filterOneItemSubitems(o), o.show()) : o.hide()
+
+i ? i === this ? (i.tappedOnMe = !0, e.options.disableSelectionToggle || e.deselectItem(i.getWuiName(), {
+  noSound: !0
+}), i.tappedOnMe = !1) : (e.deselectItem(e.currentSelected.getWuiName(), {
+  noSound: !0
+}), e.selectItem(t)) : e.selectItem(t)
+
+s ? a.itemSetName = s.nameId : (m.error(new Error("ItemSet id " + a.itemSetId + " for item id " + a.id + " does not exist.")), a.itemSetName = null)
+
+d === u - 1 ? (o += h, a(this.criterions, l, o, t, i)) : s ? ")" === h ? 0 === r ? s = !1 : (r -= 1, o += h) : o += h : "(" === h ? (r += 1, s = !0, l = !0) : "&" === h || "|" === h ? (a(this.criterions, l, o, t, i), r = -1, l = !1, this.operator = "&" === h ? c.and : c.or, o = "") : o += h
+
+n.criterions ? e.push("(" + n.getText() + ")") : e.push(n.getText())
+
+r ? (r.updateInfo(s), h.emit("entityUpdated", g.prism, r)) : (r = new u(s), t[r.id] = r, h.emit("entityAdded", g.prism, r))
+
+this.operator === a.operators.equal ? this._text = s("ui.criterion.allianceRights", [t]) : this._text = s("ui.criterion.notAllianceRights", [t])
+
+this.operator === o.operators.equal ? this._text = a("ui.tooltip.beABreed", [t]) : this._text = a("ui.tooltip.dontBeABreed", [t])
+
+t.length > 1 ? (this._giftId = parseInt(t[0], 10), this._giftLevel = parseInt(t[1], 10)) : (this._giftId = parseInt(this.value, 10), this._giftLevel = -1)
+
+t.length > 1 ? (this._jobId = parseInt(t[0], 10), this._jobLevel = parseInt(t[1], 10)) : (this._jobId = parseInt(this.value, 10), this._jobLevel = -1)
+
+t.length > 1 ? (this._mapId = parseInt(t[0], 10), this.value = parseInt(t[1], 10)) : this._mapId = window.gui.playerData.position.mapId
+
+t.length > 1 ? console.error(new Error("SpellItemCriterion: too much parameters: " + t)) : this._spellId = this.value
+
+t[0] === v ? (t = t.substr(1), i.withIcon = !0, i.tooltip = t + " (" + l("tablet.lot") + ")") : i.tooltip = t
+
+e === !1 ? this._inputBox.rootElement.removeAttribute("readonly") : this._inputBox.rootElement.setAttribute("readonly", "readonly")
+
+t[n] !== !1 && E[n](o, e, t) ? o.show() : o.hide()
+
+"function" == typeof t ? this.getIdFn = t : this.getIdFn = function (e) {
+  return e[t];
+}
+
+n instanceof m ? (i.content = n, i.appendChild(n)) : (i.content = i, i.setText(n))
+
+e ? this.spinner.addSpinner("content") : this.spinner.removeSpinner("content")
+
+e ? this._sexIcon.replaceClassNames(["male"], ["female"]) : this._sexIcon.replaceClassNames(["female"], ["male"])
+
+e ? (this.mountRenamedHandler || (this.mountRenamedHandler = this._processMountRenamed.bind(this), this.mountSterilizedHandler = this._processMountSterilized.bind(this), this.mountReleasedHandler = this._processMountReleased.bind(this), this.updateMountBoostHandler = this._processUpdateMountBoost.bind(this), this.setRatioHandler = this._setXpRatio.bind(this), this.mountRidingHandler = this._processMountRiding.bind(this)), i.on("MountRenamedMessage", this.mountRenamedHandler), i.on("MountSterilizedMessage", this.mountSterilizedHandler), i.on("MountReleasedMessage", this.mountReleasedHandler), i.on("UpdateMountBoostMessage", this.updateMountBoostHandler), t.on("setMountRatio", this.setRatioHandler), t.on("mountRiding", this.mountRidingHandler)) : (i.removeListener("MountRenamedMessage", this.mountRenamedHandler), i.removeListener("MountSterilizedMessage", this.mountSterilizedHandler), i.removeListener("MountReleasedMessage", this.mountReleasedHandler), i.removeListener("UpdateMountBoostMessage", this.updateMountBoostHandler), t.removeListener("setMountRatio", this.setRatioHandler), t.removeListener("mountRiding", this.mountRidingHandler))
+
+isNaN(p) ? console.error("MountType: Color is not a number for mountId: " + e + ", index: " + l) : a[l] = "#" + p.toString(16)
+
+this.isMini ? (this.serenityBarWidth = h, this.serenityCursorOffset = -p / 2) : (this.serenityBarWidth = this._serenityBar.rootElement.clientWidth, this.serenityCursorOffset = -this._serenityBarCursor.rootElement.clientWidth / 2)
+
+t && t === i ? this.index < i.index ? (this._canRightSlide = !0, this._canLeftSlide = !1, this.rightTab = t, t.position = 100, t.content.show(), t.content.setStyle("webkitTransform", "translate" + this._axis + "(100%)")) : (this._canRightSlide = !1, this._canLeftSlide = !0, this.leftTab = i, i.position = -100, i.content.show(), i.content.setStyle("webkitTransform", "translate" + this._axis + "(-100%)")) : (t ? (this._canRightSlide = !0, this.rightTab = t, t.position = 100, t.content.show(), t.content.setStyle("webkitTransform", "translate" + this._axis + "(100%)")) : this._canRightSlide = !1, i ? (this._canLeftSlide = !0, this.leftTab = i, i.position = -100, i.content.show(), i.content.setStyle("webkitTransform", "translate" + this._axis + "(-100%)")) : this._canLeftSlide = !1)
+
+"customFlag" === m.categoryId ? (d.show(), o.hide()) : "questObjective" === m.categoryId ? (i.flagId = m.id, i.show()) : "zaap" === m.categoryId ? (t.flagId = m.id, t.show()) : "hint" === m.categoryId ? (n.flagId = m.id, n.show()) : "estate" === m.categoryId && (u.flagId = m.id, u.show())
+
+n ? (n = Number(n), n > o && (n = o)) : n = o
+
+!m && g ? this.spouseJoin.show() : o.position.isInIncarnam() && this.join.show()
+
+r ? n.disable() : n.enable()
+
+n ? l("ExchangeObjectTransfertAllToInvMessage", {}) : l("ExchangeObjectTransfertAllFromInvMessage", {})
+
+n ? l("ExchangeObjectTransfertExistingToInvMessage", {}) : l("ExchangeObjectTransfertExistingFromInvMessage", {})
+
+g.staticInfos ? this.playersList.appendChild(new s({
+  text: r("tablet.monster.cell", g.staticInfos.nameId),
+  className: "cmButton"
+}, o.bind(null, m))) : console.error(new Error("Not a monster, type " + m.type))
+
+v.data && v.data.playerId ? this.playersList.appendChild(new s({
+  text: v.data.name,
+  className: "cmButton"
+}, i.bind(null, v))) : console.warn("ContextualMenuPlayersList: skipped actor:", v.actorId)
+
+r.systemNotificationsEnabled ? this._controller.takeNoteOfPlayerChoice() : (this._controller.takeNoteOfTriggeringEvent(), this._controller.scheduleCheck())
+
+e ? c() : n()
+
+e ? c() : l()
+
+t === e.activePreset ? e._togglePresetChannels(t) : e._setActivePreset(t)
+
+e ? this.delClassNames("hiddenChatTimestamp") : this.addClassNames("hiddenChatTimestamp")
+
+this._active && !this.isRadio ? (this.deactivate(), r("CHECKBOX_UNCHECKED")) : this._active || (this.activate(), r("CHECKBOX_CHECKED"))
+
+i ? i.cbs.push(t) : (window.dofus.sendMessage("BasicWhoIsRequestMessage", {
+  search: e,
+  verbose: !1
+}), this._whoIsMap[e] = {
+  cbs: [t],
+  timeout: r.setTimeout(this._playerOnlineHandler.bind(this, e, !1), u)
+})
+
+e.position === o.MODERATOR ? i += '(<span class="position mod">' + n("ui.common.moderator") + "</span>)" : e.position === o.GAMEMASTER_PADAWAN ? i += '(<span class="position gma">' + n("ui.common.gameMasterAssistant") + "</span>)" : e.position === o.GAMEMASTER ? i += '(<span class="position gm">' + n("ui.common.gameMaster") + "</span>)" : e.position === o.ADMIN && (i += '(<span class="position admin">' + n("ui.common.administrator") + "</span>)")
+
+window.gui.chat.active ? window.gui.chat.deactivate() : window.gui.chat.activate()
+
+e.skillId === p.UPGRADING ? u.open("legendaryWeaponUpgradingWindow") : e.skillId === p.SHATTER && u.open("legendaryWeaponShatterWindow")
+
+e === n.NO ? s.refuse && s.refuse() : e === n.IGNORE ? s.ignore && s.ignore() : s.confirm && s.confirm()
+
+u ? t() : i()
+
+u.autoGpsFlags ? this.addAllFollowedQuestsObjectives() : (this._removeAllPois(), this._scheduleRendering())
+
+n ? n.followSpouse && e.addOrUpdateSpouse(n.spouseName, n.mapId) : t.once("SpouseInformationsMessage", function (t) {
+  n = t.spouse, n.followSpouse && e.addOrUpdateSpouse(n.spouseName, n.mapId);
+})
+
+n && n !== e ? i.gui.openConfirmPopup({
+  title: d("ui.server.confirmPreferredServerTitle"),
+  message: d("ui.server.confirmPreferredServerMessage"),
+  cb: function (i) {
+    i ? t._continueSelectServer(e) : u.goBackToSelectionOf("server");
+  }
+}) : t._continueSelectServer(e)
+
+i ? t._continueSelectServer(e) : u.goBackToSelectionOf("server")
+
+this.serversWithMyCharacter.length > 0 ? c.open("serverSelection", this.serversWithMyCharacter) : c.open("serverSimpleSelection", this.serversRawData)
+
+i.openState && t === n ? g.close(e) : g.open(e, {
+  tabId: t
+})
+
+g.getWindow("bidHouseShop").openState ? g.close("bidHouseShop") : s.openBidHouse(!1)
+
+o < w ? t("Bag") : o >= w && i("Bag")
+
+e ? e instanceof Array || (e = [e]) : e = "all"
+
+e ? e instanceof Array || (e = [e]) : e = "all"
+
+n.isOpen ? n.close() : n.open()
+
+t * this._direction <= 0 ? t = 0 : t * this._direction > this._contentSize - this._visibleSize && (t = (this._contentSize - this._visibleSize) * this._direction)
+
+t * this._direction >= 0 ? t = 0 : t * this._direction < this._visibleSize - this._contentSize && (t = (this._visibleSize - this._contentSize) * this._direction)
+
+e ? this._changeButtonPosition("monsterInfoButton", "showFightsButton") : this._changeButtonPosition("monsterInfoButton", "nicknamesButton")
+
+i[a].getClassNames().indexOf(e) !== -1 ? n = i[a] : i[a].getClassNames().indexOf(t) !== -1 && (o = i[a])
+
+e ? (_.turnOff(), t._tacticalModeBtn.delClassNames("on"), h.setValue("tacticModeEngaged", !1)) : (_.turnOn(), t._tacticalModeBtn.addClassNames("on"), h.setValue("tacticModeEngaged", !0))
+
+this._shieldPoints > 0 ? this.lifePointsNumber.setHtml(this._lifePoints + "<br>" + this._shieldPoints) : this.lifePointsNumber.setHtml(this._lifePoints)
+
+e > s ? (this.setClassNames(["networkIndicator", "bad"]), console.debug("Current server lag is bad:", e)) : e > r ? this.setClassNames(["networkIndicator", "slow"]) : this.setClassNames(["networkIndicator", "good"])
+
+e && m.isFightMode ? o() : r()
+
+s.x0 > n ? (n = s.x0, this._createBox(a, o ? i : t)) : (n = 0, o = !o, this._createBox(a, o ? i : t))
+
+t ? this.inDialog || (this.actor = window.actorManager.getActorFromNpcId(e.id), this._zoomOnActor()) : this._restoreZoom()
+
+t ? this.keyMap[e].enable() : this.keyMap[e].disable()
+
+n ? (n.memberData = t, this.updateMember(i.type, t)) : this.addMember(i.type, t)
+
+a.getChild(n[s].id) ? this.updateMember(e, n[s]) : this.addMember(e, n[s])
+
+a.getChild(o[s].id) ? this.updateMember(e, o[s]) : this.addMember(e, o[s])
+
+o ? o.addClassNames("following") : console.error(new Error("Cannot find the new child " + e.followedId))
+
+e ? e.numAsked < 4 && !e.isNeverAsk && h.open("ratingWindow") : this.characterBaseInformations.level >= 40 && h.open("ratingWindow")
+
+"PrismGeolocalizedInformation" === l._type && "AllianceInsiderPrismInformation" === l.prism._type ? (l.prism.alliance = t.current, a[l.subAreaId] = l, n.push(l)) : a[l.subAreaId] && (delete a[l.subAreaId], o.push(l.subAreaId))
+
+n ? (this._countByGid[n] -= this._countByUid[i], 0 === this._countByGid[n] && delete this._countByGid[n], delete this._countByUid[i], delete this._gidByUid[i]) : console.error("Invalid UID: " + i)
+
+void 0 !== e.characteristics[t] ? this.emit("specificCharacteristicsUpdated", t, e.characteristics[t]) : console.error(new Error("emitCharacteristicsUpdate: No characteristic named: " + t))
+
+t || 0 === i ? n = o("ui.pvp.doUAttack", a) : 2 === i ? n = o("ui.pvp.doUAttackNeutral") : i === -1 ? n = o("ui.pvp.doUAttackNoGain", a) : 1 === i && (n = o("ui.pvp.doUAttackBonusGain", a))
+
+"CRAFTER" === this.craftSide && "craftInventory" !== e ? window.dofus.sendMessage("ExchangeObjectUseInWorkshopMessage", {
+  objectUID: o,
+  quantity: i
+}) : window.dofus.sendMessage("ExchangeObjectMoveMessage", {
+  objectUID: o,
+  quantity: i
+})
+
+c ? a[l] = c : console.warn("JobsData: No data for skillId", l)
+
+0 === e.parentId ? i > 0 && (t.categoriesTotalAchievementCount[e.id] ? t.categoriesTotalAchievementCount[e.id] += i : t.categoriesTotalAchievementCount[e.id] = i, t.categoriesAchievementCount[e.id] = i, t.categories[e.id] = e.achievementIds) : (t.categoriesTotal[e.parentId] ? t.categoriesTotal[e.parentId].push(e.id) : t.categoriesTotal[e.parentId] = [e.id], t.categoriesTotalAchievementCount[e.parentId] ? t.categoriesTotalAchievementCount[e.parentId] += i : t.categoriesTotalAchievementCount[e.parentId] = i, t.subCategoriesAchievementCount[e.id] = i, t.subCategories[e.id] = e.achievementIds)
+
+e.accepted ? (t.nbArenaFigthersReady++, t.emit("arenaFighterReady", t.nbArenaFigthersReady)) : t.emit("arenaFightDeclined", e.fightId, e.playerId)
+
+o === f ? e.dailyQuests.mainQuest = n[o] : n[o].dbQuest.repeatType === m ? e.dailyQuests.finished[o] = e.dailyQuests.all[o] = n[o] : e.finished[o] = e.all[o] = n[o]
+
+n[o].questId === f ? e.dailyQuests.mainQuest = n[o] : n[o].dbQuest.repeatType === m ? e.dailyQuests.active[o] = e.dailyQuests.all[o] = n[o] : e.active[o] = e.all[o] = n[o]
+
+s.dbQuest ? c.updateQuestObjectives(s, function (t) {
+  return t ? i(t) : (e.emit("questUpdate", s.questId), void i());
+}) : c.initializeActiveQuests([s], function (t, n) {
+  return t ? i(t) : (r = n[a].dbQuest.repeatType === m ? e.dailyQuests : e, a === f ? (e.dailyQuests.mainQuest = n[a], e.emit("mainDQStarted", a)) : n[a].dbQuest.repeatType === m ? (e.dailyQuests.active[a] = e.dailyQuests.all[a] = n[a], e.emit("DQStarted", a), e._pendingDailyQuest === a && (delete e.dailyQuests.all[e._pendingOldDaily], delete e.dailyQuests.active[e._pendingOldDaily], e.emit("rerollDQ", {
+    oldDQId: e._pendingOldDaily,
+    newDQId: a
+  }), e._pendingOldDaily = 0, e._pendingDailyQuest = 0)) : (e.active[a] = e.all[a] = n[a], e.emit("questStarted", a)), o(window.gui.chat, s, !!e.dailyQuests.all[a], r), void i());
+})
+
+e.dailyQuests.all[t.questId] ? (a = e.dailyQuests, e.emit("DQFinished", t.questId)) : t.questId !== f && (e.emit("QuestFinished", t.questId), a = e)
+
+"getText" === T.type ? a(v, s, b) : "table" === T.type && o(g, v, y, s, b, T)
+
+this.alignmentInfos ? r.preloadImage(this._imagePaths[this.alignmentInfos.alignmentSide], e) : r.preloadImage(this._imagePaths[0], e)
+
+e.current.scoreStageList ? t.steps.forEach(function (t) {
+  for (var i = !1, n = 0; n < e.current.scoreStageList.length; n++) if (e.current.scoreStageList[n].stageLevel === t.stageLevel) {
+    e.current.scoreStageList[n] = t, i = !0;
+    break;
+  }
+  i || e.current.scoreStageList.push(t);
+}) : (e.current.scoreStageList = t.steps, e.current.scoreStageList.sort(function (e, t) {
+  return e.stageLevel > t.stageLevel ? 1 : -1;
+}))
+
+i ? (this.alreadyOpenedPopup = !0, this._displayMarketingPopup(i)) : this._processPopupsWithTriggers()
+
+"RECEIPT_ALREADY_VALIDATED" === e.reason ? A(e.iapKey, e.orderId, function () {
+  H();
+}) : (H(), window.gui.openSimplePopup(ee("tablet.shop.validateIAPFail")))
+
+e === ce.GOULTINES_RESTRICTION ? window.gui.openSimplePopup(ee("tablet.shop.goultinesRestriction")) : e === ce.COUNTRY_COHERENCE_RESTRICTION ? window.gui.openSimplePopup(ee("ui.error.countryCoherenceRestriction")) : e === ce.FRAUD_DETECTED ? window.gui.openSimplePopup(ee("ui.error.fraudDetected")) : window.gui.openSimplePopup(ee("tablet.shop.buyFail"))
+
+e.e > B ? e.c = e.e = null : e.e < P && (e.c = [e.e = 0])
+
+s ? h.c.length > s && (h.c.length = s) : o && (h = h.mod(i))
+
+null != e && t && "object" == typeof t ? (i = t, t = null) : e && "object" == typeof e ? (i = e, e = t = null) : i = z
+
+t.id === o ? e._animate(i) : (e._setStatic(), e._setPercentage(0))
+
+window.gui.ipadRatio ? this.setStyle("width", "100%") : this.setStyle("width", s.shortcutBarSize - 9 + "px")
+
+window.gui.ipadRatio ? (this._chatIcons.setPanelsStyle("right", "auto"), this._chatIcons.setPanelsStyle("left", r.pingEmoteBtnSize + "px"), this._chatIcons.setPanelsStyle("bottom", this._emoteBoxSize + "px"), this.setStyle("left", l.CHAT_BTN_MIN_WIDTH + "px"), this.setStyle("width", r.pingEmoteBtnSize + "px"), this.setStyle("height", this._emoteBoxSize + "px"), this.setStyle("bottom", r.bottomBarHeight + "px"), this.setStyle("line-height", "inherit")) : (this._chatIcons.setPanelsStyle("left", "auto"), this._chatIcons.setPanelsStyle("right", this._emoteBoxSize + "px"), this._chatIcons.setPanelsStyle("bottom", r.pingEmoteBtnSize + "px"), this.setStyle("left", r.mapRight - this._emoteBoxSize + "px"), this.setStyle("width", this._emoteBoxSize + "px"), this.setStyle("height", r.pingEmoteBtnSize + "px"), this.setStyle("bottom", "0px"), this.setStyle("line-height", r.pingEmoteBtnSize + "px"))
+
+window.gui.ipadRatio ? c.tween(this, {
+  webkitTransform: "translate3d(0, " + this._emoteBoxSize + "px, 0)"
+}, {
+  time: this._time,
+  delay: this._delay,
+  easing: this._easing
+}, function () {
+  e.setStyle("visibility", "collapse"), e.isOpen = !1;
+}) : c.tween(this, {
+  webkitTransform: "translate3d(" + this._emoteBoxSize + "px, 0, 0)"
+}, {
+  time: this._time,
+  delay: this._delay,
+  easing: this._easing
+}, function () {
+  e.setStyle("visibility", "collapse"), e.isOpen = !1;
+})
+
+r ? i._autoAssign ? (i.assignGift(a, window.gui.playerData.id), i._autoAssign = !1) : i._toaRetryPending.push(a) : t.push(o)
+
+t.spellShortcuts ? e._setPanelContentRequest("spell", t.spellShortcuts) : e._emptyPanel("spell")
+
+t instanceof N || t instanceof E ? e._selectedSlot = t : null === t && (e._selectedSlot = null)
+
+a.isEmpty() ? t._removeShortcutClient(i, o) : t._setShortcutClient(s)
+
+o.isEmpty() ? o.image && o.setImage() : o.unset()
+
+d ? (p.isEmpty() || p.getShortcutHash() !== d.getHash()) && (p.setShortcut(d), a(p, u)) : p.isEmpty() || (p.unset(), s(p, u))
+
+o.image ? this.setImage(o.image) : (this.setImage(a.placeHolder), o.iconId < 0 && console.error(new Error("iconId < 0 for spellId " + o.id + ": " + o.iconId)), l.preloadImage("gfx/spells/sort_" + o.iconId + ".png", function (e) {
+  s._setSpellCount === i && (o.image = e, s.setImage(o.image));
+}))
+
+i > 0 ? this._domElements.criticalHit.setText(I("ui.common.short.CriticalHit") + I("ui.common.colon") + "1/" + i) : this._domElements.criticalHit.clearContent()
+
+t.length ? this._domElements.areaOfEffect.setText(I("ui.common.spellArea") + I("ui.common.colon") + t) : this._domElements.areaOfEffect.setText(t)
+
+0 !== e.getProperty("typeId", t) ? this._domElements.breed.setText(I("ui.common.breedSpell") + I("ui.common.colon") + e.getHumanReadableSpellType()) : this._domElements.breed.clearContent()
+
+e.getProperty("rangeCanBeBoosted", t) ? this._domElements.rangeBoost.setText(I("ui.spell.rangeBoost")) : this._domElements.rangeBoost.clearContent()
+
+!e.getProperty("castTestLos", t) && e.getProperty("range", t) ? this._domElements.castWithoutLos.setText(I("ui.spellInfo.castWithoutLos")) : this._domElements.castWithoutLos.clearContent()
+
+e.getProperty("castInLine", t) && !e.getProperty("castInDiagonal", t) ? this._domElements.castInLine.setText(I("ui.spellInfo.castInLine")) : this._domElements.castInLine.clearContent()
+
+i > 0 ? this._domElements.maxCastPerTurn.setText(I("ui.spellInfo.maxCastPerTurn") + I("ui.common.colon") + i) : this._domElements.maxCastPerTurn.clearContent()
+
+i > 0 ? this._domElements.maxCastPerTarget.setText(I("ui.spellInfo.maxCastPerTarget") + I("ui.common.colon") + i) : this._domElements.maxCastPerTarget.clearContent()
+
+e.getProperty("maxStack", t) > 0 ? this._domElements.maxStack.setText(I("ui.spellInfo.maxStack") + I("ui.common.colon") + e.getProperty("maxStack", t)) : this._domElements.maxStack.clearContent()
+
+e.getProperty("globalCooldown", t) === -1 ? this._domElements.globalCooldown.setText(I("ui.spellInfo.globalCastInterval")) : this._domElements.globalCooldown.clearContent()
+
+i > 0 ? this._domElements.initialCooldown.setText(I("ui.spellInfo.initialCastInterval") + I("ui.common.colon") + i) : this._domElements.initialCooldown.clearContent()
+
+t > 0 ? t > Math.PI / 2 ? this.arrow.addClassNames("bottomLeft") : this.arrow.addClassNames("bottomRight") : t < -Math.PI / 2 ? this.arrow.addClassNames("topLeft") : this.arrow.addClassNames("topRight")
+
+e.emitAtDestination ? e.once("atDestination", this._findPositionAppearAndListen.bind(this)) : this._findPositionAppearAndListen()
+
+s.data.alive ? (s.updateNumber(i), i++) : s.updateNumber()
+
+e ? t.enable() : t.disable()
+
+0 !== o.parentBoostUid ? t.push(o) : e.push(o)
+
+(a.isCriticalEffect || !p.effects.length) && p.criticalEffects.length > 0 ? a.isCriticalEffect = !0 : a.isCriticalEffect = !1
+
+this.maximizeEffect ? (f.damage.min = f.damage.max, f.erosionPercent.min = f.erosionPercent.max, f.lifePointsAdded.min = f.lifePointsAdded.max) : this.minimizeEffect && (f.damage.max = f.damage.min, f.erosionPercent.max = f.erosionPercent.min, f.lifePointsAdded.max = f.lifePointsAdded.min)
+
+M || T ? (m.type = l.TYPE.EROSION, m.erosionLifePoints = M ? this.target.erosionLifePoints : this.caster.erosionLifePoints, m.erosionPercent.normal = v.diceNum) : (g = s.getMinMaxDamageFromRawEffect(v), this.isGlyph ? m.origin = l.ORIGIN.GLYPH : this.isTrap && (m.origin = l.ORIGIN.TRAP), m.damage.min = g.min + this.spellWeaponCriticalBonus, m.damage.max = g.max + this.spellWeaponCriticalBonus)
+
+v.effectId === d.ACTION_CHARACTER_DISPATCH_LIFE_POINTS_PERCENT ? this.target.id !== this.caster.id ? m.lifePointsAddedBasedOnLifePercent.normal = v.diceNum * C / 100 : (m.type = l.TYPE.FIXED, m.damage.normal = v.diceNum * C / 100) : v.effectId === d.ACTION_FIGHT_LIFE_POINTS_WIN_PERCENT ? m.lifePointsAddedBasedOnLifePercent.normal = v.diceNum * I / 100 : (g = s.getMinMaxDamageFromRawEffect(v), m.lifePointsAdded.min = g.min + this.spellWeaponCriticalBonus, m.lifePointsAdded.max = g.max + this.spellWeaponCriticalBonus)
+
+l.BUFF_ADD_DAMAGES[a.actionId] ? this.caster[l.BUFF_ADD_DAMAGES[a.actionId]] += a.getParam1() : a.actionId === d.ACTION_CHARACTER_UNLUCKY ? this.minimizeEffect = !0 : a.actionId === d.ACTION_CHARACTER_BOOST_PERMANENT_DAMAGE_PERCENT && (this.caster.erosionPercentBonus += a.getParam1())
+
+n[a] === n[s] && o[a] < o[s] ? a = s : n[a] < n[s] && (a = s)
+
+i.critical ? (c.damage.convertToCritical(), c.lifePointsAdded.convertToCritical()) : (c.damage.resetCritical(), c.lifePointsAdded.resetCritical())
+
+h ? (h.damage.addFromDamage(c.damage), h.lifePointsAdded.addFromDamage(c.lifePointsAdded)) : (c.nameId = u, a.addEffectDamage(c))
+
+i.random > 0 ? (e.damage.min = e.damage.min > 0 ? Math.min(e.damage.min, i.damage.min) : i.damage.min, e.damage.max = Math.max(e.damage.max, i.damage.max), e.damage.minCritical = e.damage.minCritical > 0 ? Math.min(e.damage.minCritical, i.damage.minCritical) : i.damage.minCritical, e.damage.maxCritical = Math.max(e.damage.maxCritical, i.damage.maxCritical), e.lifePointsAdded.min = e.lifePointsAdded.min > 0 ? Math.min(e.lifePointsAdded.min, i.lifePointsAdded.min) : i.lifePointsAdded.min, e.lifePointsAdded.max = Math.max(e.lifePointsAdded.max, i.lifePointsAdded.max), e.lifePointsAdded.minCritical = e.lifePointsAdded.minCritical > 0 ? Math.min(e.lifePointsAdded.minCritical, i.lifePointsAdded.minCritical) : i.lifePointsAdded.minCritical, e.lifePointsAdded.maxCritical = Math.max(e.lifePointsAdded.maxCritical, i.lifePointsAdded.maxCritical), e.lifePointsAddedBasedOnLifePercent.normal = e.lifePointsAddedBasedOnLifePercent.normal > 0 ? Math.min(e.lifePointsAddedBasedOnLifePercent.normal, i.lifePointsAddedBasedOnLifePercent.normal) : i.lifePointsAddedBasedOnLifePercent.normal) : this.updateFromEffectDamage(i)
+
+n.indexOf("DA") !== -1 ? i = M.AIR : n.indexOf("DE") !== -1 ? i = M.EARTH : n.indexOf("DF") !== -1 ? i = M.FIRE : n.indexOf("DN") !== -1 ? i = M.NEUTRAL : n.indexOf("DW") !== -1 && (i = M.WATER)
+
+e.random > 0 ? (e.lifePointsAdded.min = Math.min(i, e.damage.min * n / 2), e.lifePointsAdded.max = Math.min(i, e.damage.max * n / 2)) : (t.lifePointsAdded.min = Math.min(i, t.lifePointsAdded.min + e.damage.min * n / 2), t.lifePointsAdded.max = Math.min(i, t.lifePointsAdded.max + e.damage.max * n / 2))
+
+this.sharedDamages.length > 0 ? this._computeAllSharedDamages(s, r, e) : this._computeAllElementaryDamages(s, r)
+
+E === t - 1 || C && C.actorId !== e.actorId || !a(M.cellId, N, i) ? a(b.cellId, N, i) || (A.force = 0) : I && I.indexOf(M.cellId) === -1 && (A.newCellId = M.cellId, I.push(M.cellId))
+
+o < n ? (n = o, i = [e]) : o === n && i.push(e)
+
+this._sameMapMarker ? (window.gui.mapCoordinateDisplay.removeMarker(this._sameMapMarker), this._sameMapMarker = null) : this._compass.removeChild(this)
+
+0 === this._distance ? this._sameMapMarker = window.gui.mapCoordinateDisplay.addMarker(this._type, this._tooltipText) : this._compass.appendChild(this)
+
+e.msgType === r.TEXT_INFORMATION_ERROR ? window.gui.chat.logError(e.text, e.msgPriority) : window.gui.chat.logMsg(e.text, i[e.msgType], e.msgPriority)
+
+t.indexOf(e) !== -1 ? t.splice(t.indexOf(e), 1) : console.error(new Error("StorageViewer: remove unknown filter"))
+
+r ? (this.displayedSlotCount += 1, this._filteredItemList[o] = a) : this.unSelectSlot(a.objectUID)
+
+t.selected ? i.currentOpenedWindow.emit("slot-doubletap", t, e.x, e.y) : t !== i.selectedSlot ? (i.selectSlot(t), i.currentOpenedWindow.emit("slot-tap", t, e.x, e.y)) : i.currentOpenedWindow.tapSelectedEmitsDoubleTap && i.currentOpenedWindow.emit("slot-doubletap", t, e.x, e.y)
+
+this.selectedSlot !== t ? (this.selectedSlot && this.selectedSlot.unselect(), t.select(), this.selectedSlot = t) : (t.unselect(), this.selectedSlot = null)
+
+t.currentOpenedWindow ? t.setItemList(e) : t.listUpdateRequested = e
+
+Object.keys(i).length >= y ? L.addSetButton.disable() : L.addSetButton.enable()
+
+t === _.YES ? L.saveCustom = !0 : e.setItem(i)
+
+i === _.YES ? (window.dofus.sendMessage("InventoryPresetDeleteMessage", {
+  presetId: t.presetId
+}), L.addClassNames("spinner")) : e.enable()
+
+this._buttonNo.isVisible() || this.closeButton.isVisible() ? this.noAction() : this._buttonIgnore.isVisible() ? this.ignoreAction() : this.yesAction()
+
+40 === i ? (t.preventDefault(), e.nextCmd()) : 38 === i && (t.preventDefault(), e.previousCmd())
+
+this.partyId ? this.leaveArenaBtn.enable() : this.leaveArenaBtn.disable()
+
+this.isLeader || !this.leaderId ? (this.registerBtn.enable(), this.unregisterBtn.enable()) : (this.registerBtn.disable(), this.unregisterBtn.disable())
+
+e.arenaRegistered ? (this.registerBtn.hide(), this.unregisterBtn.show()) : (this.registerBtn.show(), this.unregisterBtn.hide())
+
+t ? i ? this._displayMountDetails(t) : this._selectTile(this.rooms.equip, this.equipBox.tile) : i && this._hideMountDetails()
+
+t ? (this.selectState(E), window.gui.openContextualMenuAround("generic", this, {
+  actions: this.menuActions
+})) : s.call(this, null)
+
+t ? (this.selectState(E), window.gui.openContextualMenuAround("generic", this, {
+  actions: this.menuActions
+})) : l.call(this, null)
+
+o ? (l = -1, s = n - 1, r = i - 1) : (l = 1, s = i, r = n)
+
+n.options.closable && o === n.curentTabId ? n.close() : (n.openTab(o), r("TAB"))
+
+e === n ? this.close() : this.openTab(n)
+
+t >= b && e ? c.open("deleteCharacterConfirm", {
+  id: i,
+  name: n,
+  secretQuestion: e
+}) : T.openConfirmPopup({
+  title: d("ui.popup.warning"),
+  message: d("ui.popup.warnBeforeDelete", n),
+  cb: function (e) {
+    if (e) {
+      var t = u(i + "~000000000000000000");
+      window.dofus.sendMessage("CharacterDeletionRequestMessage", {
+        characterId: i,
+        secretAnswerHash: t
+      });
+    }
+  }
+})
+
+e.constructor == String ? e = i && "binary" === i.encoding ? a.stringToBytes(e) : n.stringToBytes(e) : o(e) ? e = Array.prototype.slice.call(e, 0) : Array.isArray(e) || (e = e.toString())
+
+8 * n + 6 * a <= 8 * e.length ? i.push(t.charAt(o >>> 6 * (3 - a) & 63)) : i.push("=")
+
+1 === t.points.length ? (t.points.push({
+  x: U,
+  y: q
+}), S(U, q, P, t)) : !l && c > r && (t.points.push({
+  x: U,
+  y: q
+}), S(U, q, P, t))
+
+this.myWindow.itemInstance ? _.openBidHouse(!0, null, this.myWindow.itemInstance) : _.openBidHouse(!1, null, this.myWindow.itemId)
+
+i[a.id] ? r.addClassNames("exotic") : a.bonusType === -1 ? r.addClassNames("malus") : 1 === a.bonusType && r.addClassNames("bonus")
+
+!this._hasText && i ? (this.lblContent.hide(), this.txIllu.setStyles({
+  backgroundImage: this._image.src,
+  backgroundPosition: "center center",
+  width: "100%"
+})) : (this.lblContent.show(), this._lblContentScroller.toggleClassName("small", i), this.txIllu.toggleDisplay(i), i && (t = t.replace(this._image.regExpResult, ""), this.txIllu.setStyles({
+  backgroundImage: this._image.src,
+  backgroundPosition: "center top",
+  width: ""
+})), this.lblContent.appendChild(this._formatLinks(t)), window.setTimeout(function () {
+  e._lblContentScroller.refresh();
+}, 0))
+
+t[0] === p ? (window.dofus.sendMessage("QuestStartRequestMessage", {
+  questId: t[1]
+}), this.close()) : t[0] === m ? (window.dofus.sendMessage("QuestObjectiveValidationMessage", {
+  questId: t[1],
+  objectiveId: t[2]
+}), this.close()) : t[0] === f && window.gui.emit("CompassUpdateMessage", {
+  type: a.COMPASS_TYPE_SIMPLE,
+  worldX: ~~t[1],
+  worldY: ~~t[2]
+})
+
+n ? e.addEventListener(r.end, function (e) {
+  l.openUrlInAppBrowser(t), e.preventDefault();
+}) : e.addEventListener(r.end, function (e) {
+  i._linkHandler(t), e.preventDefault();
+})
+
+u.indexOf(g) !== -1 ? t(d, u.split(",")[1], !0) : (t(d, u), d.href = "#")
+
+"insertRule" in e ? e.insertRule(t + "{" + i + "}", n) : "addRule" in e && e.addRule(t, i, n)
+
+a && a.twoHanded ? o.lock() : o.itemInstance || o.unset()
+
+n ? this._setSlot(e, n) : this._unsetSlot(e)
+
+n === w.notEquipped ? e._unsetSlot(i) : e._setSlot(n, t)
+
+t ? (T.setValues([_, v, y]), y >= 1 && T.createChild("div", {
+  className: "reached100"
+})) : T.setValues([_, v])
+
+this.shouldGetPixelValue ? this._tryAndGetPixelValue(this._refresh) : this._refresh()
+
+o === d.FIGHT_TYPE_PVP_ARENA ? (n += " fightType1", r += h("ui.common.koliseum")) : o === d.FIGHT_TYPE_CHALLENGE ? (n += " fightType2", r += h("ui.fight.challenge")) : o === d.FIGHT_TYPE_AGRESSION ? (n += " fightType3", r += h("ui.alert.event.11")) : o === d.FIGHT_TYPE_PvT && (n += " fightType3", r += h("ui.spectator.taxcollectorAttack"))
+
+t.hasGroupMember || i.hasGroupMember ? u = b("relation1", h("ui.spectator.isGroup")) : t.hasFriend || i.hasFriend ? u = b("relation2", h("ui.spectator.isFriend")) : (t.hasGuildMember || i.hasGuildMember) && (u = b("relation3", h("ui.spectator.isGuild")))
+
+l ? t.disable() : t.enable()
+
+!e && q && q.fightSpectatorLocked ? U.buttonSpectate.disable() : U.buttonSpectate.enable()
+
+i ? (this.pvpButton.setText(c("ui.pvp.disabled")), this.pvpContainer.delClassNames("disabled"), t.getTopWings(t.alignmentInfos, function (t) {
+  p.loadImage(t.imagePath, function (i) {
+    e.alignmentWingsContainer.setStyles({
+      left: t.left + f + "px",
+      top: t.top + g + "px",
+      width: t.width + "px",
+      height: t.height + "px",
+      backgroundImage: 'url("' + i.src + '")'
+    });
+  });
+}), this.alignmentGrade.setText(t.getAlignmentGradeString()), this.honorPoints.setValue(t.getHonor())) : (this.pvpButton.setText(c("ui.pvp.enabled")), this.pvpContainer.addClassNames("disabled"), this.alignmentWingsContainer.setStyle("backgroundImage", "none"), this.alignmentGrade.setText("-"), this.honorPoints.setValue(0))
+
+0 === i.parentId ? (e.getCategoryPercentage(i.id), t._updateBarsAndPercentages(i.id, null)) : n.push(i)
+
+i.tappedOnMe ? e.categoriesList.selectItem(t.parentId) : e._cleanRightSideContent()
+
+n ? n.setImage(e[t]) : console.warn("Missing icon for achievement #" + t, a[t])
+
+s.isSelected ? t.achievementsList.selectItem(e) : (t.openAchievementWithID = e, a.selectItem(n.categoryId))
+
+o.isSelected ? t.achievementsList.selectItem(e) : (c.isSelected || a.selectItem(c.id), c.sublist.show(), t.openAchievementWithID = e, d.selectItem(n.categoryId))
+
+isNaN(w) ? console.warn("Failed parsing achievementId of objective.criterion: " + f.criterion) : (g.achievementID = w, m(g), g.on("tap", a))
+
+1 === n.maxValue ? (this.progression.hide(), this.objectivesBox.show()) : (this.progression.show(), this.objectivesBox.hide(), this.progressionText.setText(n.value + "/" + n.maxValue), this.progressionBar.setValue(n.value, n.maxValue))
+
+t.more ? (t.more.show(), this.refresh()) : e._createMonsterMoreInfo(t)
+
+a ? t.hide() : t.show()
+
+y === r ? c.push(e[f]) : (d++, g.areaId !== p && (m = g.areaId))
+
+this._ornamentIdToSelect ? (this.tabs.openTab("ornaments"), this.ornamentList.selectItem(this._ornamentIdToSelect)) : this._titleIdToSelect ? (this.tabs.openTab("titles"), this.titleList.selectItem(this._titleIdToSelect)) : this._selectActiveTitleAndOrnament()
+
+e.isActivePOI(t) ? (e.removePOI(t, void 0, !0), i._updateQuestFollow(n, !1, !1)) : (e.addQuestObjectiveFromObjective({
+  objectiveDb: this.objectiveDb,
+  objectiveId: this.objective.objectiveId,
+  questId: n
+}), e.questFollower.isQuestFollowed(n) || i._updateQuestFollow(n, !0, !1))
+
+e[l] ? (a = !1, r.show()) : r.hide()
+
+a ? n.hide() : n.show()
+
+n <= this.index ? e._displayStepData(i) : e._displayUnknownStep(i)
+
+s ? t.hide() : t.show()
+
+this.isVisible() ? this._refreshAllContent() : this.mustRefreshAll = !0
+
+o ? d[i].setText(o.nameId) : console.error(new Error("JobsWindow: no interactive for id " + n))
+
+o === n.activeItem ? n.deactivate() : n.activate(o)
+
+t.nbCase && t.nbCase < T ? e.forEach(function (e) {
+  e.ingredientIds.length <= t.nbCase && a.push(e);
+}) : e.forEach(function (e) {
+  a.push(e);
+})
+
+this.tappedRecipe && this.tappedRecipe === e ? this._selectRecipe(e) : this._setTappedRecipe(e)
+
+p ? (c += " " + p.nameId, t._createIngredientSlot(p, i.quantities[u]), d += 1) : console.error("RecipeBox#setupRecipe: ingredientId", h, "from recipeId", t.recipeId, "is missing, just continue")
+
+t ? this.selector.select(t.categoryId) : console.error("SocialGroupCreationWindow._setEmblem: emblemSymbol is null for symbolId", this.symbolId)
+
+e !== t[n].categoryId ? t[n].hide() : t[n].show()
+
+this.openState ? (this._setAlliance(e), p.focusWindow("allianceCard")) : p.open("allianceCard", e)
+
+this.openState ? (this._setGuild(e), f.focusWindow("guildCard")) : f.open("guildCard", e)
+
+e >> t & 1 ? this.checkboxes[t].activate() : this.checkboxes[t].deactivate()
+
+i.bought ? t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseBuy", e.houseOwner, c.kamasToString(i.realPrice, ""))
+}) : t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.cantBuyHouse", c.kamasToString(i.realPrice, ""))
+})
+
+0 === e.realPrice ? t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseNosell", "'" + i + "'")
+}) : t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseSell", "'" + i + "'", c.kamasToString(e.realPrice, ""))
+})
+
+o ? this.confirmButton.enable() : this.confirmButton.disable()
+
+i >= t.itemInstance.livingObjectLevel ? n.unset() : n.setImage(e[i])
+
+n ? t() : e()
+
+I ? C = I.possibleEffects : (this._logger.error("Missing item", M), C = {})
+
+S.effect && S.effect.category === r.special ? h.push(S) : S.effect.showInSet && b.push(S)
+
+t.objectUID === this.foodItem.objectUID || t.objectUID === this.hostItem.objectUID ? (this.hostSlot.setItem(t, 1), this.foodSlot.unset()) : this.foodSlot.setItem(t, 1)
+
+t === e ? this.codeDigitContainer[t].addClassNames("highlight") : this.codeDigitContainer[t].delClassNames("highlight")
+
+s ? r ? (r.setServer(s), r.show()) : o(s, E.length % 2) : r && r.hide()
+
+T ? (T = !1, G.delClassNames("selected")) : (T = !0, G.addClassNames("selected"))
+
+C ? (C = !1, U.delClassNames("selected")) : (C = !0, U.addClassNames("selected"))
+
+i < e.charactersCount ? o.addClassNames("on") : o.delClassNames("on")
+
+this.selectedMapId ? i.buttonOk.enable() : i.buttonOk.disable()
+
+o.target.table.getRows().length <= 0 ? o.tab.disable() : (o.tab.enable(), i || (e.openTab(n), i = !0))
+
+"items" === r ? t(e) : window.dofus.sendMessage("ExchangeObjectMoveKamaMessage", {
+  quantity: e
+})
+
+"items" === _ ? e(t) : window.dofus.sendMessage("ExchangeObjectMoveKamaMessage", {
+  quantity: -t
+})
+
+this.openState ? this._setContent(e, t, i) : v.open(this.id, {
+  mode: e,
+  item: t,
+  currency: i
+})
+
+e === -1 ? this.averagePrice.setText(c("ui.item.averageprice.unavailable")) : this.averagePrice.setText(u.kamasToString(e))
+
+!t || Date.now() - t.timestamp > w ? window.dofus.sendMessage("ExchangeBidHouseListMessage", {
+  id: e
+}) : this._displayMinPrice()
+
+i >= 100 ? i = Math.round(i) : i >= 10 && (i = Math.round(10 * i) / 10)
+
+a <= -1 ? (a < -99 && (a = -99), n = " -" + Math.round(-a) + "%") : a >= 1 && (n = " +" + Math.round(a) + "%")
+
+_.getMountInfoFromCertificate(e) ? (this.mountWindow = T.getWindow("mount"), this.mountWindow.showCertificateMount(e)) : this._hideMountPreview()
+
+i > o ? (this.buyButton.disable(), this.totalPriceValue.addClassNames("red")) : (this.buyButton.enable(), this.totalPriceValue.delClassNames("red"))
+
+"number" == typeof e ? t = e : (t = e.getProperty("id"), i = e.getItemInstance())
+
+d ? e = n % c || c : u ? e = n % l || l : h && (e = n % r || r)
+
+2 * m < u ? (this._zoomLevels.push(h), u = h, h = m) : h = m
+
+this._worldMapData ? (i = this._worldMapData.origineX % e, n = this._worldMapData.origineY % t) : console.error(new Error("worldMapData are not ready yet!"))
+
+this._zoneHighlight.isDisplayed ? ((this._zoneHighlightTween.starting || this._zoneHighlightTween.playing) && this._zoneHighlightTween.stop(), this._zoneHighlightTween.reset().from({
+  x: this._zoneHighlight.x,
+  y: this._zoneHighlight.y
+}).to({
+  x: i.x,
+  y: i.y
+}, 16, W.polyOut, 9).start()) : (this._zoneHighlight.show(), this._zoneHighlight.x = i.x, this._zoneHighlight.y = i.y)
+
+u > this._worldMapWidth ? (i = Math.max(this._worldMapWidth - l.fovW * C, 0), n = this._worldMapWidth) : (i = d, n = u)
+
+p > this._worldMapHeight ? (o = Math.max(this._worldMapHeight - l.fovH * C, 0), s = this._worldMapHeight) : (o = h, s = p)
+
+void 0 === z ? (M.push(W), this._chunkBatchIndexes[x] = this._chunkBatchCurrent) : this._createChunkGraphic(W)
+
+n < o ? (t = 0, a = n) : n > g.cropPosition.width - o && (t = g._worldMapWidth, a = g.cropPosition.width - n)
+
+l ? (e.setIcons(l, g._iconsImage), e.displayIcons()) : n ? e.displaySubArea() : e.displayCoordinates()
+
+this.renderingProgram === this.renderer._programPixelArt ? this.renderingProgram = this.renderer._programFiltering : this.renderingProgram = this.renderer._programPixelArt
+
+t === -1 ? this.gameScenes.push(e) : console.warn("[animationController.addScene] Scene already in the animation controller")
+
+t !== -1 ? this.gameScenes.splice(t, 1) : console.warn("[animationController.removeScene] Scene not in the animation controller")
+
+s && a ? t.push(n) : s && e.push(n)
+
+t === -1 ? console.error(new Error("[IconCluster.remove] Icon not in cluster: " + e.id)) : (this.icons.splice(t, 1), e.visible && (this.nVisibleIcons -= 1))
+
+i._worldMapLoaded ? t() : i._deferredActionQueue.enqueue(t)
+
+i._worldMapLoaded ? t() : i._deferredActionQueue.enqueue(t)
+
+e._worldMapLoaded ? (e._worldMap.removeIcon(i.id), e._worldMap.addIcon(i, "icon_" + i.gfx)) : console.error("map not loaded!")
+
+this._worldmap ? i() : this._deferredActionQueue.enqueue(i)
+
+this.openState ? (this.openTab("guild", {
+  tabId: t
+}), m.focusWindow(this.id)) : m.open(this.id, {
+  tabId: "guild",
+  tabParams: {
+    tabId: t
+  }
+})
+
+t.table.hasRow(e) ? t.table.selectRow(e) : t.table.unSelectRow()
+
+0 === i && 0 === n ? this.conquestsInfo.setText(l("ui.alliance.noArea")) : i > 0 && 0 === n ? this.conquestsInfo.setText(l("ui.alliance.nbAreas", i, i)) : 0 === i && n > 0 ? this.conquestsInfo.setText(l("ui.alliance.nbVillages", n, n)) : this.conquestsInfo.setText(l("ui.alliance.nbAreasAndVillages", i, n, n + i))
+
+u.isPlayerFightingFor(n, y.prism, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("PrismFightJoinLeaveRequestMessage", {
+  subAreaId: i,
+  join: !1
+}) : e && 5 === t.fighters[w.allies].length ? window.dofus.sendMessage("PrismFightSwapRequestMessage", {
+  subAreaId: i,
+  targetId: e.id
+}) : window.dofus.sendMessage("PrismFightJoinLeaveRequestMessage", {
+  subAreaId: i,
+  join: !0
+})
+
+u.isPlayerFightingFor(n, y.taxCollector, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("GuildFightLeaveRequestMessage", {
+  taxCollectorId: i,
+  characterId: n
+}) : e && 5 === t.fighters[w.allies].length ? window.dofus.sendMessage("GuildFightTakePlaceRequestMessage", {
+  taxCollectorId: i,
+  replacedCharacterId: e.id
+}) : window.dofus.sendMessage("GuildFightJoinRequestMessage", {
+  taxCollectorId: i
+})
+
+o ? a(i[n], o) : s(i[n])
+
+e.isConnected ? window.gui.openContextualMenu("player", {
+  playerId: e.characterId,
+  accountId: e.accountId,
+  playerName: e.name
+}) : window.gui.openContextualMenu("offlinePlayer", {
+  playerId: e.characterId,
+  playerName: e.name,
+  hoursSinceLastConnection: e.lastConnection
+})
+
+o.isActivate() ? o.activate() : o.deactivate()
+
+o.isActivate() ? o.activate() : o.deactivate()
+
+this.connected ? window.gui.openContextualMenu("player", {
+  playerId: this.id,
+  accountId: this.accountId,
+  playerName: this.name,
+  guildId: window.gui.playerData.guild.current.guildId
+}) : window.gui.openContextualMenu("offlinePlayer", {
+  playerId: this.id,
+  playerName: this.name,
+  hoursSinceLastConnection: this.hoursSinceLastConnection
+})
+
+W ? (k.stateIcon = new r("div", {
+  className: ["stateIcon", "smiley"]
+}), M.push(k.stateIcon), T.push("gfx/smilies/" + W.gfxId + ".png")) : console.error("Smiley " + z + " details are not available, it could not be displayed")
+
+e.length ? this.joinButton.enable() : this.joinButton.disable()
+
+e ? this._startEditing() : d.showNotification(r("tablet.lockedBy", o(t)), this._editBtn)
+
+e.length ? this.joinButton.enable() : this.joinButton.disable()
+
+g.isPlayerFightingFor(n, y.taxCollector, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("GuildFightLeaveRequestMessage", {
+  taxCollectorId: i,
+  characterId: n
+}) : e && 5 === t.fighters.allies.length ? window.dofus.sendMessage("GuildFightTakePlaceRequestMessage", {
+  taxCollectorId: i,
+  replacedCharacterId: e.id
+}) : window.dofus.sendMessage("GuildFightJoinRequestMessage", {
+  taxCollectorId: i
+})
+
+t ? _.focusWindow(t.id) : _.createPanel(e, new p(), {
+  title: c("ui.social.guildTaxCollectors") + " - " + c("ui.social.guildBoosts"),
+  width: 797,
+  height: 497
+})
+
+t ? e.enable() : e.disable()
+
+o ? (m.hide(), window.dofus.sendMessage("PaddockSellRequestMessage", {
+  price: 0
+})) : d.close(M.id)
+
+M.currency === g ? e(L, t !== b) : e(L, !0)
+
+e.length > 0 ? (n.table.highlight(0), n.validButton.enable()) : n.validButton.disable()
+
+e.open ? a.openDialog("spellForget") : a.close("spellForget")
+
+e ? this.addClassNames("selected") : this.delClassNames("selected")
+
+this._canStepBack() ? this._stepLayoutSetup(ne) : (k.close(this.id), T.backToSelection())
+
+e ? (i = 1 + (e - 1) * ce * 2, n = i + 2 * ce - 1, this.loadedHeads[e] = !0) : (i = 1, n = this.numBreeds * ce * 2)
+
+null !== e[i] ? f(this.colorButtons[i], e[i], t) : this._resetColorButton(this.colorButtons[i])
+
+e !== this.selectedSlot ? (window.gui.openContextualMenuAround("item", e, {
+  item: t
+}), this._selectCurrentSlot(e, i.movedQty > 1 ? "stackMove" : "")) : this.jobsData.removeItemFromCraft(t.objectUID, i.movedQty)
+
+n || 0 === n ? (t = i[n], t.setItem(e)) : (t = i[this._usedSlots], t.setItem(e), this._usedSlots += 1)
+
+t ? this._playerRole.setText(i + " " + u("ui.common.short.level") + " " + t) : this._playerRole.setText(u("ui.craft.client"))
+
+t ? this.jobsData.moveItemToCraft(this.droppedItemSource, this.newItemInstance, e) : this.jobsData.removeItemFromCraft(this.newItemInstance.objectUID, e)
+
+r ? (a.setItem(r), a.itemUI.backgroundImage = a.getImage(), a.paymentType = this._paymentType, this._readOnly ? s.disableDrag(a) : s.enableDrag(a)) : (delete a.paymentType, a.unset(), s.disableDrag(a))
+
+t === g ? v._toggleConfirmForMe(i) : v._otherCharacterTradeSpace.toggleReady(i)
+
+"key" === w ? v = c.KEY : "infinity" === w ? _ = 1 / 0 : (y = !0, _ = parseInt(w, 10) || 1)
+
+I.flag === c.KEY ? I.slot.addClassNames("key") : I.flag === c.GIFT ? I.slot.addClassNames("gift") : I.quantity === 1 / 0 ? I.slot.addClassNames("infinity") : I.flag === c.CROWN_QTY ? (I.slot.setQuantity(I.quantity), I.slot.addClassNames("pinkCrownQty")) : (I.slot.setQuantity(I.quantity), I.slot.addClassNames("pinkQty"))
+
+"goultines" === e ? this._openGoultinesCategory() : "bonuspack" === e && this._openCategory(x)
+
+h ? this._displayItemDetails(this._articleIdToOpen) : console.error(new Error("ShopWindow: Cannot find article: " + this._articleIdToOpen))
+
+o ? this._loadCategory(o) : this._saveAndExecuteAction(function () {
+  i.setSpinnerVisible(!0), t._requestPageOfCategory(e, 1);
+})
+
+"ARTICLE" === t.type ? e.emit("displayItemDetails", t.id) : "CATEGORY" === t.type && e.emit("openCategory", t.id)
+
+a ? n.updatePrice(a) : console.error(new Error("Article " + o + " missing for an ArticleBox"))
+
+e ? this._itemsScroll.addClassNames("spinner") : this._itemsScroll.delClassNames("spinner")
+
+a ? n.updatePrice(a) : console.error(new Error("Article " + o + " missing for an ArticleBox"))
+
+n.length ? f.generateOutfits(n) : f.setLook(o())
+
+Object.keys(this._purchasesDetails).length <= this._purchasesList.getChildCount() ? this._spinner.hide() : this._spinner.show()
+
+n === u.SUCCEEDED ? e++ : t || n !== u.FAILED || (t = !0)
+
+e.canTabBeDisable(r) ? s.tab.disable() : s.tab.enable()
+
+"." === o ? e.splice(n, 1) : ".." === o ? (e.splice(n, 1), i++) : i && (e.splice(n, 1), i--)
+
+e.more ? (e.more.show(), this.refresh()) : (t._createMonsterMoreInfo(e), this.refresh())
+
+e.isPreview ? e.destroy() : e.setText(e.currentStatDescription)
+
+window.cordova && window.cordova.InAppBrowser ? window.cordova.InAppBrowser.open(n, "_system", "location=yes,hidden=yes") : window.open(n, "_system")
+
+e.isDislikeDofus ? (e._setUserPref({
+  isNeverAsk: !0
+}), e.close()) : e.isLikeDofus ? (e._setUserPref({
+  isNeverAsk: !1
+}), e.close()) : e._dislikeDofus()
+
+e(r) ? s.tab.disable() : s.tab.enable()
+
+d.effectId === r.typeActionId ? d.value += l : d.effectId === f.ACTION_GRIND_LEVEL && d.value++
+
+e ? (this.currentLW.displayItem(e), this.currentLW.show(), this.placeHolderLW.setText(null)) : (this.currentLW.hide(), this.placeHolderLW.setText(r("ui.common.selectItem")))
+
+e ? (this.upgradedLW.displayItem(e), this.upgradedLW.show(), this.placeHolderUpgradedLW.setText(null)) : (this.upgradedLW.hide(), this.placeHolderUpgradedLW.setText(r("ui.search.noResult")))
+
+e ? (this.currentLW.displayItem(e), this.currentLW.show(), this.placeHolderLW.setText(null)) : (this.currentLW.hide(), this.placeHolderLW.setText(r("ui.common.selectItem")))
+
+t === a.ALBUERA_QUEST_ID ? e.changeStep(e._getCurrentStep()) : e.checkCondition(d.NEW_QUEST_START, {
+  questId: t
+})
+
+e ? this.showLoginForm() : this.showGuestForm()
+
+this.isAlreadyGuest ? (this._createAccount.setText(r("tablet.oldGuest.register")), "guestWithNoNickname" === e ? this._introText.setText(r("tablet.oldGuest.desc.no.nick")) : this._introText.setText(r("tablet.oldGuest.desc", e))) : (this._createAccount.setText(r("tablet.login.createAccount")), this._introText.setText(r("tablet.newGuest.desc")))
+
+t._isExpanded ? (t._retract(), t._boundedBlock && t._boundedBlock.expand()) : (t.expand(), r.log("HUD.Click_on_button", {
+  interface_id: "ChangeLog",
+  button_id: "BTN_CHANGELOG_OPEN_BEFORE_LOGIN",
+  clic_parameter_key: "occurrence",
+  clic_parameter_value: ++n,
+  clic_type: "Simple_court"
+}, {
+  override: !0
+}))
+
+this === t ? t._expand() : t._retract()
+
+h.getValue().length < 3 ? g.disable() : g.enable()
+
+o.registerLogic.isParentEmailNeeded() ? H.focus() : q.focus()
+
+_.isActivate() ? w.enable() : w.disable()
+
+a.length && a[0].actorId >= 0 ? window.dofus.sendMessage("ObjectUseOnCharacterMessage", {
+  characterId: a[0].actorId,
+  objectUID: i
+}) : window.dofus.sendMessage("ObjectUseOnCellMessage", {
+  cells: o,
+  objectUID: i
+})
+
+s ? (s.disabledSkills = n.disabledSkills, s.enabledSkills = n.enabledSkills) : console.warn("Interactive element id " + n.elementId + " does not exist.")
+
+o ? o instanceof c && (w.isFightMode ? (o.state = -1, o.changeState(1)) : o.changeState ? o.changeState(n.elementState) : o.state = n.elementState) : console.warn("stated element not identified:" + n.elementId + ", cellId=" + n.elementCellId)
+
+a ? a.changeState ? a.changeState(o.elementState) : (console.warn("Identified element " + o.elementId + " is not a stated element."), a.state = o.elementState) : console.warn("Identified element " + o.elementId + " not found.")
+
+0 === (1 & n) ? 0 !== (1 & i) && this._removeCell(e, t) : 0 === (1 & i) && this._addCell(e, t)
+
+!t && o.template && o.template.exposedSymbols[r.id] ? (this.animated = !0, o.assignSymbol(r, !1, i)) : i()
+
+e.layer < this.layer ? i = 0 : (i = Math.round(e.position), i < 0 ? i = 0 : i > l && (i = l))
+
+t.layer > this.layer ? n = l : (n = Math.round(t.position), n < 0 ? n = 0 : n > l && (n = l))
+
+void 0 !== e && 1 & e.l ? (t.floor = e.f || 0, t.zone = e.z || 0, t.speed = 1 + (e.s || 0) / 10, t.zone !== C && (T = !1)) : (t.floor = -1, t.zone = -1)
+
+void 0 === m(t, i) ? n[t][i] = "    " : n[t][i] = "[  ]"
+
+t[e] ? delete t[e] : t[e] = !0
+
+"H" === r[2] ? r[0] += 1 : r[1] += 1
+
+this.texture ? (this.texture.release(), this.texture = null) : console.warn("[Background.clear] Clearing background although no texture was ever set")
+
+this.zones[i].id === e ? (t && t(this.zones[i]), this.zones[i].destroy(), this.zones.splice(i, 1)) : i++
+
+this.gridAnimator ? this.gridAnimator.removeGridLayer(e) : this.gridAnimator = new h()
+
+e._listReference ? (this._layers.removeByReference(e._listReference), e._listReference = null) : console.error(new Error("GA: _listReference is missing."))
+
+o.isNPC() ? i.npc.push(o) : o.isPlayer() ? i.onlinePlayer.push(o) : i.other.push(o)
+
+a ? (a.updateData(e), o = !1) : a = this.addEmptyActor(e)
+
+s ? s.carryCharacter(a) : i._queuedToCarryActors[o] = a
+
+n === -1 ? console.warn("[ActorManager.removeActorOccupation] Trying to remove an actor from an empty cell", e) : 1 === i.length ? delete this._occupiedCells[t] : i.splice(n, 1)
+
+n === -1 ? i.push(e) : console.warn("[ActorManager.addActorOccupation] Trying to add an actor to a cell that it already belongs to", e)
+
+e ? (t = c.MAP_LAYER_TRANSPARENT, i = c.TRANSPARENT_MODE_ALPHA) : (t = c.MAP_LAYER_PLAYGROUND, i = 1)
+
+f.isRoleplayMode && this._fullNicknameLabelCount < s.maxTitlesOrnaments ? (e.addNicknameLabel(!0), e.nicknameLabel && "full" === e.nicknameLabel.getType() && this._fullNicknameLabelCount++, e.moving && e.nicknameLabel.set(e, "name")) : e.addNicknameLabel(!1)
+
+t.loop ? o.loopAnim(e, i) : o.oneShootAnim(e, {
+  backToStatic: !1,
+  isEmoteAnimated: t.isEmoteAnimated
+}, i)
+
+"HumanOptionAlliance" === i._type ? this.addConquestIcon(i) : "HumanOptionFollowers" === i._type && this.actorManager.addActorFollowers(this, i.followingCharactersLook, !0)
+
+r.isFightMode ? b = 0 : _ && _[w] && _[w].f && (b = _[w].f)
+
+"HumanOptionGuild" === d._type ? (s = d.guildInformations, this.hasGuild = !0) : "HumanOptionAlliance" === d._type ? (r = d.allianceInformations, this.hasAlliance = !0) : "HumanOptionOrnament" === d._type ? (a = d.ornamentId, this.hasOrnament = !0) : "HumanOptionTitle" === d._type && (o = d.titleId, this.hasTitle = !0)
+
+1 === h ? this.openPlayerContextualMenu(l) : this.isFollower || console.error("nbOnlinePlayersOnCell has an unexpected value (< 1): ", h, this.actorId)
+
+n.circleGraphic ? (n.circleGraphic.w = e.element.width, n.circleGraphic.h = e.element.height, n.circleGraphic.texture = e, n._positionCircle(), n.circleGraphic.forceRefresh()) : e.release()
+
+b && b.indexOf(C) !== -1 ? T._isDead = !0 : w[M].loss && s(e, C, {
+  base: "AnimHit"
+}, i)
+
+i + 1 === e ? t.push("var p" + n + " = arr[" + n + "] * ut + arr[" + (n + 1) + "] * t") : i > 1 ? t.push("p" + n + " = p" + n + " * ut + p" + (n + 1) + " * t") : t.push("return p" + n + " * ut + p" + (n + 1) + " * t")
+
+p.showApMpUsed || e.actionId === m.ACTION_CHARACTER_ACTION_POINTS_LOST || e.actionId === m.ACTION_CHARACTER_MOVEMENT_POINTS_LOST ? s(e, t, T[e.actionId]) : s(e, t, null)
+
+e ? (I = !0, window.foreground.showInfobox(e, t)) : I && (I = !1, window.foreground.hideInfobox())
+
+c.transformState === e ? a[c.cellId] = new m(c.cellId, c.distanceToPlayer, t) : c.transformState === i && (a[c.cellId] = new m(c.cellId, c.distanceToPlayer, n))
+
+C[i] ? a = i : S.stop()
+
+window.foreground.fightIsUserTurn ? n.hideConfirmWindow = !1 : n.hideConfirmWindow = !0
+
+a ? this._castSpell(o, e, t, n) : this._castSpellConfirm(o, e, t, n)
+
+_.confirmBoxWhenWalking ? c.open("move", p, m, {
+  startHidden: !1,
+  allowDoubleTap: !0
+}, n) : n(!0)
+
+void 0 === w || A ? (T.splice(I, 1), A && C.push(A)) : I++
+
+0 === h ? this.background.addTargetHighLights(n, d._x, d._y, u.redTeamStart, u.redTeamEnd, !window.foreground.fightIsUserTurn) : this.background.addTargetHighLights(n, d._x, d._y, u.blueTeamStart, u.blueTeamEnd, !window.foreground.fightIsUserTurn)
+
+c.isOutsight(r) ? a.cancel() : a.preview(m.spellId, r, {
+  hasConfirmBox: !0
+})
+
+a.isOutsight(e) ? i.cancel() : i.preview(m.spellId, e, {
+  hasConfirmBox: !0
+})
+
+Math.floor(g) === Math.floor(_) ? (f = [Math.floor(r[p] + c[p])], g === f[0] && _ < f[0] && (f = [Math.ceil(r[p] + c[p])]), _ === f[0] && g < f[0] && (f = [Math.ceil(r[p] + c[p])])) : Math.ceil(g) === Math.ceil(_) ? (f = [Math.ceil(r[p] + c[p])], g === f[0] && _ < f[0] && (f = [Math.floor(r[p] + c[p])]), _ === f[0] && g < f[0] && (f = [Math.floor(r[p] + c[p])])) : f = [Math.floor(g), Math.floor(_)]
+
+h === o ? s.push({
+  x: Math.floor(r.x + c.x),
+  y: f[v]
+}) : s.push({
+  x: f[v],
+  y: Math.floor(r.y + c.y)
+})
+
+this._loadingProgressVisible === !1 ? (this._loadingProgressVisible = !0, t.x = this.mapScene.w / 2, t.y = this.mapScene.h / 2, this._loadingProgress.show(), this._loadingProgress.progressEggFrameTween.reset().from({
+  frame: 0
+}).to({
+  frame: .4 * i
+}, 30, p.polyIn, 2).start()) : this._loadingProgress.progressEggFrameTween.reset().from({
+  frame: t.animManager.frame
+}).to({
+  frame: (.7 * e + .4) * i
+}, 5).start()
+

@@ -8,34 +8,16 @@ const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 
 const visitor = {
-    enter(path) {
-        t;
-        debugger;
+    ConditionalExpression(path) {
+        if (path.parentPath.isExpressionStatement()) {
+            console.log(path.toString() + '\n');
+        }
     }
-    // ReturnStatement(path) {
-    //     let str = path.toString();
-    //     const argument = path.node.argument;
-    //     if (argument?.type === 'UpdateExpression') {
-    //         console.log(str + '\n');
-    //     }
-    // },
 }
 
 function main() {
-    let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\deuglified_script.js`;
-    // let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
-    let sourceCode = `
-function foo() {
-    'a';
-    'b';
-    for (let i = 0; i < 10; ++i) {
-        0;
-    }
-    1;
-    2;
-    return a;
-}
-`;
+    let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\script.js`;
+    let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
 
     const ast = parser.parse(sourceCode);
     traverse(ast, visitor);

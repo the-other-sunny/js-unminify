@@ -1,0 +1,2415 @@
+"object" == typeof _ && _.system && _.system.memory && a.isPhoneGap ? _.system.memory.getInfo(function (e) {
+  a.capacity = e.capacity;
+  n(o);
+}) : n(o);
+
+e instanceof a ? e.forEach(function (e, t) {
+  this.append(t, e);
+}, this) : Array.isArray(e) ? e.forEach(function (e) {
+  this.append(e[0], e[1]);
+}, this) : e && Object.getOwnPropertyNames(e).forEach(function (t) {
+  this.append(t, e[t]);
+}, this);
+
+e ? "string" == typeof e ? this._bodyText = e : y.blob && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : y.formData && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : y.searchParams && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : y.arrayBuffer && y.blob && t(e) ? (this._bodyArrayBuffer = u(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : y.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(e) || b(e)) ? this._bodyArrayBuffer = u(e) : this._bodyText = e = Object.prototype.toString.call(e) : this._bodyText = "";
+
+"include" === s.credentials ? r.withCredentials = !0 : "omit" === s.credentials && (r.withCredentials = !1);
+
+e ? e(String.prototype, "codePointAt", {
+  value: t,
+  configurable: !0,
+  writable: !0
+}) : String.prototype.codePointAt = t;
+
+d <= 65535 ? s.push(d) : (d -= 65536, n = (d >> 10) + 55296, o = d % 1024 + 56320, s.push(n, o));
+
+e ? e(String, "fromCodePoint", {
+  value: n,
+  configurable: !0,
+  writable: !0
+}) : String.fromCodePoint = n;
+
+typeof t !== d ? (typeof e !== d && e.exports && (t = e.exports = x), t.UAParser = x) : (n = function () {
+  return x;
+}.call(t, i, t, e), !(n !== a && (e.exports = n)));
+
+i[4] ? this.prerelease = i[4].split(".").map(function (e) {
+  if (/^[0-9]+$/.test(e)) {
+    var t = +e;
+    if (t >= 0 && t < Z) return t;
+  }
+  return e;
+}) : this.prerelease = [];
+
+o(e.semver, h.semver, n) ? h = e : r(e.semver, p.semver, n) && (p = e);
+
+i[2] ? this.semver = new s(i[2], this.loose) : this.semver = Ye;
+
+A[e] ? A[e].push(o) : (A[e] = [o], E < M ? c(e) : S.push(e));
+
+N < C ? (N += 1, e(t, i, o, a)) : x(function () {
+  m(e, t, i, o, a);
+}, 0);
+
+n ? window.setTimeout(a, n) : a();
+
+void 0 !== p && null !== p ? r += p : l && (!a || a && !a.isPreview) && i("arg " + h.toString() + " is null/undefined", e, t, n, o);
+
+f ? r += e.substring(c + 3, m) : l = !1;
+
+s(n) && "function" == typeof n.then ? n.then(function (e) {
+  d(i, null, e);
+}, function (e) {
+  d(i, e.message ? e : new Error(e));
+}) : i(null, n);
+
+e ? i(e) : ++a !== s && t !== Rt || i(null);
+
+t ? d._tasks.unshift(a) : d._tasks.push(a);
+
+0 === a ? r.shift() : a > 0 && r.splice(a, 1);
+
+"function" == typeof n ? t.pop() : n = b;
+
+n ? a(n) : e(o) && !s ? (r = !0, s = t(!0, i), a(null, Rt)) : a();
+
+e ? a(e) : a(null, r ? s : t(!1));
+
+n ? pt(function () {
+  i.apply(null, e);
+}) : i.apply(null, e);
+
+i ? n(i) : (a && o.push({
+  index: t,
+  value: e
+}), n());
+
+e ? n(e) : n(null, ee(o.sort(function (e, t) {
+  return e.index - t.index;
+}), De("value")));
+
+ze(i, r) ? pt(function () {
+  s.apply(null, i[r]);
+}) : ze(n, r) ? n[r].push(s) : (n[r] = [s], o.apply(null, e.concat(function () {
+  var e = a(arguments);
+  i[r] = e;
+  var t = n[r];
+  delete n[r];
+  for (var o = 0, s = t.length; o < s; o++) t[o].apply(null, e);
+})));
+
+e && c++ < r.times && ("function" != typeof r.errorFilter || r.errorFilter(e)) ? setTimeout(o, r.intervalFunc(c)) : i.apply(null, arguments);
+
+t.length > 1 ? o(m, n) : o(n);
+
+e.next ? e.next.prev = t : this.tail = t;
+
+e.prev ? e.prev.next = t : this.head = t;
+
+this.head ? this.insertBefore(this.head, e) : ge(this, e);
+
+this.tail ? this.insertAfter(this.tail, e) : ge(this, e);
+
+o.call(i, s) ? i[s].push(r) : i[s] = [r];
+
+o ? i._tasks.insertBefore(o, r) : i._tasks.push(r);
+
+e ? Je(e, o, n) : Je(o, n);
+
+this._type === s.TIMEOUT ? this._timeout = window.setTimeout(n(this), t) : this._type === s.INTERVAL && (this._timeout = window.setTimeout(a(this), t));
+
+navigator.notification ? navigator.notification.alert(t, d, "Dofus Touch", "Reload") : (window.alert(t), d());
+
+i ? (this.disconnect("LOGIN_ERROR"), W = B, t.emit("loginEnd", i)) : (W = F, t.emit("loginEnd"));
+
+e ? (this.disconnect("GAME_HANDSHAKE_ERROR"), W = B, t.emit("accessGameEnd", e)) : (W = z, t.emit("accessGameEnd"));
+
+"function" == typeof w[e] ? w["_" + e] = w[e] : "object" == typeof w[e] && (w["_" + e] = Function.prototype.bind.call(w[e], w));
+
+"string" == typeof s ? i[a] = s : i[a] = n(e[a], o);
+
+n < 0 ? n = 0 : n + l > r.windowFullScreenWidth && (n = r.windowFullScreenWidth - l);
+
+o < 0 ? o = 0 : o + c > r.windowFullScreenHeight && (o = r.windowFullScreenHeight - c);
+
+t ? n.emit("positioned") : n.emit("repositioned");
+
+i.openState ? i === b ? this.close(e) : v.focusWindow(e) : this.open(e, t);
+
+t.leftOf ? (a = u - c, a < 0 && (a = 0, h = Math.min(c, r.screenWidth - d))) : t.rightOf && (a = u + d, a + c > r.screenWidth && (a = r.screenWidth - c, h = Math.max(0, a - d)));
+
+"narrow" === e ? (i = m.screenWidth, n = s.CHAT_BTN_MIN_WIDTH, m.mainControlBarSize = 132, o = s.PING_EMOTE_BTN_NARROW_MIN_WIDTH) : (i = m.screenHeight, n = s.CHAT_BTN_MIN_HEIGHT, m.mainControlBarSize = 72, o = s.PING_EMOTE_BTN_WIDE_MIN_HEIGHT);
+
+"narrow" === e ? (m.posChatBtn = a, a += n, m.pingEmoteBtnSize = o, m.posPingEmoteBtn = a, a += o) : (m.pingEmoteBtnSize = o, o = 0);
+
+s.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/) ? (s = s.substr(1, s.length - 2), s = e.stylize(s, "name")) : (s = s.replace(/'/g, "\\'").replace(/\\"/g, '"').replace(/(^"|"$)/g, "'"), s = e.stylize(s, "string"));
+
+n.traceDeprecation ? console.trace(o) : console.error(o);
+
+"function" == typeof Object.create ? e.exports = function (e, t) {
+  e.super_ = t;
+  e.prototype = Object.create(t.prototype, {
+    constructor: {
+      value: e,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  });
+} : e.exports = function (e, t) {
+  e.super_ = t;
+  var i = function () {};
+  i.prototype = t.prototype;
+  e.prototype = new i();
+  e.prototype.constructor = e;
+};
+
+1 === i.length ? (i.length = 0, delete this._events[e]) : i.splice(o, 1);
+
+A ? u(A) : e.emit("longtap", w) && r();
+
+!A && C && T >= o - C ? e.emit("doubletap", n) : e.emit("tap", n) && r();
+
+this.isConnected ? this.emit("inactive", !1) : this._pingServer();
+
+o.left > s.width ? r = o.left - s.width : a.screenWidth - o.right > s.width && (r = o.left + o.width);
+
+l < c ? l = c : l + e > a.screenWidth - c && (l = a.screenWidth - c - e);
+
+s.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/) ? (s = s.substr(1, s.length - 2), s = e.stylize(s, "name")) : (s = s.replace(/'/g, "\\'").replace(/\\"/g, '"').replace(/(^"|"$)/g, "'"), s = e.stylize(s, "string"));
+
+n.traceDeprecation ? console.trace(o) : console.error(o);
+
+"function" == typeof Object.create ? e.exports = function (e, t) {
+  e.super_ = t;
+  e.prototype = Object.create(t.prototype, {
+    constructor: {
+      value: e,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  });
+} : e.exports = function (e, t) {
+  e.super_ = t;
+  var i = function () {};
+  i.prototype = t.prototype;
+  e.prototype = new i();
+  e.prototype.constructor = e;
+};
+
+1 === i.length ? (i.length = 0, delete this._events[e]) : i.splice(o, 1);
+
+this.openState ? (this.setStyles({
+  width: n[0] + "px",
+  height: n[1] + "px",
+  overflow: null
+}), m.forceReflow(this), this.addClassNames("transition"), _.tween(this, {
+  width: l + "px",
+  height: c + "px",
+  webkitTransform: f
+}, {
+  time: 150,
+  easing: "ease-out"
+}, o)) : (this.openState = !0, this.setStyles({
+  width: l + "px",
+  height: c + "px",
+  overflow: null,
+  webkitTransform: f,
+  opacity: 1
+}), b("ROLLOVER"));
+
+i.openOnTap ? e.on("tap", o) : i.longTapExplanation && e.on("tap", a);
+
+"string" == typeof e ? (i = i || l(e.length), e = c.createChild("div", {
+  text: e
+})) : i = i || E;
+
+window.wizAssets ? T.settings.getFileUri = function (e, t, i) {
+  return n("audio/" + t + ".mp3") ? i("FROM_MISSING_AUDIO_LIST") : void C.push(function (n) {
+    c.downloadFile(e + t + ".mp3", "audio/" + t + ".mp3", function (e) {
+      return n(), i(null, e);
+    }, function (e) {
+      return n(), i(e);
+    });
+  });
+} : T.settings.getFileUri = function (e, t) {
+  return n("audio/" + t + ".mp3") ? "FROM_MISSING_AUDIO_LIST" : e + t + ".mp3";
+};
+
+void 0 !== e && null !== e ? this.volume = e : e = this.volume;
+
+u ? (this.nextLoop && this.nextLoop.cancelOnLoadCallbacks(), this.nextLoop = c.createSound(e, this.id), this.nextLoop.load(function (e) {
+  return e ? (m.nextLoop.unload(), void (m.nextLoop = null)) : (s(m.loopSound), void l());
+})) : (this.nextLoop = c.createSound(e, this.id), s(this.loopSound, l));
+
+I ? C.push(i) : t.emit("messageSequence", i);
+
+s[0].length === a || "#guest" === o.join(n) ? (this._nickname = o.join(n), this._token = s[0]) : this._logger.error(new Error("Wrong format on the nickname:" + this._rawNickname));
+
+t.isRiding && l && l.model ? e.ride_id = l.model : e.ride_id = void 0;
+
+t ? n = a - m - t : t = a - m - n;
+
+i ? o = l - g - i : i = l - g - o;
+
+e ? a.push(e) : u = t;
+
+t ? a.push(t) : h = i;
+
+Array.isArray(e) ? i.ids = e : i.id = e;
+
+c ? s[l] = c : n[l] = g.newDummyRecord(f.getKey(e), l);
+
+e.target.result ? o[t] = e.target.result : r.push(t);
+
+n.rows.length > 1 ? (r.__prefetchedData = n.rows, r.__prefetchedIndex = 0, e.DEBUG && console.log("Preloaded " + r.__prefetchedData.length + " records for cursor"), r.__decode(n.rows.item(0), o)) : 1 === n.rows.length ? r.__decode(n.rows.item(0), o) : (e.DEBUG && console.log("Reached end of cursors"), o(t, t));
+
+1 === i.rowsAffected ? s(t) : r("No rows with key found" + t);
+
+1 === n.rowsAffected ? (i.__offset--, a(t)) : s("No rows with key found" + o);
+
+n.__storeProps ? (idbModules.DEBUG && console.log("Store properties - cached", n.__storeProps), t(n.__storeProps)) : e.executeSql("SELECT * FROM __sys__ where name = ?", [n.name], function (e, i) {
+  1 !== i.rows.length ? t() : (n.__storeProps = {
+    name: i.rows.item(0).name,
+    indexList: i.rows.item(0).indexList,
+    autoInc: i.rows.item(0).autoInc,
+    keyPath: i.rows.item(0).keyPath
+  }, idbModules.DEBUG && console.log("Store properties", n.__storeProps), t(n.__storeProps));
+}, function () {
+  t();
+});
+
+void 0 === primaryKey ? "true" === props.autoInc ? getNextAutoIncKey() : idbModules.util.throwDOMException(0, "Data Error - Could not eval key from keyPath") : callback(primaryKey);
+
+o > s ? i.transaction(function (t) {
+  t.executeSql("UPDATE dbVersions set version = ? where name = ?", [o, n], function () {
+    var t = e.Event("upgradeneeded");
+    t.oldVersion = s;
+    t.newVersion = o;
+    r.transaction = r.result.__versionTransaction = new e.IDBTransaction([], 2, r.source);
+    e.util.callback("onupgradeneeded", r, t, function () {
+      var t = e.Event("success");
+      e.util.callback("onsuccess", r, t);
+    });
+  }, a);
+}, a) : e.util.callback("onsuccess", r, d);
+
+0 === t.rows.length ? e.executeSql("INSERT INTO dbVersions VALUES (?,?)", [n, o || 1], function () {
+  s(0);
+}, a) : s(t.rows.item(0).version);
+
+i >= n.length ? t.executeSql("DROP TABLE __sys__", [], function () {
+  a();
+}, o) : t.executeSql("DROP TABLE " + e.util.quote(n.item(i).name), [], function () {
+  s(i + 1);
+}, function () {
+  s(i + 1);
+});
+
+f >= 0 ? (d = m.substr(0, f), u = m.substr(f + 1)) : (d = m, u = "");
+
+i(a, h) ? Array.isArray(a[h]) ? a[h].push(p) : a[h] = [a[h], p] : a[h] = p;
+
+e === b.error ? g[e](new Error(t)) : g[e](t);
+
+this.host ? o = e + this.host : this.hostname && (o = e + (this.hostname.indexOf(":") === -1 ? this.hostname : "[" + this.hostname + "]"), this.port && (o += ":" + this.port));
+
+"object" == typeof e && e.exports ? e.exports = r(i(153)) : (o = [i(153)], n = r, a = "function" == typeof n ? n.apply(t, o) : n, !(void 0 !== a && (e.exports = a)));
+
+i && i[0] ? (i = i[0].match(/[A-Z]/g), i = i ? i.join("") : void 0) : (i = t.match(/[A-Z]{3,5}/g), i = i ? i[0] : void 0);
+
+null != fa[e] && null != fa[e].parentLocale ? fa[e].set(S(fa[e]._config, t)) : (n = nt(e), null != n && (o = n._config), t = S(o, t), null == n && (t.abbr = e), i = new E(t), i.parentLocale = fa[e], fa[e] = i);
+
+null != t.GG || null != t.W || null != t.E ? (a = 1, s = 4, i = vt(t.GG, e._a[Uo], Ie(xt(), 1, 4).year), n = vt(t.W, 1), o = vt(t.E, 1), (o < 1 || o > 7) && (l = !0)) : (a = e._locale._week.dow, s = e._locale._week.doy, c = Ie(xt(), a, s), i = vt(t.gg, e._a[Uo], c.year), n = vt(t.w, c.week), null != t.d ? (o = t.d, (o < 0 || o > 6) && (l = !0)) : null != t.e ? (o = t.e + a, (t.e < 0 || t.e > 6) && (l = !0)) : o = a);
+
+n < 1 || n > Ae(i, a, s) ? g(e)._overflowWeeks = !0 : null != l ? g(e)._overflowWeekday = !0 : (r = Ce(i, n, o, a, s), e._a[Uo] = r.year, e._dayOfYear = r.dayOfYear);
+
+c(i) ? e._d = new Date(t.now()) : u(i) ? e._d = new Date(i.valueOf()) : "string" == typeof i ? _t(e) : a(i) ? (e._a = h(i.slice(0), function (e) {
+  return parseInt(e, 10);
+}), wt(e)) : s(i) ? It(e) : d(i) ? e._d = new Date(i) : t.createFromInputFallback(e);
+
+null != e ? this.utcOffset(e) : this.utcOffset(0, !0);
+
+"boolean" == typeof e ? (d(t) && (i = t, t = void 0), t = t || "") : (t = e, i = t, e = !1, d(t) && (i = t, t = void 0), t = t || "");
+
+null != o ? t[qo] = o : g(i).invalidMonth = e;
+
+null != o ? t.d = o : g(i).invalidWeekday = e;
+
+o ? g(i).era = o : g(i).invalidEra = e;
+
+i._locale.eraYearOrdinalParse ? t[Uo] = i._locale.eraYearOrdinalParse(e, o) : t[Uo] = parseInt(e, 10);
+
+this._stack.buffer.length > 0 ? (this._stack.current = this._stack.buffer, this._stack.buffer = [], this._cbs.current = this._cbs.buffer, this._cbs.buffer = [], this._eventsProcessing = !1, this._nextTimeout || this._next(t)) : this._eventsProcessing = !1;
+
+this._eventsProcessing ? (this._stack.buffer.push(t), this._cbs.buffer.push(i)) : (this._stack.current.push(t), this._cbs.current.push(i));
+
+e.informations.alive ? window.actorManager.addActor(e.informations) : window.actorManager.userActor.actorId === e.informations.contextualId && window.actorManager.userActor.loadAndPlayAnimation({
+  base: "AnimMort"
+}, {
+  loop: !1
+}, function () {
+  window.actorManager.userActor.death();
+});
+
+s === e.mapId ? window.isoEngine.reloadMap(e) : (o.lockMessages(), window.isoEngine.loadMap(e));
+
+1 === l ? e(1) : n.open({
+  min: 1,
+  max: l,
+  x: s.x,
+  y: s.y
+});
+
+e.teamNumber === d.TEAM_CHALLENGER ? o.tapOptions.possiblePlacements = e.positionsForChallengers : e.teamNumber === d.TEAM_DEFENDER ? o.tapOptions.possiblePlacements = e.positionsForDefenders : o.tapOptions.possiblePlacements && delete o.tapOptions.possiblePlacements;
+
+this.fightIsUserTurn ? e ? this._displaySpellRange() : window.isoEngine.displayUserMovementZone() : e && this._displaySpellRange();
+
+m.isRoleplayMode ? this.tapOptions.mode = "roleplay" : (delete this.tapOptions.mode, this.hideBorderArrow());
+
+_ !== y ? (v.appendChild(_), _.delClassNames("customDragElement"), _.setStyles(I), _.emit("dragEnd", S.x, S.y)) : (y.hide(), M.emit("dragEnd", S.x, S.y));
+
+_ !== y ? (v.appendChild(_), _.delClassNames("customDragElement"), _.setStyles(I), _.emit("dragEnd", S.x, S.y)) : (y.hide(), M.emit("dragEnd", S.x, S.y));
+
+_ !== y ? (v.appendChild(_), _.delClassNames("customDragElement"), _.setStyles({
+  left: I.left,
+  top: I.top,
+  webkitTransform: "translate3d(0px,0px, 0)"
+}), _.emit("dragEnd", a, s)) : M.emit("dragEnd", a, s);
+
+t.dragOnTouchstart ? (v = 0, o(n)) : t.dragInsteadOfScroll && p.setPriorityBehavior("DRAG");
+
+"number" == typeof e ? (n = e, i = o.intToString(n)) : (i = e, n = this._parseNumber(i));
+
+e === !1 ? this.rootElement.removeAttribute("readonly") : this.rootElement.setAttribute("readonly", "readonly");
+
+"HumanOptionGuild" === r._type ? n = r.guildInformations : "HumanOptionAlliance" === r._type ? o = r.allianceInformations : "HumanOptionOrnament" === r._type ? i = r.ornamentId : "HumanOptionTitle" === r._type && (t = r.titleId);
+
+"?" === t || "" === t ? a = b("ui.common.houseWithNoOwner") : t === s && (a = b("ui.common.myHouse"));
+
+P[E] < O.min ? (P[E] = O.min, x[E] = e[E] - O.min) : P[E] > O.max && (P[E] = O.max, x[E] = e[E] - O.max);
+
+"x" === N ? a.reset().from({
+  x: n
+}).to({
+  x: o
+}, t / i) : a.reset().from({
+  y: n
+}).to({
+  y: o
+}, t / i);
+
+i === R || s.isBomb ? r.characters.addSummonedBomb() : s.isCreature && r.characters.addSummonedCreature();
+
+i === _.ACTION_CHARACTER_ACTION_POINTS_USE || i === _.ACTION_CHARACTER_ACTION_POINTS_LOST || i === _.ACTION_CHARACTER_ACTION_POINTS_WIN ? C(T.fightActionPointsVariationStep, [H ? H.castingSpellId : -1, t, n, i === _.ACTION_CHARACTER_ACTION_POINTS_USE]) : i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_USE && i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_LOST && i !== _.ACTION_CHARACTER_MOVEMENT_POINTS_WIN || C(T.fightMovementPointsVariationStep, [H ? H.castingSpellId : -1, t, n, i === _.ACTION_CHARACTER_MOVEMENT_POINTS_USE]);
+
+t ? window.actorManager.userActor.hide() : window.actorManager.userActor.show();
+
+e.isFightStarted ? (window.isoEngine.displayTextBanner("tablet.fight.animation.fightStarts"), a.emit("fightEnterBattle", "PREPARATION_SKIPPED")) : (window.isoEngine.displayTextBanner("tablet.fight.animation.preparationPhase"), a.emit("fightEnterPreparation", e));
+
+t === _.ACTION_FIGHT_SPELL_DODGED_PA ? C(T.fightActionPointsLossDodge, [H ? H.castingSpellId : -1, e.targetId, e.amount, e.effectId]) : t === _.ACTION_FIGHT_SPELL_DODGED_PM && C(T.fightMovementPointsLossDodge, [H ? H.castingSpellId : -1, e.targetId, e.amount, e.effectId]);
+
+e.option === m.FIGHT_OPTION_SET_SECRET ? a.fightSecretOn = e.state : e.option === m.FIGHT_OPTION_ASK_FOR_HELP && (a.fightHelpOn = e.state);
+
+n && 0 !== a ? C(T.fightCloseCombatStep, [H ? H.castingSpellId : -1, e.sourceId, a, e.critical]) : C(T.fightSpellCastStep, [H ? H.castingSpellId : -1, e.sourceId, e.spellId, e.critical, e.effectId]);
+
+0 === l.data.teamId ? (n.push({
+  fighter: r,
+  init: d
+}), o += d) : (i.push({
+  fighter: r,
+  init: d
+}), a += d);
+
+d.isActive() ? (o.push(d), g && this.emit("BuffUpdate", d, r)) : (d.remove(), this.emit("BuffRemove", d, r));
+
+h && h.isBomb ? this.aliveSource = this.targetId : this.aliveSource = this.source;
+
+this.effectUid === -1 ? this.initParam(n || 0, o || 0, a || 0, s) : p.getDataMap("SpellEffects", [this.effectUid], function (e, t) {
+  var i = t && t[r.effectUid];
+  e ? console.error("Unable to retrieve the effects visibility for " + r.effectUid + ", " + e) : i && (r.visibleInBuffUI = i.visibleInBuffUI, r.visibleInFightLog = i.visibleInFightLog);
+  r.initParam(n || 0, o || 0, a || 0, s);
+});
+
+this.stack.length > 0 ? (this.unstack(e.uid), this.addBuff(e)) : this.remove();
+
+i ? (t[2] = i.Emoticons[t[0]].nameId, e.setDescription(t)) : o("Emoticons", t[0], e);
+
+i ? (t[0] = i.ItemTypes[t[0]].nameId, e.setDescription(t)) : o("ItemTypes", t[0], e);
+
+i ? (t[0] = i.Monsters[t[0]].nameId, e.setDescription(t)) : o("Monsters", t[0], e);
+
+i ? (t[0] = i.Spells[t[0]].nameId || "[SPELL_NAME_ID#" + t[0] + "]", e.setDescription(t)) : o("Spells", t[0], e);
+
+i ? (t[2] = i.Spells[t[2]].nameId, e.setDescription(t)) : o("Spells", t[2], e);
+
+i ? (t[2] = i.Jobs[t[0]].nameId, e.setDescription(t)) : o("Jobs", t[0], e);
+
+i && i.SpellLevels && i.SpellLevels[t[2]] ? i.Spells && i.Spells[i.SpellLevels[t[2]].spellId] ? (t[2] = i.Spells[i.SpellLevels[t[2]].spellId].nameId, e.setDescription(t)) : o("Spells", i.SpellLevels[t[2]].spellId, e) : o("SpellLevels", t[2], e);
+
+i ? (t[1] = i.Jobs[t[1]].nameId, e.setDescription(t)) : o("Jobs", t[1], e);
+
+i ? (t[2] = i.Spells[t[0]].nameId, e.setDescription(t)) : o("Spells", t[0], e);
+
+i ? (t[2] = i.Documents[t[0]].titleId, e.setDescription(t)) : o("Documents", t[0], e);
+
+i ? (t[2] = i.Monsters[t[1]].nameId, e.setDescription(t)) : o("Monsters", t[1], e);
+
+i ? (t[2] = i.AlignmentSides[t[0]].titleId, e.setDescription(t)) : o("AlignmentSides", t[0], e);
+
+i ? (t[0] = i.Jobs[t[0]].nameId, e.setDescription(t)) : o("Jobs", t[0], e);
+
+i ? (t[0] = i.MonsterRaces[t[0]].nameId, e.setDescription(t)) : o("MonsterRaces", t[0], e);
+
+i ? (t[2] = i.Ornaments[t[0]].nameId, e.setDescription(t)) : o("Ornaments", t[0], e);
+
+t[1] > 6 ? t[0] = f("ui.petWeight.fat", [t[1]]) : t[2] > 6 ? t[0] = f("ui.petWeight.lean", [t[2]]) : "EffectInstanceInteger" === e._type && t[0] > 6 ? t[0] = f("ui.petWeight.lean", [t[0]]) : t[0] = f("ui.petWeight.nominal");
+
+t[0] ? i ? (t[0] = i.Items[t[0]].nameId || "unknown", e.setDescription(t)) : o("Items", t[0], e) : (t[0] = f("ui.common.none"), e.setDescription(t));
+
+b === A ? (t[0] = "missing_item_" + t[0], e.setDescription(t), e.iconId = 15116) : (t[0] = b.nameId, e.setDescription(t), e.iconId = b.iconId);
+
+i ? (t[1] = i.Monsters[t[1]].nameId, e.setDescription(t)) : o("Monsters", t[1], e);
+
+i ? (t[2] = i.Items[t[0]].nameId, e.setDescription(t)) : o("Items", t[0], e);
+
+i ? (t[2] = i.SpellStates[t[2]].nameId, e.setDescription(t)) : o("SpellStates", t[2], e);
+
+i ? (t[0] = i.Companions[t[0]].nameId, e.setDescription(t)) : o("Companions", t[0], e);
+
+s ? a.effect = s : e[o] = null;
+
+t.EFFECT_SHAPES[n.zoneShape].hasMinSize ? n.zoneMinSize = parseInt(i[1], 10) : n.zoneEfficiencyPercent = parseInt(i[1], 10);
+
+t.EFFECT_SHAPES[n.zoneShape].hasMinSize ? (n.zoneMinSize = parseInt(i[1], 10), n.zoneEfficiencyPercent = parseInt(i[2], 10)) : (n.zoneEfficiencyPercent = parseInt(i[1], 10), n.zoneMaxEfficiency = parseInt(i[2], 10));
+
+0 === e ? this.date = Number(t) : 1 === e ? this.modelId = Number(t) : 2 === e && (this.mountId = Number(t));
+
+"" !== i && "" !== n ? i += "\n" + n : "" === i && (i += n);
+
+c.name === h.FIGHTER_LIFE_LOSS ? E[c.params[0]] = !0 : c.name === h.FIGHTER_DEATH && (S[c.params[0]] = !0);
+
+s === r ? (n = s, o = 0, a = 0) : s > r ? (n = r, o = s, a = 0) : (n = s, o = r, a = 0);
+
+"GameFightCharacterInformations" === this.data._type ? (e.neutralPercent.setText(Math.min(f, t.neutralElementResistPercent) + "%"), e.strengthPercent.setText(Math.min(f, t.earthElementResistPercent) + "%"), e.intelligencePercent.setText(Math.min(f, t.fireElementResistPercent) + "%"), e.chancePercent.setText(Math.min(f, t.waterElementResistPercent) + "%"), e.agilityPercent.setText(Math.min(f, t.airElementResistPercent) + "%")) : (e.neutralPercent.setText(t.neutralElementResistPercent + "%"), e.strengthPercent.setText(t.earthElementResistPercent + "%"), e.intelligencePercent.setText(t.fireElementResistPercent + "%"), e.chancePercent.setText(t.waterElementResistPercent + "%"), e.agilityPercent.setText(t.airElementResistPercent + "%"));
+
+i ? i.addBuff(e) : this.buffs.push(e);
+
+i ? window.gui.fightManager.emit("BuffUpdate", i, this) : window.gui.fightManager.emit("BuffAdd", e, this);
+
+a.canBeDispell(e, Number.MIN_VALUE, i) ? (window.gui.fightManager.emit("BuffRemove", a, this), a.remove()) : n.push(a);
+
+e === r.castingSpell.spell.id && r.canBeDispell(t, Number.MIN_VALUE, n) ? (r.remove(), a.push(r)) : s.push(r);
+
+"fitin" === this.scale ? (this.horizontalAlign = e.horizontalAlign || "left", this.verticalAlign = e.verticalAlign || "bottom") : (this.horizontalAlign = e.horizontalAlign || "none", this.verticalAlign = e.verticalAlign || "none");
+
+isNaN(r) ? r = this._scale : r *= .01;
+
+null === this._spriteRef ? this._spriteRef = this.displayList.add(this) : this._spriteRef = this.displayList.reposition(this._spriteRef);
+
+u ? s.merge(u, !0) : console.error("onTemplatesLoaded: skinTemplate is missing on index", d, "of", n.length, "for skinIds", i, "and boneId", t, "stack:", g);
+
+l ? (a = new n(c, t.matrices, t.colors), r = u, o = t.symbols) : (a = c, r = h, o = t);
+
+void 0 === D ? (b.push(R), M.push(A), I += 1) : u[A] = D;
+
+p ? t(p, u) : (l.push(h), c.push(u));
+
+M.maskStart ? (y.push(new a(M.id)), Array.prototype.push.apply(y, T), y.push(new s(M.id))) : Array.prototype.push.apply(y, T);
+
+e !== -1 && y[e] ^ t ? this.scaleX > 0 && (this.mirrored = !0, this.scaleX *= -1) : this.scaleX < 0 && (this.mirrored = !1, this.scaleX *= -1);
+
+c.child ? (l.assignSymbol(c.child, t, i), i = null) : l.assignSymbol(o, !1);
+
+t >= this._duration ? 1 === this._iterations ? (this._time = this._duration, this._update(), null !== this._onUpdate && this._onUpdate(), this._finished()) : (this._time = t % this._duration, this._update(), null !== this._onUpdate && this._onUpdate(), this._iterations -= 1) : (this._time = t, this._update(), null !== this._onUpdate && this._onUpdate());
+
+a.ref.container === this.memoryChunksUsed ? (this.memoryChunksUsed.removeByRef(a.ref), delete this.chunksById[a.id]) : this.memoryChunksFree.removeByReference(a.ref);
+
+e === this.root ? this.root = t : n.right === e ? n.right = t : n.left = t;
+
+null === i ? o = 0 : (i.parent = e, o = i.height);
+
+e === this.root ? this.root = t : e.parent.left === e ? e.parent.left = t : e.parent.right = t;
+
+null === i ? n = 0 : (i.parent = e, n = i.height);
+
+null === t ? this.root = o : t.right === e ? t.right = o : t.left = o;
+
+null === a ? this._buildProgram(t) : this.gl.useProgram(t.binder);
+
+null === e ? t.disable(t.SCISSOR_TEST) : (t.enable(t.SCISSOR_TEST), t.scissor(e[0], e[1], e[2], e[3]));
+
+n(e.width) && n(e.height) ? (a = o.LINEAR_MIPMAP_LINEAR, o.generateMipmap(o.TEXTURE_2D)) : console.warn("[WebGLRenderer._setFiltering]", "Cannot build mipmap from image", i, " because its dimensions are not a power of 2.");
+
+void 0 === t && void 0 === e ? (e = this.level, t = e + 1) : void 0 === t && (t = e, e = this.level);
+
+i + r < s ? i = s : i += r;
+
+o === C.CAST_INTERVAL ? e.castInterval.setPts(n.value.getAllValues()) : o === C.CAST_INTERVAL_SET && e.castIntervalSet.setPts(n.value.getAllValues());
+
+i > 0 ? W.push(k.FIGHTER_MP_GAINED, [t, i], t, -1, e, !1, 2, a) : i < 0 && (n ? W.push(k.FIGHTER_MP_USED, [t, Math.abs(i)], t, -1, e, !1, 2, a) : W.push(k.FIGHTER_MP_LOST, [t, Math.abs(i)], t, -1, e, !1, 2, a));
+
+i > 0 ? W.push(k.FIGHTER_AP_GAINED, [t, i], t, -1, e, !1, 2, a) : i < 0 && (n ? W.push(k.FIGHTER_AP_USED, [t, Math.abs(i)], t, -1, e, !1, 2, a) : W.push(k.FIGHTER_AP_LOST, [t, Math.abs(i)], t, -1, e, !1, 2, a));
+
+i !== F.VISIBLE && s === F.VISIBLE ? a = F.INVISIBLE : i === F.VISIBLE && s !== F.VISIBLE && (a = F.VISIBLE);
+
+this.spells[o] ? void 0 !== a.spellLevel && void 0 !== a.position && (this.spells[o].setLevel(a.spellLevel), this.spells[o].setPosition(a.position)) : (n[o] = {
+  level: a.spellLevel,
+  position: a.position
+}, i.push(o));
+
+window.gui.playerData.isSubscriberAtMinLevel(l.NORMAL) ? (this._bonusContainer.addClassNames("bonusPackActive"), this._linkToShop.disable()) : (this._bonusContainer.delClassNames("bonusPackActive"), this._linkToShop.enable());
+
+t ? h.loadImage(t.imagePath, function (i) {
+  N(i, t, e._wingsBottomCanvas, e._wingsBottomCtx, !1);
+  e._wingsBottomCanvas.show();
+}) : e._wingsBottomCanvas.hide();
+
+n ? (u = n.holdTexture(f), u ? p = !1 : (p = !0, v += 1)) : (p = !0, v += 1);
+
+w || b ? (c[y.name] = !0, o.BR.x = a + r, o.BR.y = s + l, o.TL.x = a, o.TL.y = s, h--) : (u = y.name, a = o.TL.x, s = o.TL.y, c = {}, d++, h = -1);
+
+g.isIOSApp ? (document.addEventListener("pause", e, !1), document.addEventListener("resume", t, !1)) : document.addEventListener("visibilitychange", function (i) {
+  i.target.hidden ? e() : t();
+}, !1);
+
+n.isConnected && n.chat.active ? n.chat.deactivate() : h.isOpen() ? h.close() : n.isConnected && !e ? ve["switch"]("global") : e ? ve.getWindow(e).backButtonClose() : n.loginScreen.isVisible() && navigator.app.exitApp();
+
+this.initialized ? this.serversData.onServerList(e) : this.once("initialized", function () {
+  this.serversData.onServerList(e);
+});
+
+g.isDevice ? Ye.replaceClassNames(["no-touch"], ["touch"]) : Ye.replaceClassNames(["touch"], ["no-touch"]);
+
+i <= 1.5 ? (this.ipadRatio = !0, Ye.replaceClassNames(["largeRatio"], ["ipadRatio"]), v.resizeNarrowScreen(e), this.sidebarBackground.setStyles({
+  left: 0,
+  top: t.mapBottom - 1 + "px",
+  width: t.screenWidth + "px",
+  height: t.screenHeight - t.mapBottom + 1 + "px"
+}), this.mapBorder1.addClassNames("vertical"), this.mapBorder1.setStyles({
+  left: 0,
+  top: 0,
+  width: t.mapLeft + "px",
+  height: t.mapHeight + "px"
+}), this.mapBorder2.addClassNames("vertical"), this.mapBorder2.setStyles({
+  left: t.mapRight + "px",
+  top: 0,
+  width: t.screenWidth - t.mapRight + "px",
+  height: t.mapHeight + "px"
+}), this.screenLeftover.setStyles({
+  left: 0,
+  top: 0,
+  width: t.screenWidth + "px",
+  height: t.mapTop + "px"
+})) : (this.ipadRatio = !1, Ye.replaceClassNames(["ipadRatio"], ["largeRatio"]), v.resizeWideScreen(e), this.sidebarBackground.setStyles({
+  left: t.mapRight + "px",
+  top: 0,
+  width: t.screenWidth - t.mapRight + "px",
+  height: t.screenHeight + "px"
+}), this.mapBorder1.delClassNames("vertical"), this.mapBorder1.setStyles({
+  left: t.mapLeft + "px",
+  top: 0,
+  width: t.mapWidth + "px",
+  height: t.mapTop + "px"
+}), this.mapBorder2.delClassNames("vertical"), this.mapBorder2.setStyles({
+  left: t.mapLeft + "px",
+  top: t.mapBottom - 1 + "px",
+  width: t.mapWidth + "px",
+  height: t.screenHeight - t.mapBottom + 1 + "px"
+}), this.screenLeftover.setStyles({
+  left: 0,
+  top: 0,
+  width: t.mapLeft + "px",
+  height: t.screenHeight + "px"
+}));
+
+e ? this.iScroll.enable() : this.iScroll.disable();
+
+this.options.useTransition && this.isInTransition ? (this.isInTransition = !1, t = this.getComputedPosition(), this._translate(n.round(t.x), n.round(t.y)), this._execEvent("scrollEnd")) : !this.options.useTransition && this.isAnimating && (this.isAnimating = !1, this._execEvent("scrollEnd"));
+
+!i || this.options.useTransition && n.style ? (this._transitionTimingFunction(n.style), this._transitionTime(i), this._translate(e, t)) : this._animate(e, t, i, n.fn);
+
+o > 0 ? o = 0 : o < this.maxScrollX && (o = this.maxScrollX);
+
+a > 0 ? a = 0 : a < this.maxScrollY && (a = this.maxScrollY);
+
+this.options.snapThreshold % 1 === 0 ? (this.snapThresholdX = this.options.snapThreshold, this.snapThresholdY = this.options.snapThreshold) : (this.snapThresholdX = n.round(this.pages[this.currentPage.pageX][this.currentPage.pageY].width * this.options.snapThreshold), this.snapThresholdY = n.round(this.pages[this.currentPage.pageX][this.currentPage.pageY].height * this.options.snapThreshold));
+
+e >= this.pages.length ? e = this.pages.length - 1 : e < 0 && (e = 0);
+
+t >= this.pages[e].length ? t = this.pages[e].length - 1 : t < 0 && (t = 0);
+
+this.hasHorizontalScroll && !this.hasVerticalScroll ? o += i ? 1 : this.wrapperWidth : a += i ? 1 : this.wrapperHeight;
+
+this.hasHorizontalScroll && !this.hasVerticalScroll ? o -= i ? 1 : this.wrapperWidth : a -= i ? 1 : this.wrapperHeight;
+
+o > 0 ? (o = 0, this.keyAcceleration = 0) : o < this.maxScrollX && (o = this.maxScrollX, this.keyAcceleration = 0);
+
+a > 0 ? (a = 0, this.keyAcceleration = 0) : a < this.maxScrollY && (a = this.maxScrollY, this.keyAcceleration = 0);
+
+this.options.listenX && !this.options.listenY ? this.indicatorStyle.display = this.scroller.hasHorizontalScroll ? "block" : "none" : this.options.listenY && !this.options.listenX ? this.indicatorStyle.display = this.scroller.hasVerticalScroll ? "block" : "none" : this.indicatorStyle.display = this.scroller.hasHorizontalScroll || this.scroller.hasVerticalScroll ? "block" : "none";
+
+this.scroller.hasHorizontalScroll && this.scroller.hasVerticalScroll ? (l.addClass(this.wrapper, "iScrollBothScrollbars"), l.removeClass(this.wrapper, "iScrollLoneScrollbar"), this.options.defaultScrollbars && this.options.customStyle && (this.options.listenX ? this.wrapper.style.right = "8px" : this.wrapper.style.bottom = "8px")) : (l.removeClass(this.wrapper, "iScrollBothScrollbars"), l.addClass(this.wrapper, "iScrollLoneScrollbar"), this.options.defaultScrollbars && this.options.customStyle && (this.options.listenX ? this.wrapper.style.right = "2px" : this.wrapper.style.bottom = "2px"));
+
+this.scroller.options.useTransform ? this.indicatorStyle[l.style.transform] = "translate(" + e + "px," + t + "px)" + this.scroller.translateZ : (this.indicatorStyle.left = e + "px", this.indicatorStyle.top = t + "px");
+
+e < 0 ? e = 0 : e > this.maxPosX && (e = this.maxPosX);
+
+t < 0 ? t = 0 : t > this.maxPosY && (t = this.maxPosY);
+
+"undefined" != typeof e && e.exports ? e.exports = o : t.IScroll = o;
+
+r.disabled ? l.addClassNames(c, "disabled") : (r.ticked && l.addClassNames(c, "ticked"), r.addClassNames && l.addClassNames(r.addClassNames), l.addClassNames(c), l.action = r);
+
+e.playerId && window.gui.playerData.socialData.isSpouse(e.playerId) ? t.addClassNames("spouse") : e.playerId && window.gui.playerData.socialData.isFriend(e.playerId) ? t.addClassNames("friend") : e.guildId && window.gui.playerData.guildData.isOnSameGuild(e.guildId) ? t.addClassNames("guildMember") : e.guildId && window.gui.playerData.alliance.isGuildOnSameAlliance(e.guildId) && t.addClassNames("allianceMember");
+
+n ? (this._guildName.setText(n.guildName), this._guildName.show(), i = n.guildEmblem, i && this._guildEmblem.setValue(i, !0), this._guildEmblem.show()) : (this._guildName.hide(), this._guildEmblem.hide());
+
+o ? (this.addClassNames("alliance"), n ? this._guildName.setText(n.guildName + " - [" + o.allianceTag + "]") : (this._guildName.setText(o.allianceName), this._guildName.show()), i = o.allianceEmblem, i && (i.isAlliance = !0, this._allianceEmblem.setValue(i, !0), this._allianceEmblem.show())) : (this.delClassNames("alliance"), this._allianceEmblem.hide());
+
+t ? o = t.filter(function (e) {
+  return e._parentJobId && (e.skillId === w || e._parentJobId !== _);
+}) : n && (o = n.disabledSkills.length > 0 ? n.disabledSkills.filter(function (e) {
+  return e._parentJobId && e._parentJobId === y;
+}) : n.enabledSkills.filter(function (e) {
+  return e._parentJobId && e._parentJobId === y;
+}));
+
+t ? this.bidHouseCatList.selectAndShowSubitem(e) : this._pushHistory();
+
+0 === e.itemCount ? (this.bidHouseCatList.toggleBreadcrumb(!1), this.bidHouseCatList.setPlaceholder(v("tablet.bidHouse.noCatHasMatchingItem", this.currentSearchText)), this.shopViewer.setPlaceholder(v("tablet.bidHouse.noMatchingItem", this.currentSearchText)), this._resetShopViewerHeader()) : this.bidHouseCatList.setPlaceholder(null);
+
+t ? this._selectItemType(t, !0) : this.bidHouseCatList.collapseAll();
+
+this.subitemFilterFunc(e, o, a) ? (i++, 1 === i && (t = a), a.show()) : a.hide();
+
+this.itemFilterFunc(o) ? (t++, 1 === t && (e = o), this.isItemDeployed(o) && this.subitemFilterFunc && this._filterOneItemSubitems(o), o.show()) : o.hide();
+
+i ? i === this ? (i.tappedOnMe = !0, e.options.disableSelectionToggle || e.deselectItem(i.getWuiName(), {
+  noSound: !0
+}), i.tappedOnMe = !1) : (e.deselectItem(e.currentSelected.getWuiName(), {
+  noSound: !0
+}), e.selectItem(t)) : e.selectItem(t);
+
+s ? o += f : o = f;
+
+s ? a.itemSetName = s.nameId : (m.error(new Error("ItemSet id " + a.itemSetId + " for item id " + a.id + " does not exist.")), a.itemSetName = null);
+
+d === u - 1 ? (o += h, a(this.criterions, l, o, t, i)) : s ? ")" === h ? 0 === r ? s = !1 : (r -= 1, o += h) : o += h : "(" === h ? (r += 1, s = !0, l = !0) : "&" === h || "|" === h ? (a(this.criterions, l, o, t, i), r = -1, l = !1, this.operator = "&" === h ? c.and : c.or, o = "") : o += h;
+
+n.criterions ? e.push("(" + n.getText() + ")") : e.push(n.getText());
+
+window.gui.playerData.identification.hasRights ? this._text = a("ui.social.guildHouseRights") + " " + this.getOperatorText() + " " + this.getValueText() : this._text = "";
+
+this.operator === s.operators.equal ? this._text = r("ui.criterion.allianceAvA") : this._text = "";
+
+e === g.taxCollector ? window.dofus.sendMessage("GuildFightLeaveRequestMessage", {
+  taxCollectorId: t,
+  characterId: i
+}) : window.dofus.sendMessage("PrismFightJoinLeaveRequestMessage", {
+  subAreaId: t,
+  join: !1
+});
+
+r ? (r.updateInfo(s), h.emit("entityUpdated", g.prism, r)) : (r = new u(s), t[r.id] = r, h.emit("entityAdded", g.prism, r));
+
+0 === this.value ? this._text = a("ui.criterion.noAlliance") : 1 === this.value ? this._text = a("ui.criterion.hasAlliance") : this._text = a("ui.criterion.hasValidAlliance");
+
+this.operator === a.operators.equal ? this._text = s("ui.criterion.allianceRights", [t]) : this._text = s("ui.criterion.notAllianceRights", [t]);
+
+0 === this.value && "B" === this.key ? this._text = a("ui.criterion.initialBones") : this._text = a("ui.criterion.bones") + " " + this.getOperatorText() + " " + this.value;
+
+this.operator === o.operators.equal ? this._text = a("ui.tooltip.beABreed", [t]) : this._text = a("ui.tooltip.dontBeABreed", [t]);
+
+t.length > 1 ? (this._giftId = parseInt(t[0], 10), this._giftLevel = parseInt(t[1], 10)) : (this._giftId = parseInt(this.value, 10), this._giftLevel = -1);
+
+t.length > 1 ? (this._jobId = parseInt(t[0], 10), this._jobLevel = parseInt(t[1], 10)) : (this._jobId = parseInt(this.value, 10), this._jobLevel = -1);
+
+t.length > 1 ? (this._mapId = parseInt(t[0], 10), this.value = parseInt(t[1], 10)) : this._mapId = window.gui.playerData.position.mapId;
+
+i.length > 1 ? (t = parseInt(i[0], 10), this._quantityMonster = parseInt(i[1], 10)) : (t = parseInt(this.value, 10), this._quantityMonster = 1);
+
+t.length > 1 ? console.error(new Error("SpellItemCriterion: too much parameters: " + t)) : this._spellId = this.value;
+
+t[0] === v ? (t = t.substr(1), i.withIcon = !0, i.tooltip = t + " (" + l("tablet.lot") + ")") : i.tooltip = t;
+
+e === !1 ? this._inputBox.rootElement.removeAttribute("readonly") : this._inputBox.rootElement.setAttribute("readonly", "readonly");
+
+o > 0 ? i = "+" : o < 0 && (i = "-");
+
+i.showWeight === !1 ? e.weight.hide() : (e.weight.setText(M("ui.common.short.weight", t.getProperty("weight"))), e.weight.show());
+
+t[n] !== !1 && E[n](o, e, t) ? o.show() : o.hide();
+
+n.dbEffect.bonusType === -1 ? o.addClassNames("malus") : 1 === n.dbEffect.bonusType && o.addClassNames("bonus");
+
+"string" == typeof n.description ? o.setHtml(h + " " + n.description) : o.appendChild(n.description);
+
+n instanceof m ? (i.content = n, i.appendChild(n)) : (i.content = i, i.setText(n));
+
+o.sort ? (n = e.appendChild(new h({
+  className: ["col", o.id],
+  name: o.id
+}, r)), n.myTable = this) : n = e.createChild("div", {
+  className: ["col", o.id]
+});
+
+e ? this.spinner.addSpinner("content") : this.spinner.removeSpinner("content");
+
+e ? this._sexIcon.replaceClassNames(["male"], ["female"]) : this._sexIcon.replaceClassNames(["female"], ["male"]);
+
+e ? (this.mountRenamedHandler || (this.mountRenamedHandler = this._processMountRenamed.bind(this), this.mountSterilizedHandler = this._processMountSterilized.bind(this), this.mountReleasedHandler = this._processMountReleased.bind(this), this.updateMountBoostHandler = this._processUpdateMountBoost.bind(this), this.setRatioHandler = this._setXpRatio.bind(this), this.mountRidingHandler = this._processMountRiding.bind(this)), i.on("MountRenamedMessage", this.mountRenamedHandler), i.on("MountSterilizedMessage", this.mountSterilizedHandler), i.on("MountReleasedMessage", this.mountReleasedHandler), i.on("UpdateMountBoostMessage", this.updateMountBoostHandler), t.on("setMountRatio", this.setRatioHandler), t.on("mountRiding", this.mountRidingHandler)) : (i.removeListener("MountRenamedMessage", this.mountRenamedHandler), i.removeListener("MountSterilizedMessage", this.mountSterilizedHandler), i.removeListener("MountReleasedMessage", this.mountReleasedHandler), i.removeListener("UpdateMountBoostMessage", this.updateMountBoostHandler), t.removeListener("setMountRatio", this.setRatioHandler), t.removeListener("mountRiding", this.mountRidingHandler));
+
+l ? (this._rideButton.setEnable(e.isRideable), this._setRideButton(n.isRiding)) : this.mountableIcon.setEnabled(e.isRideable);
+
+t ? (this.value = e, i = e / t) : (this.value = e, i = e);
+
+isNaN(p) ? console.error("MountType: Color is not a number for mountId: " + e + ", index: " + l) : a[l] = "#" + p.toString(16);
+
+t ? (this.humanValue = e, void 0 !== i ? e = i : e /= t) : this.humanValue = Math.round(100 * e);
+
+this.isMini ? (this.serenityBarWidth = h, this.serenityCursorOffset = -p / 2) : (this.serenityBarWidth = this._serenityBar.rootElement.clientWidth, this.serenityCursorOffset = -this._serenityBarCursor.rootElement.clientWidth / 2);
+
+t && t === i ? this.index < i.index ? (this._canRightSlide = !0, this._canLeftSlide = !1, this.rightTab = t, t.position = 100, t.content.show(), t.content.setStyle("webkitTransform", "translate" + this._axis + "(100%)")) : (this._canRightSlide = !1, this._canLeftSlide = !0, this.leftTab = i, i.position = -100, i.content.show(), i.content.setStyle("webkitTransform", "translate" + this._axis + "(-100%)")) : (t ? (this._canRightSlide = !0, this.rightTab = t, t.position = 100, t.content.show(), t.content.setStyle("webkitTransform", "translate" + this._axis + "(100%)")) : this._canRightSlide = !1, i ? (this._canLeftSlide = !0, this.leftTab = i, i.position = -100, i.content.show(), i.content.setStyle("webkitTransform", "translate" + this._axis + "(-100%)")) : this._canLeftSlide = !1);
+
+"customFlag" === m.categoryId ? (d.show(), o.hide()) : "questObjective" === m.categoryId ? (i.flagId = m.id, i.show()) : "zaap" === m.categoryId ? (t.flagId = m.id, t.show()) : "hint" === m.categoryId ? (n.flagId = m.id, n.show()) : "estate" === m.categoryId && (u.flagId = m.id, u.show());
+
+n ? (n = Number(n), n > o && (n = o)) : n = o;
+
+null === s ? (s = 65533, r = 1) : s > 65535 && (s -= 65536, n.push(s >>> 10 & 1023 | 55296), s = 56320 | 1023 & s);
+
+isFinite(i) ? (i = 0 | i, void 0 === n && (n = "utf8")) : (n = i, i = void 0);
+
+t < 0 ? (t += n, t < 0 && (t = 0)) : t > n && (t = n);
+
+i < 0 ? (i += n, i < 0 && (i = 0)) : i > n && (i = n);
+
+i.length > s ? i = o(e).update(i).digest() : i.length < s && (i = t.concat([i, a], s));
+
+e.partyType === r.PARTY_TYPE_ARENA ? this.restrictedMsg.hide() : (this.restrictedMsg.show(), this.restrictedMsg.setEnable(e.isLeader), this.restrictedMsg.toggleClassName("ticked", e.isRestricted));
+
+o ? t.updateContent(i) : e.updateContent(i);
+
+r && r.getGuest(h) ? (this.partyTitle.show(), this.cancelPartyInvitation.show()) : r && r.getMember(h) || this.inviteParty.show();
+
+l && l.getGuest(h) ? (this.arenaTitle.show(), this.cancelArenaInvitation.show()) : l && l.getMember(h) || this.inviteArena.show();
+
+d.isIgnored(u) ? this.stopIgnoreSession.show() : this.ignoreSession.show();
+
+!m && g ? this.spouseJoin.show() : o.position.isInIncarnam() && this.join.show();
+
+h ? window.dofus.sendMessage("GuildInvitationMessage", {
+  targetId: h
+}) : window.dofus.sendMessage("GuildInvitationByNameMessage", {
+  name: p
+});
+
+r ? n.disable() : n.enable();
+
+"AlliancePrismInformation" === t._type ? (s = o.prism.alliance, f = s.allianceName, e.setContent({
+  alliance: s
+}), r.alliance.hasAlliance() && r.alliance.current.allianceId === s.allianceId ? (i.hide(), n.toggleDisplay(r.guild.hasRight(l.GUILD_RIGHT_SET_ALLIANCE_PRISM))) : (i.show(), r.isAlive() && t.state === d.PRISM_STATE_NORMAL ? i.enable() : i.disable(), n.hide()), p.hide()) : (s = window.gui.playerData.alliance.current, f = s.allianceName, e.setContent({
+  alliance: s
+}), i.hide(), p.toggleDisplay(t.hasTeleporterModule), r.guild.hasRight(l.GUILD_RIGHT_SET_ALLIANCE_PRISM) ? n.show() : n.hide());
+
+n ? l("ExchangeObjectTransfertAllToInvMessage", {}) : l("ExchangeObjectTransfertAllFromInvMessage", {});
+
+n ? l("ExchangeObjectTransfertExistingToInvMessage", {}) : l("ExchangeObjectTransfertExistingFromInvMessage", {});
+
+r || l ? i.enable() : i.disable();
+
+g.staticInfos ? this.playersList.appendChild(new s({
+  text: r("tablet.monster.cell", g.staticInfos.nameId),
+  className: "cmButton"
+}, o.bind(null, m))) : console.error(new Error("Not a monster, type " + m.type));
+
+v.data && v.data.playerId ? this.playersList.appendChild(new s({
+  text: v.data.name,
+  className: "cmButton"
+}, i.bind(null, v))) : console.warn("ContextualMenuPlayersList: skipped actor:", v.actorId);
+
+r.systemNotificationsEnabled ? this._controller.takeNoteOfPlayerChoice() : (this._controller.takeNoteOfTriggeringEvent(), this._controller.scheduleCheck());
+
+e ? c() : n();
+
+e ? c() : l();
+
+e.success ? (t.icon.challengeState.addClassNames("success"), t.details.challengeStatus.addClassNames("success"), t.details.challengeStatus.setText(l("ui.fight.challenge.complete"))) : (t.icon.challengeState.addClassNames("fail"), t.details.challengeStatus.addClassNames("fail"), t.details.challengeStatus.setText(l("ui.fight.challenge.failed")));
+
+t.isFullScreen ? (p = 0, f = 0, m = o.screenWidth, g = o.screenHeight) : (p = o.mapLeft, f = o.mapTop, m = o.mapRight, g = o.mapBottom);
+
+M > C ? M = C : M < A && (M = A);
+
+T > I ? T = I : T < S && (T = S);
+
+t === e.activePreset ? e._togglePresetChannels(t) : e._setActivePreset(t);
+
+e.displayMode === $.FIGHT ? O.setValue("ChatHeightForFight", e.logWrapper.windowHeight) : O.setValue("ChatForRP", {
+  width: e.logWrapper.windowWidth,
+  height: e.logWrapper.windowHeight
+});
+
+a === -1 || i ? a === -1 && i && (n.push(t), o = !0) : (n.splice(a, 1), o = !0);
+
+this.chatInput.isChannelAllowedForSending(n) ? (Z[n] || (!l || c || 0 !== a || t[n] || (this._setChannelInPreset(a, n, !0), c = !0), !l && c && (this._setChannelInPreset(a, n, !1), c = !1)), c ? (d.activate(!0), t[n]++) : d.deactivate(!0)) : d.hide();
+
+e ? this.delClassNames("hiddenChatTimestamp") : this.addClassNames("hiddenChatTimestamp");
+
+this.outgoingChannel === I && this.previousPrivateReceiver ? (this.inputChat.setValue(this.previousPrivateReceiver + " " + e), t && this.inputChat.setCaretPosition(this.previousPrivateReceiver.length)) : this.inputChat.setValue(e);
+
+t.defaultValue ? (this._active = !0, this.addClassNames("on")) : this._active = !1;
+
+this._active && !this.isRadio ? (this.deactivate(), r("CHECKBOX_UNCHECKED")) : this._active || (this.activate(), r("CHECKBOX_CHECKED"));
+
+e ? this.activate(t) : this.deactivate(t);
+
+i ? i.cbs.push(t) : (window.dofus.sendMessage("BasicWhoIsRequestMessage", {
+  search: e,
+  verbose: !1
+}), this._whoIsMap[e] = {
+  cbs: [t],
+  timeout: r.setTimeout(this._playerOnlineHandler.bind(this, e, !1), u)
+});
+
+e.position === o.MODERATOR ? i += '(<span class="position mod">' + n("ui.common.moderator") + "</span>)" : e.position === o.GAMEMASTER_PADAWAN ? i += '(<span class="position gma">' + n("ui.common.gameMasterAssistant") + "</span>)" : e.position === o.GAMEMASTER ? i += '(<span class="position gm">' + n("ui.common.gameMaster") + "</span>)" : e.position === o.ADMIN && (i += '(<span class="position admin">' + n("ui.common.administrator") + "</span>)");
+
+window.gui.chat.active ? window.gui.chat.deactivate() : window.gui.chat.activate();
+
+e.skillId === p.UPGRADING ? u.open("legendaryWeaponUpgradingWindow") : e.skillId === p.SHATTER && u.open("legendaryWeaponShatterWindow");
+
+e === n.NO ? s.refuse && s.refuse() : e === n.IGNORE ? s.ignore && s.ignore() : s.confirm && s.confirm();
+
+u ? t() : i();
+
+"object" == typeof e ? o.appendChild(e) : o.setHtml(e.toString());
+
+u.autoGpsFlags ? this.addAllFollowedQuestsObjectives() : (this._removeAllPois(), this._scheduleRendering());
+
+n ? n.followSpouse && e.addOrUpdateSpouse(n.spouseName, n.mapId) : t.once("SpouseInformationsMessage", function (t) {
+  n = t.spouse;
+  n.followSpouse && e.addOrUpdateSpouse(n.spouseName, n.mapId);
+});
+
+n && n !== e ? i.gui.openConfirmPopup({
+  title: d("ui.server.confirmPreferredServerTitle"),
+  message: d("ui.server.confirmPreferredServerMessage"),
+  cb: function (i) {
+    i ? t._continueSelectServer(e) : u.goBackToSelectionOf("server");
+  }
+}) : t._continueSelectServer(e);
+
+this.serversWithMyCharacter.length > 0 ? c.open("serverSelection", this.serversWithMyCharacter) : c.open("serverSimpleSelection", this.serversRawData);
+
+e === this._rows.length ? this.content.appendChild(n) : n.insertBefore(this._rows[e]);
+
+d instanceof o ? c.appendChild(d) : (void 0 !== d && null !== d || (d = ""), c.setHtml(d.toString()));
+
+r ? a = e[l] : (a = e[c], n[c] = a);
+
+i.openState && t === n ? g.close(e) : g.open(e, {
+  tabId: t
+});
+
+g.getWindow("bidHouseShop").openState ? g.close("bidHouseShop") : s.openBidHouse(!1);
+
+o < w ? t("Bag") : o >= w && i("Bag");
+
+"Carac" === t ? s = "Characteristics" : "Goultine" === t ? s = "Shop" : "Conquest" === t ? s = "Koliseum" : "Book" === t ? s = "Quests" : "Bag" === t && (s = "Equipment");
+
+o.action ? o.action() : n(o.windowId, o.tabId);
+
+window.gui.ipadRatio ? (e.x = (y + 1) * (t % this._iconsPerLine), e.y = (y + 2) * Math.floor(t / this._iconsPerLine)) : (e.x = (y + 4) * Math.floor(t / this._iconsPerColumn), e.y = y * (t % this._iconsPerColumn));
+
+window.gui.ipadRatio ? (this._iconsPerLine = this._sizeInIcons, this._iconsPerColumn = Math.ceil(C.length / this._iconsPerLine), this.setStyles({
+  top: "",
+  right: "",
+  bottom: 0,
+  left: l.posMenuBar + "px",
+  width: l.menuBarSize + "px",
+  height: l.bottomBarHeight + "px"
+}), this._icons.setStyle("height", y * this._iconsPerColumn + M[t] + "px"), this._icons.setStyle("width", y * this._iconsPerLine + "px"), e = "top") : (this._iconsPerColumn = this._sizeInIcons, this._iconsPerLine = Math.ceil(C.length / this._iconsPerColumn), this.setStyles({
+  bottom: "",
+  left: "",
+  top: l.posMenuBar + "px",
+  right: 0,
+  width: l.sideBarWidth + "px",
+  height: l.menuBarSize + "px"
+}), this._icons.setStyle("width", y * this._iconsPerLine + M[t] + "px"), e = "left");
+
+e ? e instanceof Array || (e = [e]) : e = "all";
+
+e ? e instanceof Array || (e = [e]) : e = "all";
+
+n.getCurrentDrawerSize() >= n.getCurrentContentSize() ? (n.setAsAlwaysOpen(!0), i.hide()) : (n.setAsAlwaysOpen(!1), i.show());
+
+n.isOpen ? n.close() : n.open();
+
+t * this._direction <= 0 ? t = 0 : t * this._direction > this._contentSize - this._visibleSize && (t = (this._contentSize - this._visibleSize) * this._direction);
+
+t * this._direction >= 0 ? t = 0 : t * this._direction < this._visibleSize - this._contentSize && (t = (this._visibleSize - this._contentSize) * this._direction);
+
+o ? this._open(!0) : this._close(!0);
+
+window.gui.ipadRatio ? (this.setStyles({
+  bottom: 0,
+  top: "",
+  right: "",
+  left: s.posMainControlBar + "px",
+  width: s.mainControlBarSize + "px",
+  height: s.bottomBarHeight + "px"
+}), e = "top") : (this.setStyles({
+  bottom: "",
+  top: s.posMainControlBar + "px",
+  right: 0,
+  left: "",
+  width: s.sideBarWidth + "px",
+  height: s.mainControlBarSize + "px"
+}), e = "left");
+
+e ? this._changeButtonPosition("monsterInfoButton", "showFightsButton") : this._changeButtonPosition("monsterInfoButton", "nicknamesButton");
+
+e ? (_.turnOff(), t._tacticalModeBtn.delClassNames("on"), h.setValue("tacticModeEngaged", !1)) : (_.turnOn(), t._tacticalModeBtn.addClassNames("on"), h.setValue("tacticModeEngaged", !0));
+
+e ? window.actorManager.turnNicknamesOff() : window.actorManager.turnNicknamesOn();
+
+this._shieldPoints > 0 ? this._addShieldColor() : this._removeShieldColor();
+
+this._shieldPoints > 0 ? this.lifePointsNumber.setHtml(this._lifePoints + "<br>" + this._shieldPoints) : this.lifePointsNumber.setHtml(this._lifePoints);
+
+e > s ? (this.setClassNames(["networkIndicator", "bad"]), console.debug("Current server lag is bad:", e)) : e > r ? this.setClassNames(["networkIndicator", "slow"]) : this.setClassNames(["networkIndicator", "good"]);
+
+e && m.isFightMode ? o() : r();
+
+e.isReady ? (e.hideGraphics(), e.hideStatedElements(), window.background.hide(), a(), s(), _.show(), g.show()) : e.once("ready", o);
+
+s.x0 > n ? (n = s.x0, this._createBox(a, o ? i : t)) : (n = 0, o = !o, this._createBox(a, o ? i : t));
+
+t.wuidom ? (a.createChild("div", {
+  className: "dialogText"
+}), a.appendChild(t.wuidom)) : a.createChild("div", {
+  className: "dialogText",
+  text: t.text
+});
+
+null !== e ? window.dofus.sendMessage("NpcDialogReplyMessage", {
+  replyId: this.replyIds[e]
+}) : this._closeDialog();
+
+e ? this._zoomOnActor(this._showLockedBubble) : this._showLockedBubble();
+
+t ? this.inDialog || (this.actor = window.actorManager.getActorFromNpcId(e.id), this._zoomOnActor()) : this._restoreZoom();
+
+"string" == typeof e ? (e = e.replace(I, "").toString(), e || (e = "0")) : e = e.toFixed();
+
+t ? this.keyMap[e].enable() : this.keyMap[e].disable();
+
+n ? (n.memberData = t, this.updateMember(i.type, t)) : this.addMember(i.type, t);
+
+this.numParties > 0 ? this._selectPartyType(o(e)) : this.hide();
+
+o ? o.addClassNames("following") : console.error(new Error("Cannot find the new child " + e.followedId));
+
+e ? e.numAsked < 4 && !e.isNeverAsk && h.open("ratingWindow") : this.characterBaseInformations.level >= 40 && h.open("ratingWindow");
+
+t.current ? t.current.setInfo(e.allianceInfo) : t.current = o.createAlliance(e.allianceInfo);
+
+t.current ? t.current.setInfo(i) : t.current = o.createAlliance(i);
+
+"PrismGeolocalizedInformation" === l._type && "AllianceInsiderPrismInformation" === l.prism._type ? (l.prism.alliance = t.current, a[l.subAreaId] = l, n.push(l)) : a[l.subAreaId] && (delete a[l.subAreaId], o.push(l.subAreaId));
+
+void 0 === r ? (i = s, this._gidByUid[a] = o) : i = s - r;
+
+n ? (this._countByGid[n] -= this._countByUid[i], 0 === this._countByGid[n] && delete this._countByGid[n], delete this._countByUid[i], delete this._gidByUid[i]) : console.error("Invalid UID: " + i);
+
+t || 0 === i ? n = o("ui.pvp.doUAttack", a) : 2 === i ? n = o("ui.pvp.doUAttackNeutral") : i === -1 ? n = o("ui.pvp.doUAttackNoGain", a) : 1 === i && (n = o("ui.pvp.doUAttackBonusGain", a));
+
+"CRAFTER" === this.craftSide && "craftInventory" !== e ? window.dofus.sendMessage("ExchangeObjectUseInWorkshopMessage", {
+  objectUID: o,
+  quantity: i
+}) : window.dofus.sendMessage("ExchangeObjectMoveMessage", {
+  objectUID: o,
+  quantity: i
+});
+
+c ? a[l] = c : console.warn("JobsData: No data for skillId", l);
+
+n ? t.categoriesTotalPercentage[n] = t.categoriesTotalCurrentAchievementCount[n] / t.categoriesTotalAchievementCount[n] : t.categoriesTotalPercentage[o] = t.categoriesTotalCurrentAchievementCount[o] / t.categoriesTotalAchievementCount[o];
+
+0 === e.parentId ? i > 0 && (t.categoriesTotalAchievementCount[e.id] ? t.categoriesTotalAchievementCount[e.id] += i : t.categoriesTotalAchievementCount[e.id] = i, t.categoriesAchievementCount[e.id] = i, t.categories[e.id] = e.achievementIds) : (t.categoriesTotal[e.parentId] ? t.categoriesTotal[e.parentId].push(e.id) : t.categoriesTotal[e.parentId] = [e.id], t.categoriesTotalAchievementCount[e.parentId] ? t.categoriesTotalAchievementCount[e.parentId] += i : t.categoriesTotalAchievementCount[e.parentId] = i, t.subCategoriesAchievementCount[e.id] = i, t.subCategories[e.id] = e.achievementIds);
+
+n ? (n.forEach(function (n) {
+  t.finishedAchievementsIds.indexOf(n) !== -1 && (t.subCategoriesCurentAchievementCount[i]++, t.categoriesTotalCurrentAchievementCount[e]++);
+}), t.subCategoriesPercentage[i] = t.subCategoriesCurentAchievementCount[i] / t.subCategoriesAchievementCount[i]) : console.error("getCategoryPercentage : Cannot get sub category ID ", i);
+
+"MapComplementaryInformationsWithCoordsMessage" === e._messageType ? i(e, {
+  worldX: e.worldX,
+  worldY: e.worldY
+}) : "MapComplementaryInformationsDataInHouseMessage" === e._messageType ? i(e, e.currentHouse) : i(e);
+
+e.accepted ? (t.nbArenaFigthersReady++, t.emit("arenaFighterReady", t.nbArenaFigthersReady)) : t.emit("arenaFightDeclined", e.fightId, e.playerId);
+
+s.dbQuest ? c.updateQuestObjectives(s, function (t) {
+  return t ? i(t) : (e.emit("questUpdate", s.questId), void i());
+}) : c.initializeActiveQuests([s], function (t, n) {
+  return t ? i(t) : (r = n[a].dbQuest.repeatType === m ? e.dailyQuests : e, a === f ? (e.dailyQuests.mainQuest = n[a], e.emit("mainDQStarted", a)) : n[a].dbQuest.repeatType === m ? (e.dailyQuests.active[a] = e.dailyQuests.all[a] = n[a], e.emit("DQStarted", a), e._pendingDailyQuest === a && (delete e.dailyQuests.all[e._pendingOldDaily], delete e.dailyQuests.active[e._pendingOldDaily], e.emit("rerollDQ", {
+    oldDQId: e._pendingOldDaily,
+    newDQId: a
+  }), e._pendingOldDaily = 0, e._pendingDailyQuest = 0)) : (e.active[a] = e.all[a] = n[a], e.emit("questStarted", a)), o(window.gui.chat, s, !!e.dailyQuests.all[a], r), void i());
+});
+
+e.dailyQuests.all[t.questId] ? (a = e.dailyQuests, e.emit("DQFinished", t.questId)) : t.questId !== f && (e.emit("QuestFinished", t.questId), a = e);
+
+"getText" === T.type ? a(v, s, b) : "table" === T.type && o(g, v, y, s, b, T);
+
+this.alignmentInfos ? r.preloadImage(this._imagePaths[this.alignmentInfos.alignmentSide], e) : r.preloadImage(this._imagePaths[0], e);
+
+e > 0 && e <= 50 ? i += p : e > 50 && e <= 100 && (i += m);
+
+50 === e ? i += f : 100 === e && (i += g);
+
+e.current.scoreStageList ? t.steps.forEach(function (t) {
+  for (var i = !1, n = 0; n < e.current.scoreStageList.length; n++) if (e.current.scoreStageList[n].stageLevel === t.stageLevel) {
+    e.current.scoreStageList[n] = t;
+    i = !0;
+    break;
+  }
+  i || e.current.scoreStageList.push(t);
+}) : (e.current.scoreStageList = t.steps, e.current.scoreStageList.sort(function (e, t) {
+  return e.stageLevel > t.stageLevel ? 1 : -1;
+}));
+
+i ? (this.alreadyOpenedPopup = !0, this._displayMarketingPopup(i)) : this._processPopupsWithTriggers();
+
+"RECEIPT_ALREADY_VALIDATED" === e.reason ? A(e.iapKey, e.orderId, function () {
+  H();
+}) : (H(), window.gui.openSimplePopup(ee("tablet.shop.validateIAPFail")));
+
+"android" === t.platform ? console.error("[Haapi info] ShopWindow sending shopMobileValidateOrderRequest with data: " + JSON.stringify({
+  orderId: e,
+  receipt: i,
+  iapKey: n
+})) : console.error("[Haapi info] ShopWindow sending shopMobileValidateOrderRequest with data: " + JSON.stringify({
+  orderId: e,
+  iapKey: n
+}));
+
+X ? o ? (K.trackIAPBought(i, o._parsedPrice, X.currency, n), "com.ankama.dofustouchnext.starterpackalbueraios" !== i && "com.ankama.dofustouch.starterpackalbueraios" !== i && "com.ankama.dofustouchnext.starterpackalbueraandroid" !== i && "com.ankama.dofustouch.starterpackalbueraandroid" !== i || re.sendTagAlbueraStarterPackBought()) : console.error(new Error("Could not send event to Adjust, no product found for key: " + i)) : console.error(new Error("Could not send event to Adjust, store infos are no longer available"));
+
+e === ce.GOULTINES_RESTRICTION ? window.gui.openSimplePopup(ee("tablet.shop.goultinesRestriction")) : e === ce.COUNTRY_COHERENCE_RESTRICTION ? window.gui.openSimplePopup(ee("ui.error.countryCoherenceRestriction")) : e === ce.FRAUD_DETECTED ? window.gui.openSimplePopup(ee("ui.error.fraudDetected")) : window.gui.openSimplePopup(ee("tablet.shop.buyFail"));
+
+"android" === e.platform ? console.error("[Haapi info] ShopWindow sending shopMobileValidatePendingOrderRequest with data: " + JSON.stringify({
+  receipt: t,
+  iapKey: i
+})) : console.error("[Haapi info] ShopWindow sending shopMobileValidatePendingOrderRequest with data: " + JSON.stringify({
+  iapKey: i
+}));
+
+(r = u.search(/e/i)) > 0 ? (s < 0 && (s = r), s += +u.slice(r + 1), u = u.substring(0, r)) : s < 0 && (s = u.length);
+
+(s = u.indexOf(".")) > -1 ? u = u.replace(".", "") : s = u.length;
+
+e.e > B ? e.c = e.e = null : e.e < P && (e.c = [e.e = 0]);
+
+T[0] ? T[C++] = O[A] || 0 : (T = [O[A]], C = 1);
+
+s ? h.c.length > s && (h.c.length = s) : o && (h = h.mod(i));
+
+s ? m.c && m.c.length > s && (m.c.length = s) : o && (m = m.mod(i));
+
+t.id === o ? e._animate(i) : (e._setStatic(), e._setPercentage(0));
+
+null !== i ? this._animate(i, n) : (this._setStatic(), this._setPercentage(n));
+
+window.gui.ipadRatio ? this.setStyle("width", "100%") : this.setStyle("width", s.shortcutBarSize - 9 + "px");
+
+window.gui.ipadRatio ? (this._chatIcons.setPanelsStyle("right", "auto"), this._chatIcons.setPanelsStyle("left", r.pingEmoteBtnSize + "px"), this._chatIcons.setPanelsStyle("bottom", this._emoteBoxSize + "px"), this.setStyle("left", l.CHAT_BTN_MIN_WIDTH + "px"), this.setStyle("width", r.pingEmoteBtnSize + "px"), this.setStyle("height", this._emoteBoxSize + "px"), this.setStyle("bottom", r.bottomBarHeight + "px"), this.setStyle("line-height", "inherit")) : (this._chatIcons.setPanelsStyle("left", "auto"), this._chatIcons.setPanelsStyle("right", this._emoteBoxSize + "px"), this._chatIcons.setPanelsStyle("bottom", r.pingEmoteBtnSize + "px"), this.setStyle("left", r.mapRight - this._emoteBoxSize + "px"), this.setStyle("width", this._emoteBoxSize + "px"), this.setStyle("height", r.pingEmoteBtnSize + "px"), this.setStyle("bottom", "0px"), this.setStyle("line-height", r.pingEmoteBtnSize + "px"));
+
+window.gui.ipadRatio ? c.tween(this, {
+  webkitTransform: "translate3d(0, " + this._emoteBoxSize + "px, 0)"
+}, {
+  time: this._time,
+  delay: this._delay,
+  easing: this._easing
+}, function () {
+  e.setStyle("visibility", "collapse");
+  e.isOpen = !1;
+}) : c.tween(this, {
+  webkitTransform: "translate3d(" + this._emoteBoxSize + "px, 0, 0)"
+}, {
+  time: this._time,
+  delay: this._delay,
+  easing: this._easing
+}, function () {
+  e.setStyle("visibility", "collapse");
+  e.isOpen = !1;
+});
+
+"smileys" === e.openPanel ? e.closePanels() : (e.openSmileys(), e.emit("activated"));
+
+"attitudes" === e.openPanel ? e.closePanels() : (e.openAttitudes(), e.emit("activated"));
+
+r ? i._autoAssign ? (i.assignGift(a, window.gui.playerData.id), i._autoAssign = !1) : i._toaRetryPending.push(a) : t.push(o);
+
+t.spellShortcuts ? e._setPanelContentRequest("spell", t.spellShortcuts) : e._emptyPanel("spell");
+
+o.isBehaviourEnabled(L.ORGANIZE_BTN) ? e._organizeBtn.enable() : e._organizeBtn.disable();
+
+t instanceof N || t instanceof E ? e._selectedSlot = t : null === t && (e._selectedSlot = null);
+
+this.overlay ? this.overlay.toggleDisplay(!e) : this.overlay = this.content.createChild("div", {
+  className: "overlay",
+  hidden: e
+});
+
+window.gui.ipadRatio ? (this.setStyles({
+  top: "",
+  right: "",
+  left: u.posShortcutBar + "px",
+  bottom: "0px",
+  width: u.shortcutBarSize + "px",
+  height: u.bottomBarHeight + "px"
+}), e = u.shortcutBarSize - 75, this._columns = Math.floor(e / D), this._lines = Math.ceil(P / this._columns), t = this._lines * D + 8, this.setOpeningSide("top"), i.setSwipeDirection("horizontal"), n.setSwipeDirection("horizontal"), this._trashZone.setStyle("width", e + "px"), this._buttonBox.appendChild(this._organizeBtn), this._buttonBox.appendChild(this._pagination), this._pagination.setDirection("horizontal")) : (this.setStyles({
+  bottom: "",
+  left: "",
+  right: "0px",
+  top: u.posShortcutBar + "px",
+  width: u.sideBarWidth + "px",
+  height: u.shortcutBarSize + "px"
+}), t = u.shortcutBarSize - 29, this._lines = Math.floor(t / D), this._columns = Math.ceil(P / this._lines), e = this._columns * D + 13 + 30, this.setOpeningSide("left"), i.setSwipeDirection("vertical"), n.setSwipeDirection("vertical"), this._trashZone.setStyle("height", t + "px"), this._panelBox.appendChild(this._organizeBtn), this._panelBox.appendChild(this._pagination), this._pagination.setDirection("vertical"));
+
+window.gui.ipadRatio ? (t = s % this._columns, i = Math.floor(s / this._columns), n = t * D, o = i * D) : (t = s % this._lines, i = Math.floor(s / this._lines), n = i * D, o = t * D);
+
+a.isEmpty() ? t._removeShortcutClient(i, o) : t._setShortcutClient(s);
+
+o.isEmpty() ? o.image && o.setImage() : o.unset();
+
+d ? (p.isEmpty() || p.getShortcutHash() !== d.getHash()) && (p.setShortcut(d), a(p, u)) : p.isEmpty() || (p.unset(), s(p, u));
+
+this.isEmpty() ? e = !1 : !e && "spell" === this.type && window.gui.fightManager.isInBattle() && (e = !0);
+
+o !== n ? this._domElements.points.range.setText(" - " + o) : this._domElements.points.range.clearContent();
+
+i > 0 ? this._domElements.criticalHit.setText(I("ui.common.short.CriticalHit") + I("ui.common.colon") + "1/" + i) : this._domElements.criticalHit.clearContent();
+
+i > 0 && n > 0 && this._domElements.criticalHit.isVisible() ? this._domElements.criticalReal.setText(I("ui.itemtooltip.itemCriticalReal", "1/" + n)) : this._domElements.criticalReal.clearContent();
+
+t.length ? this._domElements.areaOfEffect.setText(I("ui.common.spellArea") + I("ui.common.colon") + t) : this._domElements.areaOfEffect.setText(t);
+
+0 !== e.getProperty("typeId", t) ? this._domElements.breed.setText(I("ui.common.breedSpell") + I("ui.common.colon") + e.getHumanReadableSpellType()) : this._domElements.breed.clearContent();
+
+e.getProperty("rangeCanBeBoosted", t) ? this._domElements.rangeBoost.setText(I("ui.spell.rangeBoost")) : this._domElements.rangeBoost.clearContent();
+
+!e.getProperty("castTestLos", t) && e.getProperty("range", t) ? this._domElements.castWithoutLos.setText(I("ui.spellInfo.castWithoutLos")) : this._domElements.castWithoutLos.clearContent();
+
+e.getProperty("castInLine", t) && !e.getProperty("castInDiagonal", t) ? this._domElements.castInLine.setText(I("ui.spellInfo.castInLine")) : this._domElements.castInLine.clearContent();
+
+i > 0 ? this._domElements.maxCastPerTurn.setText(I("ui.spellInfo.maxCastPerTurn") + I("ui.common.colon") + i) : this._domElements.maxCastPerTurn.clearContent();
+
+i > 0 ? this._domElements.maxCastPerTarget.setText(I("ui.spellInfo.maxCastPerTarget") + I("ui.common.colon") + i) : this._domElements.maxCastPerTarget.clearContent();
+
+e.getProperty("maxStack", t) > 0 ? this._domElements.maxStack.setText(I("ui.spellInfo.maxStack") + I("ui.common.colon") + e.getProperty("maxStack", t)) : this._domElements.maxStack.clearContent();
+
+e.getProperty("globalCooldown", t) === -1 ? this._domElements.globalCooldown.setText(I("ui.spellInfo.globalCastInterval")) : this._domElements.globalCooldown.clearContent();
+
+i > 0 ? this._domElements.initialCooldown.setText(I("ui.spellInfo.initialCastInterval") + I("ui.common.colon") + i) : this._domElements.initialCooldown.clearContent();
+
+t > 0 ? t > Math.PI / 2 ? this.arrow.addClassNames("bottomLeft") : this.arrow.addClassNames("bottomRight") : t < -Math.PI / 2 ? this.arrow.addClassNames("topLeft") : this.arrow.addClassNames("topRight");
+
+e.emitAtDestination ? e.once("atDestination", this._findPositionAppearAndListen.bind(this)) : this._findPositionAppearAndListen();
+
+s.data.alive ? (s.updateNumber(i), i++) : s.updateNumber();
+
+this.selectedFighter === e ? (this.selectedFighter = null, this.buffList.hide()) : (window.actorManager.selectionIndicatorOn(e), e.picto.addClassNames("selected"), this.selectedFighter = e, this.buffList.open(e));
+
+e ? d.addClassNames("readyForFight") : d.delClassNames("readyForFight");
+
+t.canSayReady ? d.enable() : d.disable();
+
+e ? t.enable() : t.disable();
+
+0 !== o.parentBoostUid ? t.push(o) : e.push(o);
+
+a > 0 ? this.key = t + "#" + i + "#" + o + "#" + a : this.key = t + "#" + i + "#" + o;
+
+i > 0 ? this.setCooldown(i) : this.setCooldown(e);
+
+e === -1 ? (this.cooldownLabel.setText("+"), this.cooldownLabel.show()) : 0 === e || e === Number.MAX_VALUE ? (this.cooldownLabel.setText(""), this.cooldownLabel.hide()) : e < -1 ? (this.cooldownLabel.setText(d.INFINITE_CHARACTER), this.cooldownLabel.show()) : (this.cooldownLabel.setText(e), this.cooldownLabel.show());
+
+(a.isCriticalEffect || !p.effects.length) && p.criticalEffects.length > 0 ? a.isCriticalEffect = !0 : a.isCriticalEffect = !1;
+
+this.maximizeEffect ? (f.damage.min = f.damage.max, f.erosionPercent.min = f.erosionPercent.max, f.lifePointsAdded.min = f.lifePointsAdded.max) : this.minimizeEffect && (f.damage.max = f.damage.min, f.erosionPercent.max = f.erosionPercent.min, f.lifePointsAdded.max = f.lifePointsAdded.min);
+
+M || T ? (m.type = l.TYPE.EROSION, m.erosionLifePoints = M ? this.target.erosionLifePoints : this.caster.erosionLifePoints, m.erosionPercent.normal = v.diceNum) : (g = s.getMinMaxDamageFromRawEffect(v), this.isGlyph ? m.origin = l.ORIGIN.GLYPH : this.isTrap && (m.origin = l.ORIGIN.TRAP), m.damage.min = g.min + this.spellWeaponCriticalBonus, m.damage.max = g.max + this.spellWeaponCriticalBonus);
+
+v.effectId === d.ACTION_CHARACTER_DISPATCH_LIFE_POINTS_PERCENT ? this.target.id !== this.caster.id ? m.lifePointsAddedBasedOnLifePercent.normal = v.diceNum * C / 100 : (m.type = l.TYPE.FIXED, m.damage.normal = v.diceNum * C / 100) : v.effectId === d.ACTION_FIGHT_LIFE_POINTS_WIN_PERCENT ? m.lifePointsAddedBasedOnLifePercent.normal = v.diceNum * I / 100 : (g = s.getMinMaxDamageFromRawEffect(v), m.lifePointsAdded.min = g.min + this.spellWeaponCriticalBonus, m.lifePointsAdded.max = g.max + this.spellWeaponCriticalBonus);
+
+A ? T.E = T.E || m && m.indexOf(N) !== -1 : T.E = T.E || f && f.indexOf(N) !== -1;
+
+i.critical ? (c.damage.convertToCritical(), c.lifePointsAdded.convertToCritical()) : (c.damage.resetCritical(), c.lifePointsAdded.resetCritical());
+
+h ? (h.damage.addFromDamage(c.damage), h.lifePointsAdded.addFromDamage(c.lifePointsAdded)) : (c.nameId = u, a.addEffectDamage(c));
+
+i.random > 0 ? (e.damage.min = e.damage.min > 0 ? Math.min(e.damage.min, i.damage.min) : i.damage.min, e.damage.max = Math.max(e.damage.max, i.damage.max), e.damage.minCritical = e.damage.minCritical > 0 ? Math.min(e.damage.minCritical, i.damage.minCritical) : i.damage.minCritical, e.damage.maxCritical = Math.max(e.damage.maxCritical, i.damage.maxCritical), e.lifePointsAdded.min = e.lifePointsAdded.min > 0 ? Math.min(e.lifePointsAdded.min, i.lifePointsAdded.min) : i.lifePointsAdded.min, e.lifePointsAdded.max = Math.max(e.lifePointsAdded.max, i.lifePointsAdded.max), e.lifePointsAdded.minCritical = e.lifePointsAdded.minCritical > 0 ? Math.min(e.lifePointsAdded.minCritical, i.lifePointsAdded.minCritical) : i.lifePointsAdded.minCritical, e.lifePointsAdded.maxCritical = Math.max(e.lifePointsAdded.maxCritical, i.lifePointsAdded.maxCritical), e.lifePointsAddedBasedOnLifePercent.normal = e.lifePointsAddedBasedOnLifePercent.normal > 0 ? Math.min(e.lifePointsAddedBasedOnLifePercent.normal, i.lifePointsAddedBasedOnLifePercent.normal) : i.lifePointsAddedBasedOnLifePercent.normal) : this.updateFromEffectDamage(i);
+
+h === -1 || h !== n && null !== n ? h !== -1 && h !== n && (n = -1) : n = h;
+
+n.indexOf("DA") !== -1 ? i = M.AIR : n.indexOf("DE") !== -1 ? i = M.EARTH : n.indexOf("DF") !== -1 ? i = M.FIRE : n.indexOf("DN") !== -1 ? i = M.NEUTRAL : n.indexOf("DW") !== -1 && (i = M.WATER);
+
+t[r] ? t[r].lifePointsAdded.addFromDamage(l.lifePointsAdded) : t[r] = l;
+
+e[r] ? e[r].damage.addFromDamage(c.damage) : e[r] = c;
+
+e.random > 0 ? (e.lifePointsAdded.min = Math.min(i, e.damage.min * n / 2), e.lifePointsAdded.max = Math.min(i, e.damage.max * n / 2)) : (t.lifePointsAdded.min = Math.min(i, t.lifePointsAdded.min + e.damage.min * n / 2), t.lifePointsAdded.max = Math.min(i, t.lifePointsAdded.max + e.damage.max * n / 2));
+
+this.sharedDamages.length > 0 ? this._computeAllSharedDamages(s, r, e) : this._computeAllElementaryDamages(s, r);
+
+w.EFFECTS_IDS.TARGET_EROSION_DAMAGE[P] ? (U = this.target.lifeLost.clone(), U.applyMultiplier(q), U.addFrom(e.erosionLifePoints), U.addFromDamage(this.target.spellErosionLifePoints), G = n(U, e.erosionPercent, c, I)) : w.EFFECTS_IDS.CASTER_EROSION_DAMAGE[P] ? (U = this.caster.lifeLost.clone(), U.applyMultiplier(Y), U.addFrom(e.erosionLifePoints), this.target.id === this.caster.id && U.addFromDamage(this.target.spellErosionLifePoints), G = n(U, e.erosionPercent, c, I)) : (this.target.spellErosionLifePoints.min += G.min * q, this.target.spellErosionLifePoints.max += G.max * q);
+
+o < n ? (n = o, i = [e]) : o === n && i.push(e);
+
+0 === this._distance ? this._angle = Math.atan2(-o.mapWidth, -o.mapHeight) : this._angle = Math.atan2(i, t);
+
+this._markerDom ? t = s.MOVE : (this._markerDom = new a(this._compass, this._arrowType || this._id, this._tooltip), t = e ? s.APPEAR_CENTER : s.APPEAR);
+
+this._sameMapMarker ? (window.gui.mapCoordinateDisplay.removeMarker(this._sameMapMarker), this._sameMapMarker = null) : this._compass.removeChild(this);
+
+0 === this._distance ? this._sameMapMarker = window.gui.mapCoordinateDisplay.addMarker(this._type, this._tooltipText) : this._compass.appendChild(this);
+
+t <= -34 && t >= -146 ? (n = (s - Math.tan(Math.PI / 2 - e) * r) / 2, o = 0) : t >= 34 && t <= 146 ? (n = (s + Math.tan(Math.PI / 2 - e) * r) / 2, o = r) : t < 34 && t > -34 ? (n = s, o = (r + Math.tan(e) * s) / 2) : (n = 0, o = (r - Math.tan(e) * s) / 2);
+
+t !== f.questFilterId ? e._isQuestFilter = !1 : e._isQuestFilter = !0;
+
+e instanceof r ? this.content.appendChild(e) : this.content.setText(e);
+
+e.msgType === r.TEXT_INFORMATION_ERROR ? window.gui.chat.logError(e.text, e.msgPriority) : window.gui.chat.logMsg(e.text, i[e.msgType], e.msgPriority);
+
+i.domIsCreated ? i._initializeView() : i.once("domCreated", i._initializeView);
+
+i.listUpdateRequested ? (i.setItemList(i.listUpdateRequested), i.dataHandlerItemList = i.listUpdateRequested, i.listUpdateRequested = null) : t.manualReset || i.resetDisplay();
+
+t.indexOf(e) !== -1 ? t.splice(t.indexOf(e), 1) : console.error(new Error("StorageViewer: remove unknown filter"));
+
+l ? this.displayedSlotCount += 1 : this.unSelectSlot(e.objectUID);
+
+r ? (this.displayedSlotCount += 1, this._filteredItemList[o] = a) : this.unSelectSlot(a.objectUID);
+
+t || i || n ? this._isTagBarHidden = !1 : this._isTagBarHidden = !0;
+
+t.selected ? i.currentOpenedWindow.emit("slot-doubletap", t, e.x, e.y) : t !== i.selectedSlot ? (i.selectSlot(t), i.currentOpenedWindow.emit("slot-tap", t, e.x, e.y)) : i.currentOpenedWindow.tapSelectedEmitsDoubleTap && i.currentOpenedWindow.emit("slot-doubletap", t, e.x, e.y);
+
+this.selectedSlot !== t ? (this.selectedSlot && this.selectedSlot.unselect(), t.select(), this.selectedSlot = t) : (t.unselect(), this.selectedSlot = null);
+
+t.currentOpenedWindow ? t.setItemList(e) : t.listUpdateRequested = e;
+
+e.preset ? (L.deleteSetButton.enable(), L.saveSetButton.enable()) : (L.deleteSetButton.disable(), L.saveSetButton.disable());
+
+Object.keys(i).length >= y ? L.addSetButton.disable() : L.addSetButton.enable();
+
+t === _.YES ? L.saveCustom = !0 : e.setItem(i);
+
+L.setSlotsBox.getChild(t.getWuiName()) ? (i = L.setSlotsBox, L._displaySet(t.preset)) : L.setItemSlotsBox.getChild(t.getWuiName()) ? (i = L.setItemSlotsBox, L.emit("setItemSlotTapped", t)) : i = L.setIconsBox;
+
+i === _.YES ? (window.dofus.sendMessage("InventoryPresetDeleteMessage", {
+  presetId: t.presetId
+}), L.addClassNames("spinner")) : e.enable();
+
+this._buttonNo.isVisible() || this.closeButton.isVisible() ? this.noAction() : this._buttonIgnore.isVisible() ? this.ignoreAction() : this.yesAction();
+
+n <= 0 ? (i._buttonYes.setText(i._buttonYesLabel), i._buttonYes.enable(), clearInterval(o)) : i._buttonYes.setText(i._buttonYesLabel + " (" + n + ")");
+
+e.level >= R ? console.warn(e.message) : console.log(e.message);
+
+t ? e.logMessage("Push token: " + t) : e.logMessage("No push token.");
+
+40 === i ? (t.preventDefault(), e.nextCmd()) : 38 === i && (t.preventDefault(), e.previousCmd());
+
+a ? this.runCommand(n) : this.cmdInput.setValue(n);
+
+n ? i._handleEvent(t) : f.openUrlInAppBrowser(t);
+
+this.partyId ? this.leaveArenaBtn.enable() : this.leaveArenaBtn.disable();
+
+this.isLeader || !this.leaderId ? (this.registerBtn.enable(), this.unregisterBtn.enable()) : (this.registerBtn.disable(), this.unregisterBtn.disable());
+
+e.arenaRegistered ? (this.registerBtn.hide(), this.unregisterBtn.show()) : (this.registerBtn.show(), this.unregisterBtn.hide());
+
+t ? (d.slot = d.appendChild(new u({
+  tooltipOptions: {
+    longTapExplanation: !0
+  }
+})), d.slot.setSpell(t, m), d.appendChild(new c({
+  spell: t
+}, f)), d.show()) : p.error(new Error("Cannot find spell id " + d.spellId + " for breed id " + this.breedData.id));
+
+this.mountFilterBox ? this.mountFilterBox.resetFilters() : console.error("_resetDom: mountFilterBox was " + this.mountFilterBox);
+
+this.equipBox ? this._resetDom() : this._createDom();
+
+"equip" === a ? (this.equipBox.box.appendChild(d), d.addClassNames("equip")) : (this.roomDropZones.appendChild(d), d.addClassNames("room"));
+
+o ? delete this.mountDataFromCertifId[n] : this.nonLoadedCertifCount--;
+
+0 === i ? n = h("tablet.mount.emptyRoom") : i === t && (n = h("tablet.mount.filteredMounts", i));
+
+t ? i ? this._displayMountDetails(t) : this._selectTile(this.rooms.equip, this.equipBox.tile) : i && this._hideMountDetails();
+
+e === C ? (t._staminaGauge.setValue(i.stamina, i.staminaMax), t._maturityGauge.setValue(i.maturity, i.maturityForAdult), t._loveGauge.setValue(i.love, i.loveMax), t._serenityGauge.setValue(i.serenity), t.gaugeDiv.delClassNames("partial")) : t.gaugeDiv.addClassNames("partial");
+
+e.isReady ? this._createDom() : e.once("mountFiltersReady", this._createDom.bind(this));
+
+t ? (this.selectState(E), window.gui.openContextualMenuAround("generic", this, {
+  actions: this.menuActions
+})) : s.call(this, null);
+
+t ? (o.mountFilters.addBehaviorFilter(n, t, !0), o._addFilterButton(n, i), this.setLabel(i), this.selectState(N)) : (this.setLabel(this.emptyLabel), this.selectState(E));
+
+t ? (this.selectState(E), window.gui.openContextualMenuAround("generic", this, {
+  actions: this.menuActions
+})) : l.call(this, null);
+
+e ? (this.mountFilters.setFilter("name", e.toLowerCase()), this._addFilterButton("searchBox", '"' + e + '"')) : this.mountFilters.removeFilter("name");
+
+o.isReversible ? n = L : o.isReversed && (n = O);
+
+0 === n || 3 === n || 2 === n && !s ? this.mountFilters.removeFilter("serenity") : (1 === n && o ? i = 0 : (1 === n && s || 2 === n && !a) && (i = y.GOOD_SERENITY_MAX), 1 === n && a ? t = 0 : (1 === n && s || 2 === n && !o) && (t = y.GOOD_SERENITY_MIN), this.mountFilters.setFilter("serenity", [t, i]));
+
+t !== S ? (a = o.getSingleColorMap()[t].colors[0], o.addColorFilter(n, t)) : (i = u, o.addPureColorFilter(n));
+
+t ? (this._addFilterButton(e, i.label), void 0 !== i.equal && (this.minFatigue = this.maxFatigue = i.equal), void 0 !== i.min && (this.minFatigue = i.min), void 0 !== i.max && (this.maxFatigue = i.max)) : (this._delFilterButton(e), void 0 === i.min && void 0 === i.equal || (this.minFatigue = 0), void 0 === i.max && void 0 === i.equal || (this.maxFatigue = 100));
+
+0 !== this.minFatigue || 100 !== this.maxFatigue ? this.mountFilters.setFilter("fatigue", [this.minFatigue, this.maxFatigue]) : this.mountFilters.removeFilter("fatigue");
+
+o ? (l = -1, s = n - 1, r = i - 1) : (l = 1, s = i, r = n);
+
+n.options.closable && o === n.curentTabId ? n.close() : (n.openTab(o), r("TAB"));
+
+e === n ? this.close() : this.openTab(n);
+
+e > i ? (this.progressCircle.setValue(0, 1), this.valueElement.setText("0%"), this.labelElt.setText(t ? t : ""), this.delClassNames("spinner"), this.gauge.show(), this.labelElt.show()) : this.labelElt.hide();
+
+e ? (this.refundedValueDom.show(), this.upgradeButton.hide(), this.resetCheckbox.toggleDisplay(this.getRefundedPts() > 0), this.labelDom.rootElement.setAttribute("colspan", 1)) : (this.refundedValueDom.hide(), this.upgradeButton.show(), this.resetCheckbox.hide(), this.labelDom.rootElement.setAttribute("colspan", 2));
+
+t >= b && e ? c.open("deleteCharacterConfirm", {
+  id: i,
+  name: n,
+  secretQuestion: e
+}) : T.openConfirmPopup({
+  title: d("ui.popup.warning"),
+  message: d("ui.popup.warnBeforeDelete", n),
+  cb: function (e) {
+    if (e) {
+      var t = u(i + "~000000000000000000");
+      window.dofus.sendMessage("CharacterDeletionRequestMessage", {
+        characterId: i,
+        secretAnswerHash: t
+      });
+    }
+  }
+});
+
+e.reason === _.DEL_ERR_TOO_MANY_CHAR_DELETION ? t = "TooManyDeletion" : e.reason === _.DEL_ERR_BAD_SECRET_ANSWER ? t = "WrongAnswer" : e.reason === _.DEL_ERR_RESTRICED_ZONE && (t = "UnsecureMode");
+
+e.constructor == String ? e = i && "binary" === i.encoding ? a.stringToBytes(e) : n.stringToBytes(e) : o(e) ? e = Array.prototype.slice.call(e, 0) : Array.isArray(e) || (e = e.toString());
+
+a > 1 ? a = 1 : a < 0 && (a = 0);
+
+F ? window.dofus.sendMessage("InteractiveUseRequestMessage", v) : m(c) || window.gui.chat.logMsg(y("ui.chat.calligraphyWronglyDrawn"));
+
+1 === t.points.length ? (t.points.push({
+  x: U,
+  y: q
+}), S(U, q, P, t)) : !l && c > r && (t.points.push({
+  x: U,
+  y: q
+}), S(U, q, P, t));
+
+n < i.min.x ? n = i.min.x : n > i.max.x && (n = i.max.x);
+
+o < i.min.y ? o = i.min.y : o > i.max.y && (o = i.max.y);
+
+n ? this._updateItemBox(n) : this._itemBox.hide();
+
+this.myWindow.itemInstance ? _.openBidHouse(!0, null, this.myWindow.itemInstance) : _.openBidHouse(!1, null, this.myWindow.itemId);
+
+i[a.id] ? r.addClassNames("exotic") : a.bonusType === -1 ? r.addClassNames("malus") : 1 === a.bonusType && r.addClassNames("bonus");
+
+e.getProperty("isWeapon") ? (m(e.getProperty("statsFormatted"), this.panelCollection.characteristics), this.itemInfoTabs.toggleTabDisplay(2, !0)) : this.itemInfoTabs.toggleTabDisplay(2, !1);
+
+i.length > 2 ? this._addedLevel += i[2] : this._addedLevel++;
+
+i.length > 2 ? this._addedLevel -= i[2] : this._addedLevel--;
+
+!this._hasText && i ? (this.lblContent.hide(), this.txIllu.setStyles({
+  backgroundImage: this._image.src,
+  backgroundPosition: "center center",
+  width: "100%"
+})) : (this.lblContent.show(), this._lblContentScroller.toggleClassName("small", i), this.txIllu.toggleDisplay(i), i && (t = t.replace(this._image.regExpResult, ""), this.txIllu.setStyles({
+  backgroundImage: this._image.src,
+  backgroundPosition: "center top",
+  width: ""
+})), this.lblContent.appendChild(this._formatLinks(t)), window.setTimeout(function () {
+  e._lblContentScroller.refresh();
+}, 0));
+
+t[0] === p ? (window.dofus.sendMessage("QuestStartRequestMessage", {
+  questId: t[1]
+}), this.close()) : t[0] === m ? (window.dofus.sendMessage("QuestObjectiveValidationMessage", {
+  questId: t[1],
+  objectiveId: t[2]
+}), this.close()) : t[0] === f && window.gui.emit("CompassUpdateMessage", {
+  type: a.COMPASS_TYPE_SIMPLE,
+  worldX: ~~t[1],
+  worldY: ~~t[2]
+});
+
+n ? e.addEventListener(r.end, function (e) {
+  l.openUrlInAppBrowser(t);
+  e.preventDefault();
+}) : e.addEventListener(r.end, function (e) {
+  i._linkHandler(t);
+  e.preventDefault();
+});
+
+u.indexOf(g) !== -1 ? t(d, u.split(",")[1], !0) : (t(d, u), d.href = "#");
+
+"insertRule" in e ? e.insertRule(t + "{" + i + "}", n) : "addRule" in e && e.addRule(t, i, n);
+
+e ? (this._updatePageLeft(), this.lblPageNumberRight.setText(this._currentIndex + 2)) : (this._updatePageLeft(), this._updatePageRight());
+
+!o && i && a(t, e.data) ? s(t, e.data) : window.gui.playerData.inventory.equipItem(e.data.objectUID, this.position);
+
+a && a.twoHanded ? o.lock() : o.itemInstance || o.unset();
+
+n ? this._setSlot(e, n) : this._unsetSlot(e);
+
+n === w.notEquipped ? e._unsetSlot(i) : e._setSlot(n, t);
+
+i.isRiding ? e._setSlot(w.mount, i.equippedMount) : e._unsetSlot(w.mount);
+
+e.mountLocation ? this._itemBox.displayMount(e) : this._itemBox.displayItem(e);
+
+"house" === e ? (this.roomSelector.show(), this.chestSelector.show(), this.housingAreaSelector.show(), this.skillSelector.show(), this.mountSelector.hide(), this.breedingSelector.hide(), this.paddocksAreaSelector.hide()) : (this.roomSelector.hide(), this.chestSelector.hide(), this.housingAreaSelector.hide(), this.skillSelector.hide(), this.mountSelector.show(), this.breedingSelector.show(), this.paddocksAreaSelector.show());
+
+this.currentPageIndex <= 1 ? this.leftButton.disable() : this.leftButton.enable();
+
+this.currentPageIndex >= t.totalPage ? this.rightButton.disable() : this.rightButton.enable();
+
+t ? (T.setValues([_, v, y]), y >= 1 && T.createChild("div", {
+  className: "reached100"
+})) : T.setValues([_, v]);
+
+this.shouldGetPixelValue ? this._tryAndGetPixelValue(this._refresh) : this._refresh();
+
+this.maxValue ? (e === d && (this.humanValue = t), void 0 !== i ? t = i : t /= this.maxValue) : e === d && (this.humanValue = Math.round(100 * t));
+
+this.shouldGetPixelValue ? this._tryAndGetPixelValue(this._refresh) : this._refresh();
+
+0 === i.teamId ? n.insertAsFirstChild(o) : n.appendChild(o);
+
+o === d.FIGHT_TYPE_PVP_ARENA ? (n += " fightType1", r += h("ui.common.koliseum")) : o === d.FIGHT_TYPE_CHALLENGE ? (n += " fightType2", r += h("ui.fight.challenge")) : o === d.FIGHT_TYPE_AGRESSION ? (n += " fightType3", r += h("ui.alert.event.11")) : o === d.FIGHT_TYPE_PvT && (n += " fightType3", r += h("ui.spectator.taxcollectorAttack"));
+
+t.hasGroupMember || i.hasGroupMember ? u = b("relation1", h("ui.spectator.isGroup")) : t.hasFriend || i.hasFriend ? u = b("relation2", h("ui.spectator.isFriend")) : (t.hasGuildMember || i.hasGuildMember) && (u = b("relation3", h("ui.spectator.isGuild")));
+
+l ? t.disable() : t.enable();
+
+!e && q && q.fightSpectatorLocked ? U.buttonSpectate.disable() : U.buttonSpectate.enable();
+
+i ? (this.pvpButton.setText(c("ui.pvp.disabled")), this.pvpContainer.delClassNames("disabled"), t.getTopWings(t.alignmentInfos, function (t) {
+  p.loadImage(t.imagePath, function (i) {
+    e.alignmentWingsContainer.setStyles({
+      left: t.left + f + "px",
+      top: t.top + g + "px",
+      width: t.width + "px",
+      height: t.height + "px",
+      backgroundImage: 'url("' + i.src + '")'
+    });
+  });
+}), this.alignmentGrade.setText(t.getAlignmentGradeString()), this.honorPoints.setValue(t.getHonor())) : (this.pvpButton.setText(c("ui.pvp.enabled")), this.pvpContainer.addClassNames("disabled"), this.alignmentWingsContainer.setStyle("backgroundImage", "none"), this.alignmentGrade.setText("-"), this.honorPoints.setValue(0));
+
+0 === t.alignmentSide ? (this.rightColumn.addClassNames("disabled"), this.pvpButton.hide()) : (this.rightColumn.delClassNames("disabled"), this.pvpButton.show());
+
+0 === i.parentId ? (e.getCategoryPercentage(i.id), t._updateBarsAndPercentages(i.id, null)) : n.push(i);
+
+t ? (o = this.categoriesList.getItem(t), o.sublist && o.sublist.getItem(e).getChild("label").getChild("percentage").setText((100 * n.subCategoriesPercentage[e]).toFixed() + "%")) : (o = this.categoriesList.getItem(e), t = e);
+
+t.tappedOnMe ? e.categoriesList.selectItem("mainProgressBar") : e._cleanRightSideContent();
+
+i.tappedOnMe ? e.categoriesList.selectItem(t.parentId) : e._cleanRightSideContent();
+
+n ? n.setImage(e[t]) : console.warn("Missing icon for achievement #" + t, a[t]);
+
+o.isSelected ? t.achievementsList.selectItem(e) : (c.isSelected || a.selectItem(c.id), c.sublist.show(), t.openAchievementWithID = e, d.selectItem(n.categoryId));
+
+this.searchName ? s.searchDataMap("Achievements", {
+  match: e
+}, function (e, n) {
+  return t.hasSearchedName = !0, e ? console.error("AchievementsWindow achievements search", e) : (i(n), void t._searchResult());
+}) : this.hasSearchedName = !0;
+
+this.searchDescription ? s.searchDataMap("Achievements", {
+  match: e,
+  matchProp: "descriptionId"
+}, function (e, n) {
+  return t.hasSearchedDescription = !0, e ? console.error("AchievementsWindow description search", e) : (i(n), void t._searchResult());
+}) : this.hasSearchedDescription = !0;
+
+this.searchObjective ? s.searchDataMap("AchievementObjectives", {
+  match: e
+}, function (e, n) {
+  return t.hasSearchedObjectives = !0, e ? console.error("AchievementsWindow objectives search", e) : (i(n, !0), void t._searchResult());
+}) : this.hasSearchedObjectives = !0;
+
+isNaN(w) ? console.warn("Failed parsing achievementId of objective.criterion: " + f.criterion) : (g.achievementID = w, m(g), g.on("tap", a));
+
+1 === n.maxValue ? (this.progression.hide(), this.objectivesBox.show()) : (this.progression.show(), this.objectivesBox.hide(), this.progressionText.setText(n.value + "/" + n.maxValue), this.progressionBar.setValue(n.value, n.maxValue));
+
+1 === n.maxValue ? (this.progression.hide(), this.objectivesBox.show()) : (this.progression.show(), this.objectivesBox.hide(), this.progressionText.setText(n.maxValue + "/" + n.maxValue), this.progressionBar.setValue(n.maxValue, n.maxValue));
+
+s[u] ? s[u].push(d.id) : s[u] = [d.id];
+
+c <= 1 ? d.push([g, l[g]]) : u[c] ? u[c].push(g) : u[c] = [g];
+
+t.more ? (t.more.show(), this.refresh()) : e._createMonsterMoreInfo(t);
+
+a ? t.hide() : t.show();
+
+c.dropInfo.dropMinPercent < 2 ? c.addClassNames("rareDrop") : c.dropInfo.dropMinPercent < 10 && c.addClassNames("okDrop");
+
+y === r ? c.push(e[f]) : (d++, g.areaId !== p && (m = g.areaId));
+
+void 0 !== this.x ? l.open("worldMap", {
+  x: this.x,
+  y: this.y
+}) : this.subareaId ? l.open("worldMap", {
+  subarea: this.subareaId
+}) : this.subareaIds && l.open("worldMap", {
+  subareas: this.subareaIds,
+  favorite: this.favorite,
+  centerOn: this.centerOn
+});
+
+this._ornamentIdToSelect ? (this.tabs.openTab("ornaments"), this.ornamentList.selectItem(this._ornamentIdToSelect)) : this._titleIdToSelect ? (this.tabs.openTab("titles"), this.titleList.selectItem(this._titleIdToSelect)) : this._selectActiveTitleAndOrnament();
+
+0 !== window.gui.playerData.alignment.alignmentInfos.alignmentGrade ? this.warningWings.show() : this.warningWings.hide();
+
+e.isActivePOI(t) ? (e.removePOI(t, void 0, !0), i._updateQuestFollow(n, !1, !1)) : (e.addQuestObjectiveFromObjective({
+  objectiveDb: this.objectiveDb,
+  objectiveId: this.objective.objectiveId,
+  questId: n
+}), e.questFollower.isQuestFollowed(n) || i._updateQuestFollow(n, !0, !1));
+
+e[l] ? (a = !1, r.show()) : r.hide();
+
+a ? n.hide() : n.show();
+
+n <= this.index ? e._displayStepData(i) : e._displayUnknownStep(i);
+
+s ? t.hide() : t.show();
+
+R.active[e] ? s.delClassNames("completed") : s.addClassNames("completed");
+
+t && !o ? n.questFollower.followQuest(e, i) : !t && o && n.questFollower.unfollowQuest(e, i);
+
+"-" === e ? a.noFilter = !0 : a.filter = parseInt(e, 10);
+
+this.isVisible() ? this._refreshAllContent() : this.mustRefreshAll = !0;
+
+0 === l || 1 === r.getMaxLevel() ? (o.hide(), s.hide(), t.hide()) : (1 === c ? o.disable() : o.toggleClassName("locked", !n && c <= l), a(r, Math.min(c + 1, r.getMaxLevel())) && c !== r.getMaxLevel() || s.disable());
+
+null === t ? (i = null, n = null) : (i = t.id, n = t.experience ? t.experience.jobLevel : 1);
+
+t ? this.jobSelectSpecialButtons.push(o) : (this.jobSelectButtons.push(o), o.createChild("div", {
+  className: "level",
+  name: "level"
+}));
+
+o ? d[i].setText(o.nameId) : console.error(new Error("JobsWindow: no interactive for id " + n));
+
+o === n.activeItem ? n.deactivate() : n.activate(o);
+
+t.nbCase && t.nbCase < T ? e.forEach(function (e) {
+  e.ingredientIds.length <= t.nbCase && a.push(e);
+}) : e.forEach(function (e) {
+  a.push(e);
+});
+
+p ? (c += " " + p.nameId, t._createIngredientSlot(p, i.quantities[u]), d += 1) : console.error("RecipeBox#setupRecipe: ingredientId", h, "from recipeId", t.recipeId, "is missing, just continue");
+
+t.canChangeName && t.canChangeEmblem ? e.modification = "all" : t.canChangeName ? e.modification = "name" : e.modification = "emblem";
+
+t.canChangeName && t.canChangeEmblem && t.canChangeTag ? e.modification = "all" : t.canChangeName ? e.modification = "name" : e.modification = "emblem";
+
+t ? this.selector.select(t.categoryId) : console.error("SocialGroupCreationWindow._setEmblem: emblemSymbol is null for symbolId", this.symbolId);
+
+this.openState ? (this._setAlliance(e), p.focusWindow("allianceCard")) : p.open("allianceCard", e);
+
+this.openState ? (this._setGuild(e), f.focusWindow("guildCard")) : f.open("guildCard", e);
+
+i.bought ? t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseBuy", e.houseOwner, c.kamasToString(i.realPrice, ""))
+}) : t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.cantBuyHouse", c.kamasToString(i.realPrice, ""))
+});
+
+0 === e.realPrice ? t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseNosell", "'" + i + "'")
+}) : t.openPopup({
+  title: d("ui.popup.information"),
+  message: d("ui.common.houseSell", "'" + i + "'", c.kamasToString(e.realPrice, ""))
+});
+
+o ? this.confirmButton.enable() : this.confirmButton.disable();
+
+i >= t.itemInstance.livingObjectLevel ? n.unset() : n.setImage(e[i]);
+
+e.livingObjectId && e.objectGID ? (this.feedButton.enable(), this.dissociateButton.enable()) : (this.feedButton.disable(), this.dissociateButton.disable());
+
+a ? (t.itemRecipeBox.getChild("title").setText(l("ui.item.utilityReceipt")), t.recipeBox = new h(a, {
+  isMenuOnItemDisabled: !0
+}), t._craftDetails = new _("div", {
+  "class": "craftDetails"
+}), t.recipeBox.on("itemTapped", r), t.recipeBox.myWindow = t, t.recipeBox.setupRecipe(function (e) {
+  return e ? void console.error(new Error("setupRecipe error: " + e)) : void (t.itemRecipeBox && (t.itemRecipeBox.appendChild(t.recipeBox), t._craftDetails.setText(t.recipeBox.craftDetails), t.itemRecipeBox.appendChild(t._craftDetails)));
+}), t.recipeBox.myWindow = t) : u ? t.itemRecipeBox.getChild("title").setText(l("ui.item.secretReceipt")) : t.itemRecipeBox.getChild("title").setText(l("ui.item.utilityNoReceipt"));
+
+n ? t() : e();
+
+o < 0 ? (t.selectedItemIds.push(i.dbItem.id), this.select()) : (t.selectedItemIds.splice(o, 1), this.unselect());
+
+I ? C = I.possibleEffects : (this._logger.error("Missing item", M), C = {});
+
+S.effect && S.effect.category === r.special ? h.push(S) : S.effect.showInSet && b.push(S);
+
+e.item.isChangingCharacterLookWhenEquipped() ? this._showHelp(d("tablet.mimicry.helpMerge")) : this._showWarning(d("tablet.mimicry.fixedAppearance"));
+
+n ? t.index = n.index : t.index = Object.keys(this.members).length;
+
+e ? (t.on("partyInvitationDetails", this.joinPartyHandler), t.on("partyInvitationCancelled", this.closePartyInvitationHandler), t.on("partyLeaderUpdate", this.setLeaderHandler), t.on("partyNewGuest", this.addOrUpdateMemberHandler), t.on("partyNewMember", this.addOrUpdateMemberHandler), t.on("partyUpdateMember", this.addOrUpdateMemberHandler), t.on("partyMemberLeaving", this.removeMemberHandler), t.on("partyGuestLeaving", this.removeMemberHandler)) : (t.removeListener("partyInvitationDetails", this.joinPartyHandler), t.removeListener("partyInvitationCancelled", this.closePartyInvitationHandler), t.removeListener("partyLeaderUpdate", this.setLeaderHandler), t.removeListener("partyNewGuest", this.addOrUpdateMemberHandler), t.removeListener("partyNewMember", this.addOrUpdateMemberHandler), t.removeListener("partyUpdateMember", this.addOrUpdateMemberHandler), t.removeListener("partyMemberLeaving", this.removeMemberHandler), t.removeListener("partyGuestLeaving", this.removeMemberHandler));
+
+3 === e.status ? d.enable() : d.disable();
+
+s ? r ? (r.setServer(s), r.show()) : o(s, E.length % 2) : r && r.hide();
+
+i.data.isSelectable ? Y.enable() : Y.disable();
+
+T ? (T = !1, G.delClassNames("selected")) : (T = !0, G.addClassNames("selected"));
+
+C ? (C = !1, U.delClassNames("selected")) : (C = !0, U.addClassNames("selected"));
+
+h <= 0 ? f.disable() : f.enable();
+
+h >= t.length - d ? _.disable() : _.enable();
+
+window.gui.serversData.connectedServerId === u ? (window.dofus.sendMessage("CharactersListRequestMessage"), r.close(o.id)) : window.gui.serversData.selectServer(u);
+
+i < e.charactersCount ? o.addClassNames("on") : o.delClassNames("on");
+
+e.isSelectable ? this.enable() : this.disable();
+
+this.selectedMapId ? i.buttonOk.enable() : i.buttonOk.disable();
+
+c === e.spawnMapId ? this.windowTitle.addClassNames("saved") : this.windowTitle.delClassNames("saved");
+
+c === e.spawnMapId ? this.windowTitle.addClassNames("saved") : this.windowTitle.delClassNames("saved");
+
+o.target.table.getRows().length <= 0 ? o.tab.disable() : (o.tab.enable(), i || (e.openTab(n), i = !0));
+
+"items" === r ? t(e) : window.dofus.sendMessage("ExchangeObjectMoveKamaMessage", {
+  quantity: e
+});
+
+"items" === _ ? e(t) : window.dofus.sendMessage("ExchangeObjectMoveKamaMessage", {
+  quantity: -t
+});
+
+this.openState ? this._setContent(e, t, i) : v.open(this.id, {
+  mode: e,
+  item: t,
+  currency: i
+});
+
+e === -1 ? this.averagePrice.setText(c("ui.item.averageprice.unavailable")) : this.averagePrice.setText(u.kamasToString(e));
+
+!t || Date.now() - t.timestamp > w ? window.dofus.sendMessage("ExchangeBidHouseListMessage", {
+  id: e
+}) : this._displayMinPrice();
+
+i >= 100 ? i = Math.round(i) : i >= 10 && (i = Math.round(10 * i) / 10);
+
+a <= -1 ? (a < -99 && (a = -99), n = " -" + Math.round(-a) + "%") : a >= 1 && (n = " +" + Math.round(a) + "%");
+
+_.getMountInfoFromCertificate(e) ? (this.mountWindow = T.getWindow("mount"), this.mountWindow.showCertificateMount(e)) : this._hideMountPreview();
+
+this.table ? this.table.clearContent() : this.table = this.tableBox.appendChild(new w(l, "id", {
+  scaleOnPress: !0
+}));
+
+this.isItemSearchable ? (this.searchDiv.toggleDisplay(!0), this.rowCount.setText("..."), this.rowCount.show(), this.table.sortByColumnId("shortName", "ascending"), this.table.delClassNames("noShortName")) : (this.searchDiv.toggleDisplay(!1), this.table.sortBy && "shortName" === this.table.sortBy.id && this.table.resetSort(), this.table.addClassNames("noShortName"));
+
+i > o ? (this.buyButton.disable(), this.totalPriceValue.addClassNames("red")) : (this.buyButton.enable(), this.totalPriceValue.delClassNames("red"));
+
+"number" == typeof e ? t = e : (t = e.getProperty("id"), i = e.getItemInstance());
+
+n ? p.arrangeOpeningWindowVertically(this.id, {
+  below: "wallet",
+  fullHeight: !0
+}) : p.positionWindow(this.id, g);
+
+d ? e = n % c || c : u ? e = n % l || l : h && (e = n % r || r);
+
+t._optionButtonsLoaded ? t._refreshOptionsButtonsSelections() : (t._createOptionsButtons(), t._createConquestButton());
+
+1 === t._worldMap.getDisplayedWorldmapId() ? t.conquestButton.show() : t.conquestButton.hide();
+
+e._isConquestListDisplayed ? (e._conquestPresenter.hideConquestList(), e._isConquestListDisplayed = !1, e.toggleClassName("withoutLeftColumn", !0)) : (e._conquestPresenter.showConquestList(), e._isConquestListDisplayed = !0, e.toggleClassName("withoutLeftColumn", !1));
+
+3 === this._worldMapId ? (this._worldMapWidth = n.totalWidth / 2, this._worldMapHeight = n.totalHeight / 2) : (this._worldMapWidth = n.totalWidth, this._worldMapHeight = n.totalHeight);
+
+2 * m < u ? (this._zoomLevels.push(h), u = h, h = m) : h = m;
+
+this._worldMapData ? (i = this._worldMapData.origineX % e, n = this._worldMapData.origineY % t) : console.error(new Error("worldMapData are not ready yet!"));
+
+this._zoneHighlight.isDisplayed ? ((this._zoneHighlightTween.starting || this._zoneHighlightTween.playing) && this._zoneHighlightTween.stop(), this._zoneHighlightTween.reset().from({
+  x: this._zoneHighlight.x,
+  y: this._zoneHighlight.y
+}).to({
+  x: i.x,
+  y: i.y
+}, 16, W.polyOut, 9).start()) : (this._zoneHighlight.show(), this._zoneHighlight.x = i.x, this._zoneHighlight.y = i.y);
+
+u > this._worldMapWidth ? (i = Math.max(this._worldMapWidth - l.fovW * C, 0), n = this._worldMapWidth) : (i = d, n = u);
+
+p > this._worldMapHeight ? (o = Math.max(this._worldMapHeight - l.fovH * C, 0), s = this._worldMapHeight) : (o = h, s = p);
+
+void 0 === z ? (M.push(W), this._chunkBatchIndexes[x] = this._chunkBatchCurrent) : this._createChunkGraphic(W);
+
+n < o ? (t = 0, a = n) : n > g.cropPosition.width - o && (t = g._worldMapWidth, a = g.cropPosition.width - n);
+
+null === t ? f.x = w.x : (f.x = t, Math.abs(t - w.x) > v && (v = Math.abs(t - w.x), y = T * (o - a) / o));
+
+null === i ? f.y = w.y : (f.y = i, Math.abs(i - w.y) > v && (v = Math.abs(i - w.y), y = T * (o - u) / o));
+
+l ? (e.setIcons(l, g._iconsImage), e.displayIcons()) : n ? e.displaySubArea() : e.displayCoordinates();
+
+this.usePrecisionRendering ? (this.areasToRefresh = [], this.sceneRendering = this.renderer.startTextureUsage(this.r - this.l, this.b - this.t, this.sceneTextureRatio, this.name), this.sceneTextureRatio = this.sceneRendering.width / (this.r - this.l), this.renderingProgram = this.renderer._programFiltering, this.renderingParams = {
+  ratio: .15,
+  resolution: 250
+}, this.refresh = this._refreshPrecisionRendering, this.render = this._compositePrecisionRendering, this.clear = this._clearPrecisionRendering) : (this.refresh = this._refresh, this.render = this._composite, this.clear = this._clear);
+
+this.renderingProgram === this.renderer._programPixelArt ? this.renderingProgram = this.renderer._programFiltering : this.renderingProgram = this.renderer._programPixelArt;
+
+t === -1 ? this.gameScenes.push(e) : console.warn("[animationController.addScene] Scene already in the animation controller");
+
+t !== -1 ? this.gameScenes.splice(t, 1) : console.warn("[animationController.removeScene] Scene not in the animation controller");
+
+void 0 === this.iconsPerCategory[i] ? this.iconsPerCategory[i] = [e] : this.iconsPerCategory[i].push(e);
+
+s && a ? t.push(n) : s && e.push(n);
+
+t === -1 ? console.error(new Error("[IconCluster.remove] Icon not in cluster: " + e.id)) : (this.icons.splice(t, 1), e.visible && (this.nVisibleIcons -= 1));
+
+i._worldMapLoaded ? t() : i._deferredActionQueue.enqueue(t);
+
+i._worldMapLoaded ? t() : i._deferredActionQueue.enqueue(t);
+
+e._worldMapLoaded ? (e._worldMap.removeIcon(i.id), e._worldMap.addIcon(i, "icon_" + i.gfx)) : console.error("map not loaded!");
+
+"PrismGeolocalizedInformation" === n._type ? this._activePrisms[n.subAreaId] = n : this._emptyPrisms[n.subAreaId] = n;
+
+"PrismGeolocalizedInformation" === n._type ? ((!a || a.mapId !== n.mapId || a.worldX !== n.worldX || a.worldY !== n.worldY || a.subAreaId !== n.subAreaId || a.prism.state !== n.prism.state || a.prism.alliance && n.prism.alliance && a.prism.alliance.allianceTag !== n.prism.alliance.allianceTag) && (this._changingPrisms[n.subAreaId] = n), this._activePrisms[o] = n, delete this._emptyPrisms[o]) : (this._emptyPrisms[o] = n, delete this._activePrisms[o]);
+
+this._worldmap ? i() : this._deferredActionQueue.enqueue(i);
+
+this.openState ? (this.openTab("guild", {
+  tabId: t
+}), m.focusWindow(this.id)) : m.open(this.id, {
+  tabId: "guild",
+  tabParams: {
+    tabId: t
+  }
+});
+
+t.table.hasRow(e) ? t.table.selectRow(e) : t.table.unSelectRow();
+
+0 === i && 0 === n ? this.conquestsInfo.setText(l("ui.alliance.noArea")) : i > 0 && 0 === n ? this.conquestsInfo.setText(l("ui.alliance.nbAreas", i, i)) : 0 === i && n > 0 ? this.conquestsInfo.setText(l("ui.alliance.nbVillages", n, n)) : this.conquestsInfo.setText(l("ui.alliance.nbAreasAndVillages", i, n, n + i));
+
+e.remainSeconds > 0 ? o(e) : a(e);
+
+u.isPlayerFightingFor(n, y.prism, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("PrismFightJoinLeaveRequestMessage", {
+  subAreaId: i,
+  join: !1
+}) : e && 5 === t.fighters[w.allies].length ? window.dofus.sendMessage("PrismFightSwapRequestMessage", {
+  subAreaId: i,
+  targetId: e.id
+}) : window.dofus.sendMessage("PrismFightJoinLeaveRequestMessage", {
+  subAreaId: i,
+  join: !0
+});
+
+u.isPlayerFightingFor(n, y.taxCollector, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("GuildFightLeaveRequestMessage", {
+  taxCollectorId: i,
+  characterId: n
+}) : e && 5 === t.fighters[w.allies].length ? window.dofus.sendMessage("GuildFightTakePlaceRequestMessage", {
+  taxCollectorId: i,
+  replacedCharacterId: e.id
+}) : window.dofus.sendMessage("GuildFightJoinRequestMessage", {
+  taxCollectorId: i
+});
+
+o ? a(i[n], o) : s(i[n]);
+
+e.isConnected ? window.gui.openContextualMenu("player", {
+  playerId: e.characterId,
+  accountId: e.accountId,
+  playerName: e.name
+}) : window.gui.openContextualMenu("offlinePlayer", {
+  playerId: e.characterId,
+  playerName: e.name,
+  hoursSinceLastConnection: e.lastConnection
+});
+
+o.isActivate() ? o.activate() : o.deactivate();
+
+o.isActivate() ? o.activate() : o.deactivate();
+
+this.connected ? window.gui.openContextualMenu("player", {
+  playerId: this.id,
+  accountId: this.accountId,
+  playerName: this.name,
+  guildId: window.gui.playerData.guild.current.guildId
+}) : window.gui.openContextualMenu("offlinePlayer", {
+  playerId: this.id,
+  playerName: this.name,
+  hoursSinceLastConnection: this.hoursSinceLastConnection
+});
+
+W ? (k.stateIcon = new r("div", {
+  className: ["stateIcon", "smiley"]
+}), M.push(k.stateIcon), T.push("gfx/smilies/" + W.gfxId + ".png")) : console.error("Smiley " + z + " details are not available, it could not be displayed");
+
+e.length ? this.joinButton.enable() : this.joinButton.disable();
+
+e ? this._startEditing() : d.showNotification(r("tablet.lockedBy", o(t)), this._editBtn);
+
+e.length ? this.joinButton.enable() : this.joinButton.disable();
+
+g.isPlayerFightingFor(n, y.taxCollector, i, w.allies) ? e && n === e.id && window.dofus.sendMessage("GuildFightLeaveRequestMessage", {
+  taxCollectorId: i,
+  characterId: n
+}) : e && 5 === t.fighters.allies.length ? window.dofus.sendMessage("GuildFightTakePlaceRequestMessage", {
+  taxCollectorId: i,
+  replacedCharacterId: e.id
+}) : window.dofus.sendMessage("GuildFightJoinRequestMessage", {
+  taxCollectorId: i
+});
+
+e.remainSeconds > 0 ? i._updateTimerProgressBar(e) : i._clearFightStartTimer(e);
+
+t ? _.focusWindow(t.id) : _.createPanel(e, new p(), {
+  title: c("ui.social.guildTaxCollectors") + " - " + c("ui.social.guildBoosts"),
+  width: 797,
+  height: 497
+});
+
+t ? this._rowCounter.setText(s("tablet.firstResults", e.length)) : this._rowCounter.setText(s("tablet.nResults", e.length));
+
+e.length ? (this._table.setPlaceholderText(""), this._table.addList(e, !0, !0)) : this._table.setPlaceholderText(s("ui.search.noResult"));
+
+t ? e.enable() : e.disable();
+
+o ? (m.hide(), window.dofus.sendMessage("PaddockSellRequestMessage", {
+  price: 0
+})) : d.close(M.id);
+
+M.currency === g ? e(L, t !== b) : e(L, !0);
+
+e.length > 0 ? (n.table.highlight(0), n.validButton.enable()) : n.validButton.disable();
+
+e.open ? a.openDialog("spellForget") : a.close("spellForget");
+
+e ? this.addClassNames("selected") : this.delClassNames("selected");
+
+this.relookingParams ? this._initCharacterForRelooking(e) : this._initCharacter(e);
+
+e.breedId ? (this._sex = e.sex, a = e.cosmeticId, s = e.breedId) : this.relookingParams.canRegender ? this._sex = o.sex ? re : le : this._sex = o.sex ? le : re;
+
+n.canRebreed ? (t = A("tablet.connection.rebreed"), i = A("tablet.charcrea.titleRebreed")) : n.canRename ? (t = A("ui.connection.rename"), i = A("ui.charcrea.titleRename")) : n.canRecolor ? (t = A("ui.connection.recolor"), i = A("ui.charcrea.titleRecolor")) : n.canReface && (t = A("ui.connection.relook"), i = A("ui.charcrea.titleRelook"));
+
+n.canRebreed ? this._stepLayoutSetup(ne) : this._stepLayoutSetup(oe);
+
+i ? this.backButton.setText(A("ui.common.cancel")) : t && (this.headSexTabs.toggleTabAvailability(re, this._sex === re), this.headSexTabs.toggleTabAvailability(le, this._sex === le), this._selectCurrentHeads(), this.relookingParams ? (this._allowElement(this.headSexTabs, this.relookingParams.canRegender), this._allowElement(this.nameSelector, this.relookingParams.canRename, K), this._allowElement(this.colorTool, this.relookingParams.canRecolor, J), this.createBtn.setText(A("ui.common.validation")), this.backButton.setText(A("ui.common.cancel"))) : (this._selectColor(0, !0), this.backButton.setText(A("ui.common.back"))));
+
+this._canStepBack() ? this._stepLayoutSetup(ne) : (k.close(this.id), T.backToSelection());
+
+e ? (i = 1 + (e - 1) * ce * 2, n = i + 2 * ce - 1, this.loadedHeads[e] = !0) : (i = 1, n = this.numBreeds * ce * 2);
+
+i ? this._loadColors(i, !0) : this._resetColors();
+
+this.active && i && "function" == typeof i ? this.on("tap", i) : this.addClassNames("inactive");
+
+e ? (this.plainColor.setStyle("display", "block"), this.plainColor.setStyle("background", e.hex), this.plainColor.setStyle("background", "-moz-linear-gradient(top,  #ffffff 0%, " + e.hex + " 14%, " + e.hex + " 85%, " + e.hex + " 85%, #110f0d 100%)"), this.plainColor.setStyle("background", "-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(14%," + e.hex + "), color-stop(85%," + e.hex + "), color-stop(85%," + e.hex + "), color-stop(100%,#110f0d))"), this.plainColor.setStyle("background", "-webkit-linear-gradient(top,  #ffffff 0%," + e.hex + " 14%," + e.hex + " 85%," + e.hex + " 85%,#110f0d 100%)"), this.plainColor.setStyle("background", "-o-linear-gradient(top,  #ffffff 0%," + e.hex + " 14%," + e.hex + " 85%," + e.hex + " 85%,#110f0d 100%)"), this.plainColor.setStyle("background", "-ms-linear-gradient(top,  #ffffff 0%," + e.hex + " 14%," + e.hex + " 85%," + e.hex + " 85%,#110f0d 100%)"), this.plainColor.setStyle("background", "linear-gradient(to bottom,  #ffffff 0%," + e.hex + " 14%," + e.hex + " 85%," + e.hex + " 85%,#110f0d 100%)")) : this.plainColor.setStyle("display", "none");
+
+t.length > 0 && r ? this.setValue(n, !1) : (n = e, this.setValue(n, !1));
+
+t.length > 0 ? (this.addClassNames("invalid"), this.emit("validationFailed", t)) : (this.delClassNames("invalid"), this.emit("validationPassed"));
+
+e ? this.show() : this.hide();
+
+o.isRecipeKnown && !e.keepResultVisible ? (l._itemResult.hide(), l._craftResultBox._clearProgress(), l.highlightedRecipeId = o.itemToCraft.resultId) : l.highlightedRecipeId = null;
+
+h.playerData.inventory.objects[n.objectUID] ? l._mySlotElems.addAndModifySlot(n) : l._targetSlotElems.addAndModifySlot(n);
+
+l._isInAutoCraft ? l._buttonMerge.disable() : l._restoreMergeStopButtons();
+
+e !== this.selectedSlot ? (window.gui.openContextualMenuAround("item", e, {
+  item: t
+}), this._selectCurrentSlot(e, i.movedQty > 1 ? "stackMove" : "")) : this.jobsData.removeItemFromCraft(t.objectUID, i.movedQty);
+
+n || 0 === n ? (t = i[n], t.setItem(e)) : (t = i[this._usedSlots], t.setItem(e), this._usedSlots += 1);
+
+t ? this._playerRole.setText(i + " " + u("ui.common.short.level") + " " + t) : this._playerRole.setText(u("ui.craft.client"));
+
+t ? c.playerData.id === e.id && (i.setText(a("ui.common.cancel")), o._restoreMergeStopButtons()) : (i.setText(a("ui.common.merge")), o._isReady = !1);
+
+window.gui.playerData.id === o ? e(window.gui.playerData.characterBaseInformations.entityLook) : window.dofus.sendMessage("ContactLookRequestByIdMessage", {
+  contactType: r.SOCIAL_CONTACT_CRAFTER,
+  playerId: t.playerInfo.playerId
+});
+
+this.isInAutoCraft ? this.jobsData.startCombining() : this.jobsData.stopCombining();
+
+e ? this.itemPlaceholder.setText(null) : this.itemPlaceholder.setText(this.placeholderText);
+
+i.magicPoolStatus === r.MAGIC_POOL_INCREASE ? d = " +" + s("ui.craft.smithResidualMagic") : i.magicPoolStatus === r.MAGIC_POOL_LOSS ? d = " -" + s("ui.craft.smithResidualMagic") : a = a.substring(0, a.length - 1);
+
+this.isCrafter ? (this._setEnableCraftingBox(t), this._setEnableIngredientsBag(t), i = e ? "tablet.craftHelp.magicMultiCrafter2" : "tablet.craftHelp.magicMultiCrafter1") : (this._setEnableCraftingBox(!1), this._setEnableIngredientsBag(!t), this.acceptBtn.setEnable(!t), this.stopBtn.setEnable(t), i = e ? "tablet.craftHelp.magicMultiClient2" : "tablet.craftHelp.magicMultiClient1");
+
+t ? this.jobsData.moveItemToCraft(this.droppedItemSource, this.newItemInstance, e) : this.jobsData.removeItemFromCraft(this.newItemInstance.objectUID, e);
+
+i.onlySuccess ? t._successPayment.setKama(n) : t._normalPayment.setKama(n);
+
+i.onlySuccess ? t._successPayment.addItem(a) : t._normalPayment.addItem(a);
+
+i.onlySuccess ? t._successPayment.modifyItem(a) : t._normalPayment.modifyItem(a);
+
+i.onlySuccess ? t._successPayment.removeItem(i.objectUID) : t._normalPayment.removeItem(i.objectUID);
+
+e ? this.positionInfo = this._positionInfoOnSuccess : this.positionInfo = this._positionInfoNormal;
+
+t >= e ? this._nextBtn.disable() : this._nextBtn.enable();
+
+t <= 1 ? this._previousBtn.disable() : this._previousBtn.enable();
+
+r ? (a.setItem(r), a.itemUI.backgroundImage = a.getImage(), a.paymentType = this._paymentType, this._readOnly ? s.disableDrag(a) : s.enableDrag(a)) : (delete a.paymentType, a.unset(), s.disableDrag(a));
+
+t ? e.addFilters([D]) : e.removeFilter(D);
+
+"craftMagus" === R ? (L = {}, D = i) : "decrafting" === R ? D = n : (L = E.getStorageCraftFilterMap(O, l), D = t);
+
+e.remote ? v._otherCharacterTradeSpace.modifyKama(e.quantity) : v._myTradeSpace.modifyKama(e.quantity);
+
+t ? (v._otherCharacterTradeSpace.addAndModifyItem(s), v._otherCharacterTradeSpace.blink(p), v._otherCharacterTradeSpace.incrementExchangePodsQty(-d), v._myTradeSpace.incrementExchangePodsQty(d)) : (v._myTradeSpace.addAndModifyItem(s), v._otherCharacterTradeSpace.incrementExchangePodsQty(d), v._myTradeSpace.incrementExchangePodsQty(-d));
+
+t ? (v._otherCharacterTradeSpace.removeItem(i), v._otherCharacterTradeSpace.blink(p), v._otherCharacterTradeSpace.incrementExchangePodsQty(a), v._myTradeSpace.incrementExchangePodsQty(-a)) : (v._myTradeSpace.removeItem(i), v._otherCharacterTradeSpace.incrementExchangePodsQty(-a), v._myTradeSpace.incrementExchangePodsQty(a));
+
+t === g ? v._toggleConfirmForMe(i) : v._otherCharacterTradeSpace.toggleReady(i);
+
+e ? v._buttonConfirm.disable() : v._buttonConfirm.enable();
+
+n <= 60 ? this._exchangePodsProgressBar.replaceClassNames(["yellow", "orange", "red"], ["green"]) : n <= 70 ? this._exchangePodsProgressBar.replaceClassNames(["green", "orange", "red"], ["yellow"]) : n <= 80 ? this._exchangePodsProgressBar.replaceClassNames(["green", "yellow", "red"], ["orange"]) : this._exchangePodsProgressBar.replaceClassNames(["green", "yellow", "orange"], ["red"]);
+
+t ? (p._npcTradeSpace.addAndModifyItem(a), p._npcTradeSpace.blink(u)) : p._myTradeSpace.addAndModifyItem(a);
+
+t ? (p._npcTradeSpace.removeItem(n), p._npcTradeSpace.blink(u)) : p._myTradeSpace.removeItem(n);
+
+e.remote ? p._npcTradeSpace.modifyKama(e.quantity) : p._myTradeSpace.modifyKama(e.quantity);
+
+a.getCurrentValue ? o = a.getCurrentValue() : a.gameOptionId && (o = _[a.gameOptionId]);
+
+"bool" === a.type ? s.toggleActivation(o, !0) : "dropdown" === a.type ? s.select(o, !0) : "custom" === a.type && "function" == typeof s.updateVisual && s.updateVisual(o);
+
+o ? (e++, s.toggleClassName("odd", e % 2 === 0), null === t && (t = i)) : this._hideSection(i);
+
+l.isIOSApp ? t = e.schemeiOS : l.isAndroidApp && (t = e.schemeAndroid);
+
+l > r ? this.buyBtn.disable() : this.buyBtn.enable();
+
+m[p] && "1" !== h.quantity ? m[p].quantity++ : (m[p] = {
+  slot: t.appendChild(new r({
+    tooltip: g.name
+  })),
+  quantity: parseInt(h.quantity, 10) || 1
+}, f.push(g.id));
+
+"key" === w ? v = c.KEY : "infinity" === w ? _ = 1 / 0 : (y = !0, _ = parseInt(w, 10) || 1);
+
+I.flag === c.KEY ? I.slot.addClassNames("key") : I.flag === c.GIFT ? I.slot.addClassNames("gift") : I.quantity === 1 / 0 ? I.slot.addClassNames("infinity") : I.flag === c.CROWN_QTY ? (I.slot.setQuantity(I.quantity), I.slot.addClassNames("pinkCrownQty")) : (I.slot.setQuantity(I.quantity), I.slot.addClassNames("pinkQty"));
+
+"banner" === y ? (this._promoBanner.toggleDisplay(!!I && !c), this._promoBannerOver.toggleDisplay(!1), this._promoBannerFree.toggleDisplay(c), I && (this._clearCountdown(), this.countdown = new m(new Date(e.enddate), function (e, t, n) {
+  return e ? console.error(e) : (i._promoBanner.setText(h("tablet.shop.promo.banner", n)), void i._promoBannerFree.setText(h("tablet.shop.promo.banner", n)));
+}, function () {
+  return i.rootElement ? (i._promoBannerOver.setText(h("tablet.shop.promo.banner.over")), i._promoBannerFree.setText(h("tablet.shop.promo.banner.over")), i._promoBannerOver.toggleDisplay(!c), void i._promoBanner.toggleDisplay(!1)) : console.error(new Error("articleBox onTimeout: the box is missing " + i.articleId));
+}))) : "corner" === y ? (this._promoCorner.toggleDisplay(C), this._promoCorner.toggleClassName("promoCorner", !c), this._promoCorner.toggleClassName("promoCornerFree", c), C && this._promoRate.setText(s(e))) : "strip" === y && (this._promoStrip.toggleDisplay(C), this._promoStrip.toggleClassName("promoStrip", !c), this._promoStrip.toggleClassName("promoStripFree", c), C && this._promoStrip.setText(s(e)));
+
+n ? (e.delClassNames(["unavailable"]), e.currentPriceText.setText(t)) : (e.toggleClassName("unavailable", !t), o ? (e.currentPriceText.setText(h("ui.shop.free")), e.replaceClassNames(["bigPrice"], ["lowPrice"]), e.enable()) : t ? (e.currentPriceText.setText(c.kamasToString(t, "")), t >= p ? e.replaceClassNames(["lowPrice"], ["bigPrice"]) : t < m ? e.replaceClassNames(["bigPrice"], ["lowPrice"]) : e.delClassNames(["lowPrice", "bigPrice"]), e.enable(), i && (a = c.kamasToString(i, ""), e.originalPriceText.setText(a))) : (e.currentPriceText.setText(h("ui.item.averageprice.unavailable")), e.replaceClassNames(["lowPrice"], ["bigPrice"]), e.disable()));
+
+"goultines" === e ? this._openGoultinesCategory() : "bonuspack" === e && this._openCategory(x);
+
+h ? this._displayItemDetails(this._articleIdToOpen) : console.error(new Error("ShopWindow: Cannot find article: " + this._articleIdToOpen));
+
+o ? this._loadCategory(o) : this._saveAndExecuteAction(function () {
+  i.setSpinnerVisible(!0);
+  t._requestPageOfCategory(e, 1);
+});
+
+a > C ? n() : this.requestTimeout = window.setTimeout(n, C - a);
+
+"ARTICLE" === t.type ? e.emit("displayItemDetails", t.id) : "CATEGORY" === t.type && e.emit("openCategory", t.id);
+
+a ? n.updatePrice(a) : console.error(new Error("Article " + o + " missing for an ArticleBox"));
+
+r ? this._banners[a].setStyle("backgroundImage", d(r)) : s.className && this._banners[a].addClassNames(s.className);
+
+n ? (n.addClassNames("spinner"), n.setStyles({
+  width: t + "px",
+  height: i + "px"
+})) : console.error(new Error("Cannot find the current banner for page " + this._currentPage));
+
+n ? s = 0 | e : i && (s = 0);
+
+e ? (this._loadContent.addClassNames("spinner"), this._loadContent.delClassNames("showArrow")) : (this._loadContent.delClassNames("spinner"), this._loadContent.addClassNames("showArrow"));
+
+e ? this._itemsScroll.addClassNames("spinner") : this._itemsScroll.delClassNames("spinner");
+
+a ? n.updatePrice(a) : console.error(new Error("Article " + o + " missing for an ArticleBox"));
+
+a === -1 ? r.push("malus") : 1 === a && r.push("bonus");
+
+l && l !== -1 ? (this._firstItemOfSet = i, this._linkToItemSet.show()) : (this._firstItemOfSet = null, this._linkToItemSet.hide());
+
+n.length ? f.generateOutfits(n) : f.setLook(o());
+
+Object.keys(this._purchasesDetails).length <= this._purchasesList.getChildCount() ? this._spinner.hide() : this._spinner.show();
+
+n === u.SUCCEEDED ? e++ : t || n !== u.FAILED || (t = !0);
+
+this._pendingPurchases.length ? this._processNext() : this._endProcessing();
+
+e.canTabBeDisable(r) ? s.tab.disable() : s.tab.enable();
+
+i ? (this._score.delClassNames("unavailable"), this._score.setText(o("ui.common.score") + o("ui.common.colon") + t)) : (this._score.addClassNames("unavailable"), this._score.setText(o("ui.toa.ascensionClosed")));
+
+"." === o ? e.splice(n, 1) : ".." === o ? (e.splice(n, 1), i++) : i && (e.splice(n, 1), i--);
+
+e.more ? (e.more.show(), this.refresh()) : (t._createMonsterMoreInfo(e), this.refresh());
+
+this._isTutorial ? (this._shield.model = 1, this._shield.bonusesPerLevel = [{
+  effectId: 125,
+  descriptionId: "#1{~1~2 to }#2 Vitality",
+  bonusRatio: 1
+}], this._updateTutorialShieldInformations(e.itemInstance), e.mode = "shieldTutorial") : (this._updateShieldInformations(e.itemInstance), e.mode = "shield");
+
+e.isPreview ? e.destroy() : e.setText(e.currentStatDescription);
+
+window.gui.gifts.getToaRetryPendingUid().length ? e._message.setText(r("ui.toa.retryOwned")) : e._message.setText(r("ui.toa.retryMessage", s.TOA_RETRY_HC_PRICE));
+
+this._cb ? this._cb(e, this._stepNumber) : r.error(new Error("ToaRetryPopupLogic: cb is falsy"));
+
+a > h ? n() : this.requestTimeout = window.setTimeout(n, h - a);
+
+e._popupInfo.articleId ? (u.close("market"), u.open("market", {
+  tabId: "shop",
+  tabParams: {
+    articleId: e._popupInfo.articleId
+  }
+}), e._shopRedirection = !0) : e._popupInfo.link && m.openUrlInAppBrowser(e._popupInfo.link);
+
+e.description ? (this.setStyle("height", f + "px"), this._description.setStyle("height", g + "px"), this._description.show()) : (this.setStyle("height", f - g + "px"), this._description.setStyle("height", 0), this._description.hide());
+
+window.cordova && window.cordova.InAppBrowser ? window.cordova.InAppBrowser.open(n, "_system", "location=yes,hidden=yes") : window.open(n, "_system");
+
+e.isDislikeDofus ? (e._setUserPref({
+  isNeverAsk: !0
+}), e.close()) : e.isLikeDofus ? (e._setUserPref({
+  isNeverAsk: !1
+}), e.close()) : e._dislikeDofus();
+
+e ? e.numAsked++ : e = {
+  isNeverAsk: !1,
+  numAsked: 1
+};
+
+e(r) ? s.tab.disable() : s.tab.enable();
+
+o.possibleEffects[0].effectId === a ? i.unshift(a) : i.push(a);
+
+d.effectId === r.typeActionId ? d.value += l : d.effectId === f.ACTION_GRIND_LEVEL && d.value++;
+
+e ? (this.currentLW.displayItem(e), this.currentLW.show(), this.placeHolderLW.setText(null)) : (this.currentLW.hide(), this.placeHolderLW.setText(r("ui.common.selectItem")));
+
+e ? (this.upgradedLW.displayItem(e), this.upgradedLW.show(), this.placeHolderUpgradedLW.setText(null)) : (this.upgradedLW.hide(), this.placeHolderUpgradedLW.setText(r("ui.search.noResult")));
+
+e ? (this.currentLW.displayItem(e), this.currentLW.show(), this.placeHolderLW.setText(null)) : (this.currentLW.hide(), this.placeHolderLW.setText(r("ui.common.selectItem")));
+
+d.effectId === l ? i.unshift(l) : i.push(l);
+
+t._answer[e - 1] ? t._answer[e - 1].addClassNames("disabled") : t._answer[e + 1].addClassNames("disabled");
+
+t === a.ALBUERA_QUEST_ID ? e.changeStep(e._getCurrentStep()) : e.checkCondition(d.NEW_QUEST_START, {
+  questId: t
+});
+
+e instanceof l ? this._content.appendChild(e) : this._content.appendChild(s.process(e));
+
+e ? this.setStyles({
+  left: "",
+  right: a.screenWidth - (a.mapLeft + a.mapWidth) + "px"
+}) : this.setStyles({
+  left: d + "px",
+  right: ""
+});
+
+e ? this.showLoginForm() : this.showGuestForm();
+
+r._href ? h.openUrlInAppBrowser(r._href) : console.error("SplashScreenNews: url missing for language", r._language);
+
+this.isAlreadyGuest ? (this._createAccount.setText(r("tablet.oldGuest.register")), "guestWithNoNickname" === e ? this._introText.setText(r("tablet.oldGuest.desc.no.nick")) : this._introText.setText(r("tablet.oldGuest.desc", e))) : (this._createAccount.setText(r("tablet.login.createAccount")), this._introText.setText(r("tablet.newGuest.desc")));
+
+window.Config.disabledFeatures.guest ? (this._guestLink.toggleDisplay(!1), this._btnVersion.replaceClassNames(["formBtn2"], ["formBtn"])) : (this._guestLink.toggleDisplay(!0), this._btnVersion.replaceClassNames(["formBtn"], ["formBtn2"]));
+
+window.developmentMode ? this._inputPassword.setValue(window.Config.defaultPassword || "") : this._inputPassword.setValue("");
+
+t._isExpanded ? (t._retract(), t._boundedBlock && t._boundedBlock.expand()) : (t.expand(), r.log("HUD.Click_on_button", {
+  interface_id: "ChangeLog",
+  button_id: "BTN_CHANGELOG_OPEN_BEFORE_LOGIN",
+  clic_parameter_key: "occurrence",
+  clic_parameter_value: ++n,
+  clic_type: "Simple_court"
+}, {
+  override: !0
+}));
+
+this === t ? t._expand() : t._retract();
+
+/alt=/i.test(c) ? o = c.substr(4) : /width=/i.test(c) ? a = c.substr(6) : /height=/i.test(c) && (s = c.substr(7));
+
+/author=/i.test(m) ? l = m.substr(7) : /link=/i.test(m) ? (c = m.substr(5), M.test(c) || T.test(c) || (c = void 0)) : /date=/i.test(m) && (d = Number(m.substr(5)));
+
+h.getValue().length < 3 ? g.disable() : g.enable();
+
+o.registerLogic.isParentEmailNeeded() ? H.focus() : q.focus();
+
+o.registerLogic.hasGuestAccount() ? o.setTitle(r("tablet.oldGuest.register")) : o.setTitle(r("ui.login.createAccount"));
+
+n ? o.setTitle(s("tablet.oldGuest.register")) : o.setTitle(s("ui.login.createAccount"));
+
+_.isActivate() ? w.enable() : w.disable();
+
+this._state.hasStartedDownloading ? this._retryDownloading() : this._startDownloading();
+
+window.gui.fightManager && window.gui.fightManager.isInFight() ? (this.wholeSessionFightFPS.resetEntries(), this.wholeSessionFightFPS.addEntry(e), 0 === this._lastTimeFightFPS && (this._lastTimeFightFPS = Date.now()), Date.now() - this._lastTimeFightFPS >= d && (this._lastTimeFightFPS = Date.now(), this.lastSecondsAverageFightFPS.resetEntries(), this.lastSecondsAverageFightFPS.addEntry(Math.round(this._lastSecondsFightFPS.getData().average)), this._lastSecondsFightFPS.resetValues()), this._lastSecondsFightFPS.addEntry(e)) : (this.wholeSessionRoleplayFPS.resetEntries(), this.wholeSessionRoleplayFPS.addEntry(e), 0 === this._lastTimeRoleplayFPS && (this._lastTimeRoleplayFPS = Date.now()), Date.now() - this._lastTimeRoleplayFPS >= d && (this._lastTimeRoleplayFPS = Date.now(), this.lastSecondsAverageRoleplayFPS.resetEntries(), this.lastSecondsAverageRoleplayFPS.addEntry(Math.round(this._lastSecondsRoleplayFPS.getData().average)), this._lastSecondsRoleplayFPS.resetValues()), this._lastSecondsRoleplayFPS.addEntry(e));
+
+v.isFightMode ? (this.cleanupChallenges(), r.removeScene(this.actorManager)) : (r.addScene(this.actorManager), this.actorManager.userActor.show(), this.clearUserMovementZone(), this.background.deleteAllZones());
+
+a.length && a[0].actorId >= 0 ? window.dofus.sendMessage("ObjectUseOnCharacterMessage", {
+  characterId: a[0].actorId,
+  objectUID: i
+}) : window.dofus.sendMessage("ObjectUseOnCellMessage", {
+  cells: o,
+  objectUID: i
+});
+
+w.isFightMode ? this.switchGameContextFight() : this.switchGameContextRoleplay();
+
+s ? (s.disabledSkills = n.disabledSkills, s.enabledSkills = n.enabledSkills) : console.warn("Interactive element id " + n.elementId + " does not exist.");
+
+o ? o instanceof c && (w.isFightMode ? (o.state = -1, o.changeState(1)) : o.changeState ? o.changeState(n.elementState) : o.state = n.elementState) : console.warn("stated element not identified:" + n.elementId + ", cellId=" + n.elementCellId);
+
+a ? a.changeState ? a.changeState(o.elementState) : (console.warn("Identified element " + o.elementId + " is not a stated element."), a.state = o.elementState) : console.warn("Identified element " + o.elementId + " not found.");
+
+o._pingHighlight[e] ? (o._pingHighlight[e].texture = n, o._pingHighlight[e].forceRefresh()) : n.release();
+
+s.state === O ? l.l |= 1 : s.state === R && (l.l &= 254);
+
+0 === (1 & n) ? 0 !== (1 & i) && this._removeCell(e, t) : 0 === (1 & i) && this._addCell(e, t);
+
+!t && o.template && o.template.exposedSymbols[r.id] ? (this.animated = !0, o.assignSymbol(r, !1, i)) : i();
+
+e.layer < this.layer ? i = 0 : (i = Math.round(e.position), i < 0 ? i = 0 : i > l && (i = l));
+
+t.layer > this.layer ? n = l : (n = Math.round(t.position), n < 0 ? n = 0 : n > l && (n = l));
+
+void 0 !== e && 1 & e.l ? (t.floor = e.f || 0, t.zone = e.z || 0, t.speed = 1 + (e.s || 0) / 10, t.zone !== C && (T = !1)) : (t.floor = -1, t.zone = -1);
+
+t[e] ? delete t[e] : t[e] = !0;
+
+"H" === r[2] ? r[0] += 1 : r[1] += 1;
+
+s.isFightMode ? t.stop() : t.animate();
+
+this.texture ? (this.texture.release(), this.texture = null) : console.warn("[Background.clear] Clearing background although no texture was ever set");
+
+this.displayGrid ? (this.gridLines.show(), new m(this.gridLines, ["alpha"]).to({
+  alpha: 1
+}, 20).start()) : this.gridLines.hide();
+
+this.isDebugMode ? this.cellIdOverlay.generateOverlay(e) : this.cellIdOverlay.clear();
+
+this.gridAnimator ? this.gridAnimator.removeGridLayer(e) : this.gridAnimator = new h();
+
+e._listReference ? (this._layers.removeByReference(e._listReference), e._listReference = null) : console.error(new Error("GA: _listReference is missing."));
+
+this.texture ? (this.texture.release(), this.texture = null) : console.warn("[CellIdOverlay.clear] Clearing CellIdOverlay although no texture was ever set");
+
+o.isNPC() ? i.npc.push(o) : o.isPlayer() ? i.onlinePlayer.push(o) : i.other.push(o);
+
+i ? this.removeActor(n) : window.isoEngine.tryDisplayUserMovementZone();
+
+a ? a.updateData(e) : a = i.addEmptyActor(e);
+
+a ? (a.updateData(e), o = !1) : a = this.addEmptyActor(e);
+
+s ? s.carryCharacter(a) : i._queuedToCarryActors[o] = a;
+
+n === -1 ? console.warn("[ActorManager.removeActorOccupation] Trying to remove an actor from an empty cell", e) : 1 === i.length ? delete this._occupiedCells[t] : i.splice(n, 1);
+
+n === -1 ? i.push(e) : console.warn("[ActorManager.addActorOccupation] Trying to add an actor to a cell that it already belongs to", e);
+
+i === !0 ? c.isolationCoefficient = T : (c.isolationCoefficient = M, r.staticInfos && r.staticInfos.isMiniBoss ? c.addIcon("miniBoss") : c.removeIcon("miniBoss"), r.staticInfos || console.error("ActorManager#addActorFollowers: no staticInfos", "actorId:", o, "followerId:", l));
+
+e ? (t = c.MAP_LAYER_TRANSPARENT, i = c.TRANSPARENT_MODE_ALPHA) : (t = c.MAP_LAYER_PLAYGROUND, i = 1);
+
+"" === t ? i.removeTurnNumber() : i.addTurnNumber(t);
+
+n ? i(e, n) : this._onIdAdded[e] = i;
+
+f.isRoleplayMode && this._fullNicknameLabelCount < s.maxTitlesOrnaments ? (e.addNicknameLabel(!0), e.nicknameLabel && "full" === e.nicknameLabel.getType() && this._fullNicknameLabelCount++, e.moving && e.nicknameLabel.set(e, "name")) : e.addNicknameLabel(!1);
+
+t.loop ? o.loopAnim(e, i) : o.oneShootAnim(e, {
+  backToStatic: !1,
+  isEmoteAnimated: t.isEmoteAnimated
+}, i);
+
+d ? n.playCustomAnimation({
+  animationName: d,
+  direction: n.direction,
+  loop: !0,
+  duration: i,
+  delay: 0
+}, function () {
+  n.actorState = r.WAITING_FOR_NEXT_ANIMATION;
+}) : n.actorState = r.WAITING_FOR_NEXT_ANIMATION;
+
+"HumanOptionAlliance" === i._type ? this.addConquestIcon(i) : "HumanOptionFollowers" === i._type && this.actorManager.addActorFollowers(this, i.followingCharactersLook, !0);
+
+this.moving ? console.warn('[Actor._startPath] error: actor "' + this.actorId + '" is already moving.') : (this.pathTween.start(!1), this.pathTween.onceFinish(function () {
+  t.moving = !1;
+  r.isRoleplayMode && l.hasFullNicknameLabelData(t) && t.nicknameLabel && t._hadFullNicknameLabel && "name" === t.nicknameLabel.getType() && t.nicknameLabel.set(t, "full");
+  var i = t.path[t.path.length - 1];
+  return t.animSymbol = i.a, t._x = i.x, t._y = i.y, t.animManager.assignSymbol(t.animSymbol, !0), e && e();
+}));
+
+r.isFightMode ? b = 0 : _ && _[w] && _[w].f && (b = _[w].f);
+
+0 === y ? f = 1 : T.y === p ? (M = m.horizontal, f = T.x > h ? 0 : 4) : T.x === h ? (M = m.vertical, f = T.y > p ? 2 : 6) : (M = m.linear, f = T.x > h ? T.y > p ? 1 : 7 : T.y > p ? 3 : 5);
+
+"none" === this._textureId ? this.texture = window.isoEngine.mapScene.createTexture(e, this.id, "nearest", "throwable") : this.texture = window.isoEngine.mapScene.createTexture(e, this._textureId, "nearest", "archivable");
+
+"HumanOptionGuild" === d._type ? (s = d.guildInformations, this.hasGuild = !0) : "HumanOptionAlliance" === d._type ? (r = d.allianceInformations, this.hasAlliance = !0) : "HumanOptionOrnament" === d._type ? (a = d.ornamentId, this.hasOrnament = !0) : "HumanOptionTitle" === d._type && (o = d.titleId, this.hasTitle = !0);
+
+t.hasWings ? t._nicknameLabelCanvas.updateWithWings() : t._nicknameLabelCanvas.update();
+
+e ? (n.height = this._canvas.height + t.height + i, o.drawImage(t, s, 0), this._canvasHasContents && o.drawImage(this._canvas, a, t.height + i)) : (n.height = this._canvas.height + t.height + i, o.drawImage(t, s, this._canvas.height + i), this._canvasHasContents && o.drawImage(this._canvas, 0, 0));
+
+this._top ? (this._canvasHasContents = !0, this._syncCanvas(!1, this._textCanvas, 0), this._syncCanvas(!0, this._topCanvas, this._textOffset)) : this._syncCanvas(!1, this._textCanvas, 0);
+
+i ? (n(this._topCanvas), this._textOffset = -(t.top + o.height), this._topCanvas.width = o.width, this._topCanvas.height = o.height, this._topCtx.drawImage(o, 0, 0), this._top = !0) : (n(this._bottomCanvas), this._bottomOffset = t.top - o.height, this._bottomCanvas.width = o.width, this._bottomCanvas.height = o.height, this._bottomCtx.drawImage(o, 0, 0), this._bottom = !0);
+
+1 === h ? this.openPlayerContextualMenu(l) : this.isFollower || console.error("nbOnlinePlayersOnCell has an unexpected value (< 1): ", h, this.actorId);
+
+t === i ? this.setHighlight(s) : (this.setHighlight(a), this.actorManager.turnIndicatorOff());
+
+n.circleGraphic ? (n.circleGraphic.w = e.element.width, n.circleGraphic.h = e.element.height, n.circleGraphic.texture = e, n._positionCircle(), n.circleGraphic.forceRefresh()) : e.release();
+
+0 === i ? r = u : 1 === i ? r = h : console.error("invalid team number");
+
+e ? (this.nicknameLabel.set(this, "full"), this._hadFullNicknameLabel = !0) : (this.nicknameLabel.set(this, "name"), this._hadFullNicknameLabel = !1);
+
+this.texture ? (this.texture.release(), this.texture = null) : console.warn("[CanvasText.clear] Clearing CanvasText, but it was already clear");
+
+e > d ? e = d : t < d && (t = d);
+
+i > u ? i = u : n < u && (n = u);
+
+b && b.indexOf(C) !== -1 ? T._isDead = !0 : w[M].loss && s(e, C, {
+  base: "AnimHit"
+}, i);
+
+p.showApMpUsed || e.actionId === m.ACTION_CHARACTER_ACTION_POINTS_LOST || e.actionId === m.ACTION_CHARACTER_MOVEMENT_POINTS_LOST ? s(e, t, T[e.actionId]) : s(e, t, null);
+
+e.carriedActor ? e.carriedActor.parentActor = null : console.warn("attempted to drop actor that did not exist.");
+
+g === this._lastTapId ? (m = !0, this._lastTapId = null) : this._lastTapId = g;
+
+e ? (I = !0, window.foreground.showInfobox(e, t)) : I && (I = !1, window.foreground.hideInfobox());
+
+c.transformState === e ? a[c.cellId] = new m(c.cellId, c.distanceToPlayer, t) : c.transformState === i && (a[c.cellId] = new m(c.cellId, c.distanceToPlayer, n));
+
+"fight" === i.mode && void 0 !== i.spellId ? this.displayEffectZone(o) : "fight" === i.mode && this._isUserTurn && (this.actorManager.getActorsOnCell(o).length > 0 ? this._resetWalkLayer() : (window.foreground.confirmBox.close(), A = this._displayPathInFight(o)));
+
+C[i] ? a = i : S.stop();
+
+this._spellRangeLayer && this._spellRangeLayer.cellInfos.hasOwnProperty(e) ? t ? (this._castSpellImmediately(e), this.clearSpellDisplay()) : this._castSpellImmediatelyConfirm(e) : this.clearSpellDisplay();
+
+window.foreground.fightIsUserTurn ? n.hideConfirmWindow = !1 : n.hideConfirmWindow = !0;
+
+a ? this._castSpell(o, e, t, n) : this._castSpellConfirm(o, e, t, n);
+
+_.confirmBoxWhenWalking ? c.open("move", p, m, {
+  startHidden: !1,
+  allowDoubleTap: !0
+}, n) : n(!0);
+
+void 0 === w || A ? (T.splice(I, 1), A && C.push(A)) : I++;
+
+t.reachable ? (this.reachable.push(e), this.reachableMap[e] = i) : (this.unreachable.push(e), this.unreachableMap[e] = i);
+
+0 === h ? this.background.addTargetHighLights(n, d._x, d._y, u.redTeamStart, u.redTeamEnd, !window.foreground.fightIsUserTurn) : this.background.addTargetHighLights(n, d._x, d._y, u.blueTeamStart, u.blueTeamEnd, !window.foreground.fightIsUserTurn);
+
+c.isOutsight(r) ? a.cancel() : a.preview(m.spellId, r, {
+  hasConfirmBox: !0
+});
+
+a.isOutsight(e) ? i.cancel() : i.preview(m.spellId, e, {
+  hasConfirmBox: !0
+});
+
+Math.floor(g) === Math.floor(_) ? (f = [Math.floor(r[p] + c[p])], g === f[0] && _ < f[0] && (f = [Math.ceil(r[p] + c[p])]), _ === f[0] && g < f[0] && (f = [Math.ceil(r[p] + c[p])])) : Math.ceil(g) === Math.ceil(_) ? (f = [Math.ceil(r[p] + c[p])], g === f[0] && _ < f[0] && (f = [Math.floor(r[p] + c[p])]), _ === f[0] && g < f[0] && (f = [Math.floor(r[p] + c[p])])) : f = [Math.floor(g), Math.floor(_)];
+
+this._loadingProgressVisible === !1 ? (this._loadingProgressVisible = !0, t.x = this.mapScene.w / 2, t.y = this.mapScene.h / 2, this._loadingProgress.show(), this._loadingProgress.progressEggFrameTween.reset().from({
+  frame: 0
+}).to({
+  frame: .4 * i
+}, 30, p.polyIn, 2).start()) : this._loadingProgress.progressEggFrameTween.reset().from({
+  frame: t.animManager.frame
+}).to({
+  frame: (.7 * e + .4) * i
+}, 5).start();
+
+t._activateMapScene() ? (t._loadingProgress.progressEgg.alpha = 1, t.mapScene.renderingParams.ratio = 1, t._saveImageForTransition("black"), t._startLoading()) : t._loadingFadeInTransitionRunning === !1 && (t._isMapLoading ? t._startLoading() : (e && t._makeUserActorWalkInDirection(e, !1), t._runLoadingFadeInTransition()));
+
+null === this._mapSceneTransitionGraphic ? this._mapSceneTransitionGraphic = new m({
+  w: this.mapScene.w,
+  h: this.mapScene.h,
+  scene: this.mapScene,
+  position: 0,
+  isHudElement: !0,
+  alpha: 1
+}, o.texture) : (this._mapSceneTransitionGraphic.clear(), this._mapSceneTransitionGraphic.texture = o.texture, this._mapSceneTransitionGraphic.show());
+
+this.changeMapTimeout ? (window.clearTimeout(this.changeMapTimeout), this.changeMapTimeout = null) : window.foreground.lock("loadMap");
+

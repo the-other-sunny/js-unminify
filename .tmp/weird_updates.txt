@@ -1,0 +1,13 @@
+for (;; y);
+for (;; t.pop());
+for (;; u.push(0));
+for (;; u.pop());
+for (;; d.pop(), l--);
+for (;; d.splice(0, 1), a -= w);
+for (;; g.pop());
+for (;; e.splice(0, 1));
+for (;; r.push(0));
+for (;; p.splice(0, 1), --h);
+for (;; _.push(0));
+for (;; n.push(0));
+for (;; i);

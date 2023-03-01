@@ -1,0 +1,48 @@
+for (e = 0, i = n; i >= 10; i /= 10, e++);
+
+for (; c[i] === 0; c.pop(), i--);
+
+for (e = -1; c[0] === 0; c.shift(), e -= LOG_BASE);
+
+for (i = 1, v = c[0]; v >= 10; v /= 10, i++);
+
+for (; xc[--k] == 0; xc.pop());
+
+for (; !a[0] && a.length > 1; a.shift());
+
+for (i = 1, s = qc[0]; s >= 10; s /= 10, i++);
+
+for (; len < i; str += '0', len++);
+
+for (; !c[--j]; c.pop());
+
+for (j = c[0]; j >= 10; j /= 10, i++);
+
+for (d = 1, k = xc[0]; k >= 10; k /= 10, d++);
+
+for (; xc.length <= ni; xc.push(0));
+
+for (d = 1; k >= 10; k /= 10, d++);
+
+for (i = 1, j = xc[0]; j >= 10; j /= 10, i++);
+
+for (k = 1; j >= 10; j /= 10, k++);
+
+for (i = xc.length; xc[--i] === 0; xc.pop());
+
+for (; v % 10 == 0; v /= 10, n--);
+
+for (b = a; b--; t.push(0));
+
+for (; xc[0] == 0; xc.shift(), --ye);
+
+for (; a--; t.push(0));
+
+for (; v % 10 == 0; v /= 10, n--);
+
+for (v = c[0]; v >= 10; v /= 10, n++);
+
+for (i = xcL + ycL, zc = []; i--; zc.push(0));
+
+for (var words = [], i = 0, b = 0; i < bytes.length; i++, b += 8) words[b >>> 5] |= bytes[i] << 24 - b % 32;
+

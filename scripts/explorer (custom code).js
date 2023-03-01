@@ -7,13 +7,18 @@ const generate = require('@babel/generator').default;
 const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 
-const ExpressionStatement = require('../src/processNode/ExpressionStatement');
+const ForStatement = require('../src/processNode/ForStatement');
 
 const visitor = {
-    ExpressionStatement: ExpressionStatement
+    LVal(path) {
+        debugger;
+    }
 };
 
-let sourceCode = `1 && 2`;
+let sourceCode = `
+var a = 0;
+var b = a;
+`;
 
 const ast = parser.parse(sourceCode);
 traverse(ast, visitor);

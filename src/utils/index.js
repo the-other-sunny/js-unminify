@@ -42,6 +42,13 @@ function negate(node) {
     return simple_negation(node);
 }
 
+function extendSet(set, iter) {
+    for (const elt of iter) {
+        set.add(elt);
+    }
+}
+
 module.exports.isBlock = isBlock;
 module.exports.isExpandable = isExpandable;
 module.exports.negate = negate;
+module.exports.extendSet = extendSet;

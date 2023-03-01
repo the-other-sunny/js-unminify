@@ -66,4 +66,23 @@ function Statement(path) {
     }
 }
 
+/**
+ * Replaces `void 0` expressions with `undefined`, `!0` with `true` and `!1` with `false`.
+ * @param {Path} path 
+ */
+function UnaryExpression(path) {
+    const { operator, argument } = path.node; 
+    if (operator === 'void' &&
+        t.isNumberLiteral(argument) &&
+        argument.value === 0
+    ) {
+        path.replaceWith(t.identifier('undefined'));
+    }
+
+    if (operator === '!' && t.isNumberLiteral(argument)) {
+        path.replaceWith(t.booleanLiteral(!argument.value));
+    }
+}
+
 module.exports.Statement = Statement;
+module.exports.UnaryExpression = UnaryExpression;

@@ -10,14 +10,14 @@ const t = require('@babel/types');
 const ForStatement = require('../src/processNode/ForStatement');
 
 const visitor = {
-    LVal(path) {
+    enter(path) {
         debugger;
     }
 };
 
 let sourceCode = `
-var a = 0;
-var b = a;
+let a;
+a === undefined;
 `;
 
 const ast = parser.parse(sourceCode);

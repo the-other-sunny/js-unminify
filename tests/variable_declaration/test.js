@@ -5,7 +5,7 @@ const parser = require('@babel/parser');
 const generate = require('@babel/generator').default;
 const traverse = require('@babel/traverse').default;
 
-const VariableDeclaration = require('../../src/processNode/VariableDeclarationStatement');
+const VariableDeclaration = require('../../src/processNode/VariableDeclaration');
 
 const visitor = {
     VariableDeclaration: VariableDeclaration,

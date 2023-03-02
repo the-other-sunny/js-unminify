@@ -8,7 +8,7 @@ function returnSequence(path) {
 
     const expressions = [...path.node.argument.expressions];
     const lastExpr = expressions.pop();
-    t.replaceWithMultiple([
+    path.replaceWithMultiple([
         ...expressions.map(expr => t.expressionStatement(expr)),
         t.returnStatement(lastExpr)
     ]);
@@ -23,7 +23,7 @@ function returnConditional(path) {
     const ifNode = t.ifStatement(
         test,
         t.blockStatement([
-            t.expressionStatement(consequent)
+            t.returnStatement(consequent),
         ])
     );
     const returnNode = t.returnStatement(alternate);
@@ -52,7 +52,7 @@ function ReturnStatement(path) {
         returnSequence(path);
     } else if (t.isConditionalExpression(argument)) {
         returnConditional(path);
-    } else if (t.unaryExpression(argument) && argument.operator === 'void') {
+    } else if (t.isUnaryExpression(argument) && argument.operator === 'void') {
         returnVoid(path);
     } else if (t.isIdentifier(argument) && argument.name === 'undefined') {
         returnUndefined(path);

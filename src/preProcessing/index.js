@@ -73,13 +73,13 @@ function Statement(path) {
 function UnaryExpression(path) {
     const { operator, argument } = path.node; 
     if (operator === 'void' &&
-        t.isNumberLiteral(argument) &&
+        t.isNumericLiteral(argument) &&
         argument.value === 0
     ) {
         path.replaceWith(t.identifier('undefined'));
     }
 
-    if (operator === '!' && t.isNumberLiteral(argument)) {
+    if (operator === '!' && t.isNumericLiteral(argument)) {
         path.replaceWith(t.booleanLiteral(!argument.value));
     }
 }

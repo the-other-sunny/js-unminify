@@ -6,8 +6,9 @@ function IfStatement(path) {
     if (!t.isSequenceExpression(test)) {
         return;
     }
+    
     if (!isExpandable(path)) {
-        const warnMsg = `The following SwitchStatement is not expandable:\n${path.toString()}`;
+        const warnMsg = `The following \`IfStatement\` is not expandable:\n${path.toString()}`;
         console.warn(warnMsg);
         return;
     }

@@ -7,14 +7,14 @@ const generate = require('@babel/generator').default;
 const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 
-const ReturnStatement = require('../../src/processNode/ReturnStatement');
+const IfStatement = require('../../src/processNode/IfStatement');
 
 const visitor = {
-    ReturnStatement
+    IfStatement
 };
 
 function main() {
-    let inputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\tests\return_undefined\io\input.js`;
+    let inputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\tests\if_statement\io\input.js`;
     let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
 
     const ast = parser.parse(sourceCode);

@@ -17,9 +17,20 @@ function preProcess(ast) {
 function process(ast) {
     const ExpressionStatement = require('../src/processNode/ExpressionStatement');
     const ForStatement = require('../src/processNode/ForStatement');
+    const IfStatement = require('../src/processNode/IfStatement');
     const ReturnStatement = require('../src/processNode/ReturnStatement');
+    const SwitchStatement = require('../src/processNode/SwitchStatement');
+    const ThrowStatement = require('../src/processNode/ThrowStatement');
     const VariableDeclaration = require('../src/processNode/VariableDeclaration');
-    traverse(ast, { ExpressionStatement, ForStatement, ReturnStatement, VariableDeclaration });
+    traverse(ast, {
+        ExpressionStatement,
+        ForStatement,
+        IfStatement,
+        ReturnStatement,
+        SwitchStatement,
+        ThrowStatement,
+        VariableDeclaration
+    });
 }
 
 function postProcess(ast) {
@@ -37,7 +48,7 @@ function main() {
     // traverse(ast, visitor);
     sourceCode = generate(ast).code;
     
-    const outputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\io\output\script_deuglified.js`;
+    const outputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\io\output\script_deuglified_1.js`;
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, sourceCode);
 }

@@ -7,7 +7,7 @@ function ThrowStatement(path) {
         return;
     }
     if (!isExpandable(path)) {
-        const warnMsg = `The following SwitchStatement is not expandable:\n${path.toString()}`;
+        const warnMsg = `The following \`ThrowStatement\` is not expandable:\n${path.toString()}`;
         console.warn(warnMsg);
         return;
     }

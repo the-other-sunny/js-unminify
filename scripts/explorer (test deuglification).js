@@ -48,7 +48,7 @@ function main() {
     // traverse(ast, visitor);
     sourceCode = generate(ast).code;
     
-    const outputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\output\script_deuglified_9.js`;
+    const outputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\output\script_deuglified_1.js`;
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, sourceCode);
 }

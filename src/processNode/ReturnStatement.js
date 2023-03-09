@@ -46,6 +46,19 @@ function returnUndefined(path) {
     path.replaceWith(t.returnStatement());
 }
 
+function returnAssignment(path) {
+    if (!isExpandable(path)) {
+        return; // TODO: perhaps, we should throw or warn about that ?
+    }
+    
+    // TODO: left is an LVal, we should check if any LVal can be returned...
+    const { operator, left, right } = path.node.argument;
+    path.replaceWithMultiple([
+        t.expressionStatement(t.assignmentExpression(operator, left, right)),
+        t.returnStatement(left)
+    ]);
+}
+
 function returnLogicalAND(path) {
     const { left, right } = path.node.argument;
     const test = left; // TODO: should be unbooleanized if necessary
@@ -108,6 +121,11 @@ function ReturnStatement(path) {
             returnLogicalAND(path);
         if (argument.operator === '||')
             returnLogicalOR(path);
+        return;
+    }
+
+    if (t.isAssignmentExpression(argument)) {
+        returnAssignment(path);
         return;
     }
 }

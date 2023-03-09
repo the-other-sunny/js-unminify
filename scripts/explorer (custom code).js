@@ -11,13 +11,20 @@ const ForStatement = require('../src/processNode/ForStatement');
 
 const visitor = {
     enter(path) {
+        // debugger;
+    },
+    BlockStatement(path) {
         debugger;
     }
 };
 
 let sourceCode = `
-let a;
-a === undefined;
+{
+    ;
+    a1;
+    a2;
+    a3
+}
 `;
 
 const ast = parser.parse(sourceCode);

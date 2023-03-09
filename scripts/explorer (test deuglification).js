@@ -38,7 +38,7 @@ function postProcess(ast) {
 }
 
 function main() {
-    let inputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\io\input\script.js`;
+    let inputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\input\script.js`;
     let sourceCode = fs.readFileSync(inputPath, { encoding: 'utf-8' });
 
     const ast = parser.parse(sourceCode);
@@ -48,7 +48,7 @@ function main() {
     // traverse(ast, visitor);
     sourceCode = generate(ast).code;
     
-    const outputPath = String.raw`C:\Users\Sunny\OneDrive\Touch Projects\deuglify\io\output\script_deuglified_1.js`;
+    const outputPath = String.raw`C:\Users\ryadb\OneDrive\Touch Projects\deuglify\io\output\script_deuglified_9.js`;
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, sourceCode);
 }

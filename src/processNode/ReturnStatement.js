@@ -1,5 +1,5 @@
 const t = require('@babel/types');
-const isExpandable = require('../utils').isExpandable;
+const { isExpandable, isBoolean, negate, isBooleanSequence} = require('../utils');
 
 function returnSequence(path) {
     if (!isExpandable(path)) {
@@ -15,19 +15,19 @@ function returnSequence(path) {
 }
 
 function returnConditional(path) {
-    if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
-    }
-
     const { test, consequent, alternate } = path.node.argument;
-    const ifNode = t.ifStatement(
-        test,
-        t.blockStatement([
-            t.returnStatement(consequent),
-        ])
+
+    path.replaceWith(
+        t.ifStatement(
+            test,
+            t.blockStatement([
+                t.returnStatement(consequent)
+            ]),
+            t.blockStatement([
+                t.returnStatement(alternate)
+            ])
+        )
     );
-    const returnNode = t.returnStatement(alternate);
-    path.replaceWithMultiple([ifNode, returnNode]);
 }
 
 function returnVoid(path) {
@@ -46,16 +46,69 @@ function returnUndefined(path) {
     path.replaceWith(t.returnStatement());
 }
 
+function returnLogicalAND(path) {
+    const { left, right } = path.node.argument;
+    const test = left; // TODO: should be unbooleanized if necessary
+    const consequent = t.returnStatement(right);
+    const alternate = t.returnStatement(t.booleanLiteral(false));
+    
+    path.replaceWith(
+        t.ifStatement(
+            test, 
+            t.blockStatement([consequent]),
+            t.blockStatement([alternate]))
+    );
+}
+
+function returnLogicalOR(path) {
+    const { left, right } = path.node.argument;
+    const test = negate(left);
+    const consequent = t.returnStatement(right);
+    const alternate = t.returnStatement(t.booleanLiteral(true));
+
+    path.replaceWith(
+        t.ifStatement(
+            test, 
+            t.blockStatement([consequent]),
+            t.blockStatement([alternate]))
+    );
+}
+
 function ReturnStatement(path) {
     const argument = path.node.argument;
+
     if (t.isSequenceExpression(argument)) {
         returnSequence(path);
-    } else if (t.isConditionalExpression(argument)) {
+        return;
+    }
+    
+    if (t.isConditionalExpression(argument)) {
         returnConditional(path);
-    } else if (t.isUnaryExpression(argument) && argument.operator === 'void') {
+        return;
+    }
+    
+    if (t.isUnaryExpression(argument) && argument.operator === 'void') {
         returnVoid(path);
-    } else if (t.isIdentifier(argument) && argument.name === 'undefined') {
+        return;
+    }
+    
+    if (t.isIdentifier(argument) && argument.name === 'undefined') {
         returnUndefined(path);
+        return;
+    }
+    
+    if (t.isLogicalExpression(argument) && isBoolean(argument.left)) {
+        if (isBooleanSequence(argument)) {
+            // TODO: if it's a booleanSequence but the leftmost element is `!(a > b)` `!(a || b)`, we shouldn't ignore it
+            // check /.tmp/returned_boolean_sequences (fishy).txt
+            return;
+        }
+        
+        if (argument.operator === '&&')
+            returnLogicalAND(path);
+        if (argument.operator === '||')
+            returnLogicalOR(path);
+        return;
     }
 }
 

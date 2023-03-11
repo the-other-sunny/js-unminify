@@ -10,7 +10,7 @@ function throwSequence(path) {
     const lastExpr = expressions.pop();
     
     path.replaceWithMultiple([
-        t.sequenceExpression(expressions),
+        t.expressionStatement(t.sequenceExpression(expressions)),
         t.throwStatement(lastExpr)
     ]);
 }

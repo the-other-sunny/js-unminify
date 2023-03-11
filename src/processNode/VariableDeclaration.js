@@ -18,7 +18,7 @@ function singleDeclaratorWithSequenceExpression(path) {
     const lastExpr = expressions.pop();
 
     path.replaceWithMultiple([
-        t.sequenceExpression(expressions),
+        t.expressionStatement(t.sequenceExpression(expressions)),
         t.variableDeclaration(kind, [t.variableDeclarator(id, lastExpr)])
     ]);
 }

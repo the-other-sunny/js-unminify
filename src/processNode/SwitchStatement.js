@@ -1,6 +1,6 @@
 const t = require('@babel/types');
 
-const isExpandable = require('../utils').isExpandable;
+const { isExpandable } = require('../utils');
 
 function sequenceDiscriminant(path) {
     const { discriminant, cases } = path.node;

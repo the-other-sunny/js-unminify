@@ -1,4 +1,5 @@
 const t = require('@babel/types');
+
 const { isExpandable, isBoolean, negate, isBooleanSequence} = require('../utils');
 
 function returnSequence(path) {
@@ -9,7 +10,7 @@ function returnSequence(path) {
     const expressions = [...path.node.argument.expressions];
     const lastExpr = expressions.pop();
     path.replaceWithMultiple([
-        ...expressions.map(expr => t.expressionStatement(expr)),
+        t.expressionStatement(t.sequenceExpression(expressions)),
         t.returnStatement(lastExpr)
     ]);
 }
@@ -42,10 +43,6 @@ function returnVoid(path) {
     ]);
 }
 
-function returnUndefined(path) {
-    path.replaceWith(t.returnStatement());
-}
-
 function returnAssignment(path) {
     if (!isExpandable(path)) {
         return; // TODO: perhaps, we should throw or warn about that ?
@@ -57,6 +54,10 @@ function returnAssignment(path) {
         t.expressionStatement(t.assignmentExpression(operator, left, right)),
         t.returnStatement(left)
     ]);
+}
+
+function returnUndefined(path) {
+    path.replaceWith(t.returnStatement());
 }
 
 function returnLogicalAND(path) {
@@ -94,7 +95,7 @@ function ReturnStatement(path) {
         returnSequence(path);
         return;
     }
-    
+
     if (t.isConditionalExpression(argument)) {
         returnConditional(path);
         return;
@@ -105,6 +106,11 @@ function ReturnStatement(path) {
         return;
     }
     
+    if (t.isAssignmentExpression(argument)) {
+        returnAssignment(path);
+        return;
+    }
+
     if (t.isIdentifier(argument) && argument.name === 'undefined') {
         returnUndefined(path);
         return;
@@ -121,11 +127,6 @@ function ReturnStatement(path) {
             returnLogicalAND(path);
         if (argument.operator === '||')
             returnLogicalOR(path);
-        return;
-    }
-
-    if (t.isAssignmentExpression(argument)) {
-        returnAssignment(path);
         return;
     }
 }

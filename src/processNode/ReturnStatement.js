@@ -62,29 +62,23 @@ function returnUndefined(path) {
 
 function returnLogicalAND(path) {
     const { left, right } = path.node.argument;
-    const test = left; // TODO: should be unbooleanized if necessary
-    const consequent = t.returnStatement(right);
-    const alternate = t.returnStatement(t.booleanLiteral(false));
-    
+
     path.replaceWith(
         t.ifStatement(
-            test, 
-            t.blockStatement([consequent]),
-            t.blockStatement([alternate]))
+            negate(left),
+            t.blockStatement([t.returnStatement(t.booleanLiteral(false))]),
+            t.blockStatement([t.returnStatement(right)]))
     );
 }
 
 function returnLogicalOR(path) {
     const { left, right } = path.node.argument;
-    const test = negate(left);
-    const consequent = t.returnStatement(right);
-    const alternate = t.returnStatement(t.booleanLiteral(true));
 
     path.replaceWith(
         t.ifStatement(
-            test, 
-            t.blockStatement([consequent]),
-            t.blockStatement([alternate]))
+            left, // TODO: should be unbooleanized if necessary
+            t.blockStatement([t.returnStatement(t.booleanLiteral(true))]),
+            t.blockStatement([t.returnStatement(right)]))
     );
 }
 

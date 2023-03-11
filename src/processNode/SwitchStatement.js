@@ -1,4 +1,5 @@
 const t = require('@babel/types');
+
 const isExpandable = require('../utils').isExpandable;
 
 function sequenceDiscriminant(path) {

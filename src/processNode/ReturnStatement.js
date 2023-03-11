@@ -21,12 +21,8 @@ function returnConditional(path) {
     path.replaceWith(
         t.ifStatement(
             test,
-            t.blockStatement([
-                t.returnStatement(consequent)
-            ]),
-            t.blockStatement([
-                t.returnStatement(alternate)
-            ])
+            t.blockStatement([t.returnStatement(consequent)]),
+            t.blockStatement([t.returnStatement(alternate)])
         )
     );
 }
@@ -50,6 +46,7 @@ function returnAssignment(path) {
     
     // TODO: left is an LVal, we should check if any LVal can be returned...
     const { operator, left, right } = path.node.argument;
+    
     path.replaceWithMultiple([
         t.expressionStatement(t.assignmentExpression(operator, left, right)),
         t.returnStatement(left)

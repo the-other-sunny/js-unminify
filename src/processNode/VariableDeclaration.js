@@ -12,9 +12,8 @@ function multipleDeclarators(path) {
 }
 
 function singleDeclaratorWithSequenceExpression(path) {
-    const node = path.node;
-    const kind = node.kind;
-    const { id, init } = node.declarations[0];
+    const { kind, declarations } = path.node;
+    const { id, init } = declarations[0];
     const expressions = [...init.expressions];
     const newInit = expressions.pop();
 

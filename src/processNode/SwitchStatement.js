@@ -1,23 +1,29 @@
 const t = require('@babel/types');
 const isExpandable = require('../utils').isExpandable;
 
-function SwitchStatement(path) {
+function sequenceDiscriminant(path) {
     const { discriminant, cases } = path.node;
-    if (!t.isSequenceExpression(discriminant)) {
-        return;
-    }
     if (!isExpandable(path)) {
         const warnMsg = `The following \`SwitchStatement\` is not expandable:\n${path.toString()}`;
         console.warn(warnMsg);
-        return;
+        return; // TODO: perhaps, we should throw or warn about that ?
     }
 
     const expressions = [...discriminant.expressions];
-    const newDiscriminant = expressions.pop();
+    const lastExpr = expressions.pop();
     path.replaceWithMultiple([
-        ...expressions.map(expr => t.expressionStatement(expr)),
-        t.switchStatement(newDiscriminant, cases)
+        t.expressionStatement(t.sequenceExpression(expressions)),
+        t.switchStatement(lastExpr, cases)
     ]);
+}
+
+function SwitchStatement(path) {
+    const discriminant = path.node.discriminant;
+    
+    if (!t.isSequenceExpression(discriminant)) {
+        sequenceDiscriminant(path);
+        return;
+    }
 }
 
 module.exports = SwitchStatement;

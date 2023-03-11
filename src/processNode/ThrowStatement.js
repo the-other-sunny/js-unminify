@@ -1,23 +1,29 @@
 const t = require('@babel/types');
+
 const isExpandable = require('../utils').isExpandable;
 
-function ThrowStatement(path) {
-    const argument = path.node.argument;
-    if (!t.isSequenceExpression(argument)) {
-        return;
-    }
+function throwSequence(path) {
     if (!isExpandable(path)) {
-        const warnMsg = `The following \`ThrowStatement\` is not expandable:\n${path.toString()}`;
-        console.warn(warnMsg);
+        return; // TODO: perhaps, we should throw or warn about that ?
+    }
+    const expressions = [...path.node.argument.expressions];
+    const lastExpr = expressions.pop();
+    
+    path.replaceWithMultiple([
+        t.sequenceExpression(expressions),
+        t.throwStatement(lastExpr)
+    ]);
+}
+
+function ThrowStatement(path) {
+    // TODO: `ThrowStatements` share a lot of similarities with `ReturnStatement`s
+    // should probably study that more in depth to better process `ThrowStatement`s
+    const argument = path.node.argument;
+
+    if (t.isSequenceExpression(argument)) {
+        throwSequence(path);
         return;
     }
-
-    const expressions = [...argument.expressions];
-    const newArgument = expressions.pop();
-    path.replaceWithMultiple([
-        ...expressions.map(expr => t.expressionStatement(expr)),
-        t.throwStatement(newArgument)
-    ]);
 }
 
 module.exports = ThrowStatement;

@@ -15,11 +15,11 @@ function singleDeclaratorWithSequenceExpression(path) {
     const { kind, declarations } = path.node;
     const { id, init } = declarations[0];
     const expressions = [...init.expressions];
-    const newInit = expressions.pop();
+    const lastExpr = expressions.pop();
 
     path.replaceWithMultiple([
         t.sequenceExpression(expressions),
-        t.variableDeclaration(kind, [t.variableDeclarator(id, newInit)])
+        t.variableDeclaration(kind, [t.variableDeclarator(id, lastExpr)])
     ]);
 }
 

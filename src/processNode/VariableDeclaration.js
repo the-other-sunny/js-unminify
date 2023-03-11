@@ -43,6 +43,7 @@ function VariableDeclaration(path) {
         multipleDeclarators(path);
         return;
     }
+    
     if (node.declarations.length === 1 &&
         t.isSequenceExpression(node.declarations[0].init)
     ) {

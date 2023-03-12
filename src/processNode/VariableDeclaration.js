@@ -3,12 +3,13 @@ const t = require('@babel/types');
 const { isExpandable } = require('../utils');
 
 function multipleDeclarators(path) {
-    const node = path.node;
-    const newNodes = node.declarations.map((varDeclarator) => {
-        return t.variableDeclaration(node.kind, [varDeclarator])
-    });
+    const node = path.node.declarations;
 
-    path.replaceWithMultiple(newNodes);
+    path.replaceWithMultiple(
+        declarations.map(
+            varDeclarator => t.variableDeclaration(node.kind, [varDeclarator])
+        )
+    );
 }
 
 function singleDeclaratorWithSequenceExpression(path) {

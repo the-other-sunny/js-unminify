@@ -1,7 +1,7 @@
 const t = require('@babel/types');
 
 /**
- * Turn `Statement`s into `BlockStatement`s whenever possible so the `Statement` can be exploded if necessary.
+ * Turn `Statement`s into `BlockStatement`s whenever possible so the `Statement` can be expanded if necessary.
  * @param {Path} path 
  * @returns 
  */
@@ -10,29 +10,32 @@ function Statement(path) {
         return;
     }
     
-    let turnableIntoABlock = false;
-    // TODO: replace with an `Array.includes`
-    switch (path.parent.type) {
-        case 'DoWhileStatement':
-        case 'ForInStatement':
-        case 'ForOfStatement':
-        case 'ForStatement':
-        case 'IfStatement':
-        case 'LabeledStatement':
-        case 'WhileStatement':
-        case 'WithStatement':
-            turnableIntoABlock = true;
+    const AllowerParentTypes = [
+        'DoWhileStatement',
+        'ForInStatement',
+        'ForOfStatement',
+        'ForStatement',
+        'IfStatement',
+        'LabeledStatement',
+        'WhileStatement',
+        'WithStatement',
+    ]
+
+    if (!AllowerParentTypes.includes(path.parent.type)) {
+        return;
     }
-    
-    if (turnableIntoABlock) {
-        path.replaceWith(
-            t.blockStatement([path.node])
-        );
-    }
+
+    const newStatement = t.isEmptyStatement(path.node) ? 
+                         t.blockStatement([]) :
+                         t.blockStatement([path.node]);
+    path.replaceWith(newStatement);
 }
 
 /**
- * Replaces `void 0` expressions with `undefined`, `!0` with `true` and `!1` with `false`.
+ * Apply the following transformations:
+ *     `void 0` ---> `undefined`
+ *     `!0`     ---> `true`
+ *     `!1`     ---> `false`
  * @param {Path} path 
  */
 function UnaryExpression(path) {
@@ -44,10 +47,12 @@ function UnaryExpression(path) {
     }
 
     if (operator === '!' && t.isNumericLiteral(argument)) {
-        if (argument.value === 0)
+        if (argument.value === 0) {
             path.replaceWith(t.booleanLiteral(true));
-        if (argument.value === 1)
+        }
+        if (argument.value === 1) {
             path.replaceWith(t.booleanLiteral(false));
+        }
         return;
     }
 }

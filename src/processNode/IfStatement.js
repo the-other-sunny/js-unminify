@@ -1,4 +1,5 @@
 const t = require('@babel/types');
+
 const { isExpandable, willReturn, isInLambda, getTail, negate } = require('../utils');
 
 function sequenceExpressionTest(path) {
@@ -10,10 +11,11 @@ function sequenceExpressionTest(path) {
     
     const { test, consequent, alternate } = path.node;
     const expressions = [...test.expressions];
-    const newTest = expressions.pop();
+    const lastExpr = expressions.pop();
+
     path.replaceWithMultiple([
-        ...expressions.map(expr => t.expressionStatement(expr)),
-        t.ifStatement(newTest, consequent, alternate)
+        t.expressionStatement(t.sequenceExpression(expressions)),
+        t.ifStatement(lastExpr, consequent, alternate)
     ]);
 }
 
@@ -29,9 +31,12 @@ function ANDSequence1(path) {
 
     const innerIf = t.ifStatement(right, consequent);
     const outerIf = t.ifStatement(left, t.blockStatement([innerIf]));
+    
     path.replaceWith(outerIf);
 }
 
+// TODO: can cause scope issues
+// TODO: should be more cautious about moving blocks around as it might cause scope issues, we should keep track of the declared names.
 function ANDSequence2(path) {
     // if (c && seq)
     //     returning_cons;
@@ -46,13 +51,14 @@ function ANDSequence2(path) {
     }
     
     const { test, consequent, alternate } = path.node;    
+    
     if (!t.isBlockStatement(alternate)) {
         throw new Error("wtf"); // TODO: improve errors
     }
-    path.replaceWithMultiple([
-        t.ifStatement(test, consequent),
-        ...alternate.body // alternate should be a block statement
-    ]);
+
+    path.replaceWithMultiple(
+        [t.ifStatement(test, consequent), ...alternate.body]
+    );
 }
 
 function ORSequence1(path) {
@@ -66,6 +72,7 @@ function ORSequence1(path) {
     // else
     //     cons;
     const { test, consequent, alternate } = path.node;
+
     path.replaceWith(negate(test), alternate, consequent);
 }
 
@@ -78,29 +85,24 @@ function ORSequence2(path) {
     // ===>
     // function() {
     //     ...
-    //     if (!c && !seq)
+    //     if (c || seq)
+    //         cons;
+    //     else
     //         return;
-    //     cons;
     // }
-
+    
     const { test, consequent } = path.node;
     
     if (!t.isBlockStatement(consequent)) {
         throw new Error("wtf"); // TODO: improve errors
     }
     
-    const ifReturn = t.ifStatement(
-        negate(test),
-        t.blockStatement([
-            t.returnStatement()
-        ])
+    path.replaceWith(
+        t.ifStatement(test, consequent, t.blockStatement([t.returnStatement()]))
     );
-    path.replaceWithMultiple([
-        ifReturn,
-        ...consequent.body
-    ]);
 }
 
+// TODO: need to detect and remove a last statement `return;` in returning_cons
 function ORSequence3(path) {
     // function() {
     //     ...
@@ -111,13 +113,13 @@ function ORSequence3(path) {
     // ===>
     // function() {
     //     ...
-    //     if (!c && !seq) {
+    //     if (c || seq) {
+    //         returning_cons;
+    //     } else {
     //         tail;
     //         [return;]
     //     }
-    //     returning_cons;
     // }
-
 
     const { test, consequent } = path.node;
 
@@ -135,23 +137,18 @@ function ORSequence3(path) {
         tailStatements.push(t.returnStatement());
     }
     
-    // remove tail
+    // remove tail from function's body
     const tailPaths = path.parentPath.get('body').slice(thisIndex+1);
     tailPaths.forEach(path => path.remove());
     
-    path.replaceWithMultiple([
-        t.ifStatement(negate(test), t.blockStatement(tailStatements)),
-        ...consequent.body
-    ]);
+    path.replaceWith(
+        t.ifStatement(test, consequent, t.blockStatement(tailStatements))
+    );
 }
 
 function IfStatement(path) {
     const { test, consequent, alternate } = path.node;
     // if (seq, c)
-    //     cons;
-    // ===>
-    // seq;
-    // if (c)
     //     cons;
     if (t.isSequenceExpression(test)) {
         sequenceExpressionTest(path);
@@ -160,10 +157,6 @@ function IfStatement(path) {
     
     // if (c && seq)
     //     cons;
-    // ===>
-    // if (c)
-    //     if (seq)
-    //         cons;
     if (
         t.isLogicalExpression(test) &&
         test.operator === '&&' &&
@@ -178,11 +171,6 @@ function IfStatement(path) {
     //     returning_cons;
     // else
     //     alt;
-    // ===>
-    // if (c)
-    //     if (seq)
-    //         returning_cons;
-    // alt;
     if (
         t.isLogicalExpression(test) &&
         test.operator === '&&' &&
@@ -198,11 +186,6 @@ function IfStatement(path) {
     //     cons;
     // else
     //     returning_alt;
-    // ===>
-    // if (!c && !seq)
-    //     returning_alt;
-    // else
-    //      cons;
     if (
         t.isLogicalExpression(test) &&
         test.operator === '||' &&
@@ -226,13 +209,6 @@ function IfStatement(path) {
         //     if (c || seq)
         //         cons;
         // }
-        // ===>
-        // function() {
-        //     ...
-        //     if (!c && !seq)
-        //         return;
-        //     cons;
-        // }
         if (!alternate && tail.length === 0) {
             ORSequence2(path);
             return;
@@ -243,15 +219,6 @@ function IfStatement(path) {
         //     if (c || seq)
         //         returning_cons;
         //     tail;
-        // }
-        // ===>
-        // function() {
-        //     ...
-        //     if (!c && !seq) {
-        //         tail;
-        //         [return;]
-        //     }
-        //     returning_cons;
         // }
         if (willReturn(consequent) && !alternate) {
             ORSequence3(path);

@@ -21,7 +21,7 @@ function sequenceDiscriminant(path) {
 function SwitchStatement(path) {
     const discriminant = path.node.discriminant;
     
-    if (!t.isSequenceExpression(discriminant)) {
+    if (t.isSequenceExpression(discriminant)) {
         sequenceDiscriminant(path);
         return;
     }

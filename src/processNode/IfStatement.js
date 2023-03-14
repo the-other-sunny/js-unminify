@@ -73,7 +73,7 @@ function ORSequence1(path) {
     //     cons;
     const { test, consequent, alternate } = path.node;
 
-    path.replaceWith(negate(test), alternate, consequent);
+    path.replaceWith(t.ifStatement(negate(test), alternate, consequent));
 }
 
 function ORSequence2(path) {

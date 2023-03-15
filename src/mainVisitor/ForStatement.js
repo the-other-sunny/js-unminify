@@ -1,12 +1,22 @@
 const t = require('@babel/types');
 
-const { extendSet, negate } = require('../utils');
+const { isExpandable, extendSet, negate } = require('../utils');
 
 function extractInit(path) {
-    // TODO: implement use of identifiers
-    const { init, test, update, body } = path.node;
-    let changed = false;    
+    if (!isExpandable(path)) {
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
+    }
 
+    let changed = false; 
+    const init = path.node.init;
+    
     if (!init) {
         return changed;
     }
@@ -53,11 +63,11 @@ function extractInit(path) {
             return t.isIdentifier(id) && maintainedIdentifiers.has(id.name);
         });
 
-        if (index == -1) {
+        if (index === -1) {
             index = declarations.length;
         }
 
-        if (index == 0) {
+        if (index === 0) {
             return changed;
         }
 
@@ -97,11 +107,11 @@ function extractInit(path) {
                    maintainedIdentifiers.has(expr.left.name); 
         });
 
-        if (index == -1) {
+        if (index === -1) {
             index = expressions.length;
         }
 
-        if (index == 0) {
+        if (index === 0) {
             return changed;
         }
 
@@ -144,7 +154,7 @@ function sequenceTest(path) {
 }
 
 function logicalANDTest(path) {
-    // TODO: if test is a && b && c, this will lead to two `ifBreaks`...
+    // TODO: if test is a && b && c && ..., this will lead to multiple `ifBreaks`...
     const { init, test, update, body } = path.node;
     const { left, right } = test;
     

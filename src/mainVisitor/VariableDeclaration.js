@@ -3,6 +3,17 @@ const t = require('@babel/types');
 const { isExpandable } = require('../utils');
 
 function multipleDeclarators(path) {
+    if (!isExpandable(path)) {
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
+    }
+
     const { kind, declarations } = path.node;
 
     path.replaceWithMultiple(
@@ -13,6 +24,17 @@ function multipleDeclarators(path) {
 }
 
 function singleDeclaratorWithSequenceExpression(path) {
+    if (!isExpandable(path)) {
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
+    }
+    
     const { kind, declarations } = path.node;
     const { id, init } = declarations[0];
     const expressions = [...init.expressions];

@@ -4,8 +4,16 @@ const { isExpandable } = require('../utils');
 
 function throwSequence(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
+    
     const expressions = [...path.node.argument.expressions];
     const lastExpr = expressions.pop();
     

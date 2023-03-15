@@ -4,8 +4,13 @@ const { isExpandable, willReturn, isInLambda, getTail, negate } = require('../ut
 
 function sequenceExpressionTest(path) {
     if (!isExpandable(path)) {
-        const warnMsg = `The following \`IfStatement\` is not expandable:\n${path.toString()}`;
-        console.warn(warnMsg);
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
         return;
     }
     
@@ -35,7 +40,6 @@ function ANDSequence1(path) {
     path.replaceWith(outerIf);
 }
 
-// TODO: can cause scope issues
 // TODO: should be more cautious about moving blocks around as it might cause scope issues, we should keep track of the declared names.
 function ANDSequence2(path) {
     // if (c && seq)
@@ -47,13 +51,13 @@ function ANDSequence2(path) {
     //     returning_cons;
     // alt;
     if (!isExpandable(path)) {
-        throw new Error("wtf"); // TODO: improve errors
+        throw new Error("Provided path is not expandable.");
     }
     
     const { test, consequent, alternate } = path.node;    
     
     if (!t.isBlockStatement(alternate)) {
-        throw new Error("wtf"); // TODO: improve errors
+        throw new Error("`IfStatement`s alternate should be a `BlockStatement`.");
     }
 
     path.replaceWithMultiple(
@@ -94,7 +98,7 @@ function ORSequence2(path) {
     const { test, consequent } = path.node;
     
     if (!t.isBlockStatement(consequent)) {
-        throw new Error("wtf"); // TODO: improve errors
+        throw new Error("`IfStatement`s consequent should be a `BlockStatement`");
     }
     
     path.replaceWith(
@@ -102,7 +106,7 @@ function ORSequence2(path) {
     );
 }
 
-// TODO: need to detect and remove a last statement `return;` in returning_cons
+// TODO: might need to detect and remove a last statement `return;` in returning_cons
 function ORSequence3(path) {
     // function() {
     //     ...
@@ -124,10 +128,7 @@ function ORSequence3(path) {
     const { test, consequent } = path.node;
 
     if (!t.isBlockStatement(consequent)) {
-        throw new Error("wtf"); // TODO: improve error
-    }
-    if (!t.isBlockStatement(path.parent)) {
-        throw new Error("wtf"); // TODO: improve error
+        throw new Error("`IfStatement`s consequent should be a `BlockStatement`");
     }
 
     const thisIndex = path.parent.body.indexOf(path.node);

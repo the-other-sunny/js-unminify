@@ -4,7 +4,14 @@ const { isExpandable, isBoolean, negate, isBooleanSequence} = require('../utils'
 
 function returnSequence(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
 
     const expressions = [...path.node.argument.expressions];
@@ -29,7 +36,14 @@ function returnConditional(path) {
 
 function returnVoid(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
 
     const expression = path.node.argument.argument;
@@ -41,7 +55,14 @@ function returnVoid(path) {
 
 function returnAssignment(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
     
     // TODO: left is an LVal, we should check if any LVal can be returned...
@@ -109,7 +130,7 @@ function ReturnStatement(path) {
     
     if (t.isLogicalExpression(argument) && isBoolean(argument.left)) {
         if (isBooleanSequence(argument)) {
-            // TODO: if it's a booleanSequence but the leftmost element is `!(a > b)` `!(a || b)`, we shouldn't ignore it
+            // TODO: if it's a booleanSequence but the leftmost element is like `!(a > b)` `!(a || b)`, we shouldn't ignore it
             // check /.tmp/returned_boolean_sequences (fishy).txt
             return;
         }

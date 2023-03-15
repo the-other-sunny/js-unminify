@@ -16,9 +16,9 @@ function transform(ast) {
     traverse(ast, postProcessVisitor);
 }
 
-describe('testing io files', () => {
+describe('io test', () => {
     for (const file of globSync('./test/io/**/*.io.js')) {
-        describe(`testing file: ${file}`, () => {
+        describe(file, () => {
             for (const { name, inputAst, expectedOutputAst } of testParser(file)) {
                 test(name, () => {
                     transform(inputAst);

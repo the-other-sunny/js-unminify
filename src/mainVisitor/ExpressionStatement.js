@@ -4,7 +4,14 @@ const { isExpandable, negate } = require('../utils');
 
 function sequenceExpression(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
 
     const expressions = path.node.expression.expressions;
@@ -50,7 +57,14 @@ function logicalORExpression(path) {
 
 function assignSequence(path) {
     if (!isExpandable(path)) {
-        return; // TODO: perhaps, we should throw or warn about that ?
+        console.warn(
+            `Given \`path\` is not expandable.\n` +
+            `    Node type: ${path.node.type}\n` +
+            `    Parent type: ${path.parent.type}\n` +
+            `Node source code:\n` +
+            `${path.toString()}`
+        );
+        return;
     }
 
     const { operator, left, right } = path.node.expression;

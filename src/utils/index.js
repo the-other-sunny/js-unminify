@@ -160,12 +160,12 @@ function isInLambda(path) {
 function getTail(path) {
     const parentNode = path.parent;
     if (!t.isBlockStatement(parentNode) && !t.isProgram(parentNode)) {
-        throw new Error("wtf"); // TODO: improve errors
+        throw new Error('`path` should be inside a block.');
     }
 
     const index = parentNode.body.indexOf(path.node);
     if (index === -1) {
-        throw new Error("wtf"); // TODO: improve errors
+        throw new Error("Unable to find the current node among it's parent's childs.");
     }
     
     return parentNode.body.slice(index+1);

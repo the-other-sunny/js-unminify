@@ -64,9 +64,7 @@ function assignSequence(path) {
 }
 
 function assignConditional(path) {
-    // TODO: the current way to handle this should be improved, for instance to fully expand conditional assignment with a sequence or another conditional as a consequent or an alternate.
     function _assignConditional(path) {
-        // TODO: the current way to handle this should be improved, for instance to fully expand conditional assignment with a sequence or another conditional as a consequent or an alternate.
         const { operator, left, right } = path.node.expression;
         const { test, consequent, alternate } = right;
         
@@ -86,13 +84,13 @@ function assignConditional(path) {
     
     const right = path.node.expression.right;
     const { consequent, alternate } = right;
+
     if (
         t.isConditionalExpression(consequent) ||
         t.isConditionalExpression(alternate) ||
         t.isSequenceExpression(consequent) ||
         t.isSequenceExpression(alternate)
     ) {
-        _assignConditional(path); // this is needed as the traversal will explore `path`'s childs and won't process `path` itself.
         const visitor = {
             ExpressionStatement(path) {
                 const expression = path.node.expression;
@@ -104,6 +102,8 @@ function assignConditional(path) {
                     _assignConditional(path);
             }
         };
+        // this is needed as the traversal will explore `path`'s childs and won't process `path` itself.
+        _assignConditional(path);
         path.traverse(visitor);
     }
 }

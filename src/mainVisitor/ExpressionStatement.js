@@ -63,27 +63,27 @@ function assignSequence(path) {
     ]);
 }
 
-function _assignConditional(path) {
-    // TODO: the current way to handle this should be improved, for instance to fully expand conditional assignment with a sequence or another conditional as a consequent or an alternate.
-    const { operator, left, right } = path.node.expression;
-    const { test, consequent, alternate } = right;
-    
-    const consequent_ = t.expressionStatement(
-        t.assignmentExpression(operator, left, consequent)
-    );
-    const alternate_ = t.expressionStatement(
-        t.assignmentExpression(operator, left, alternate)
-    );
-
-    path.replaceWith(t.ifStatement(
-        test,
-        t.blockStatement([consequent_]),
-        t.blockStatement([alternate_])
-    ));
-}
-
 function assignConditional(path) {
     // TODO: the current way to handle this should be improved, for instance to fully expand conditional assignment with a sequence or another conditional as a consequent or an alternate.
+    function _assignConditional(path) {
+        // TODO: the current way to handle this should be improved, for instance to fully expand conditional assignment with a sequence or another conditional as a consequent or an alternate.
+        const { operator, left, right } = path.node.expression;
+        const { test, consequent, alternate } = right;
+        
+        const consequent_ = t.expressionStatement(
+            t.assignmentExpression(operator, left, consequent)
+        );
+        const alternate_ = t.expressionStatement(
+            t.assignmentExpression(operator, left, alternate)
+        );
+    
+        path.replaceWith(t.ifStatement(
+            test,
+            t.blockStatement([consequent_]),
+            t.blockStatement([alternate_])
+        ));
+    }
+    
     const right = path.node.expression.right;
     const { consequent, alternate } = right;
     if (

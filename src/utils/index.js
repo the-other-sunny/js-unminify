@@ -153,7 +153,7 @@ function willReturn(node) {
 
 function isInLambda(path) {
     const parentNode = path.parentPath.node;
-    const grandParentNode = path.parentPath.parentPath.node;
+    const grandParentNode = path.parentPath.parentPath?.node;
     return t.isBlockStatement(parentNode) && t.isFunction(grandParentNode);
 }
 

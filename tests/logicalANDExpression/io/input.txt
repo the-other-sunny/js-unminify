@@ -1,9 +1,0 @@
-foo && bar();
-
-some_condition() && some_other_condition() && do_something();
-
-x() && y();
-
-(x(), 1) && y();
-
-(foo || bar || baz) && x();

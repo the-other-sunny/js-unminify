@@ -4,14 +4,22 @@ import { program } from "commander";
 
 import processCode from "./processCode";
 
-program
+function main() {
+    program
     .name('unminify')
-    .option('-i, --input-file', 'input file')
-    .option('-o, --output-file', 'output file')
-    .action(function(options) {
-        const { inputFile, outputFile } = options;
-        const inputContent = fs.readFileSync(inputFile, 'utf-8');
+    .requiredOption('-i, --input-file <path>', 'input file')
+    .requiredOption('-o, --output-file <path>', 'output file');
 
-        const outputContent = processCode(inputContent);
-        fs.writeFileSync(outputFile, outputContent, 'utf-8');
-    });
+    program.parse();
+
+    const options = program.opts();
+    console.log(options);
+    const { inputFile, outputFile } = options;
+    const inputContent = fs.readFileSync(inputFile, 'utf-8');
+    
+    const outputContent = processCode(inputContent);
+
+    fs.writeFileSync(outputFile, outputContent, 'utf-8');
+}
+
+main();

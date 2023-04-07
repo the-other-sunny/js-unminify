@@ -2,6 +2,7 @@
   "name": "unminify",
   "version": "0.0.1",
   "author": "the-other-sunny",
+  "main": "./build/src/index.js",
   "scripts": {
     "test": "jest"
   },

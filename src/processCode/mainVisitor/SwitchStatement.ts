@@ -1,7 +1,7 @@
 import * as t from '@babel/types';
 import { NodePath } from '@babel/traverse';
 
-import { isExpandable } from '../../AstUtils';
+import { isExpandable } from '../../astUtils';
 
 interface SwitchStatement<T extends t.Expression> extends t.SwitchStatement {
     discriminant: T

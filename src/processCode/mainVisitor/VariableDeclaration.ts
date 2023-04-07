@@ -1,7 +1,7 @@
 import * as t from '@babel/types';
 import type { NodePath } from '@babel/traverse';
 
-import { isExpandable } from '../../AstUtils';
+import { isExpandable } from '../../astUtils';
 
 interface VariableDeclarator<
     T extends t.VariableDeclarator['init']

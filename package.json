@@ -4,6 +4,7 @@
   "author": "the-other-sunny",
   "main": "./build/src/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "dependencies": {

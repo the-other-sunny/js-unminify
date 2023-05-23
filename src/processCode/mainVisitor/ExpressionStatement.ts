@@ -1,7 +1,7 @@
 import * as t from '@babel/types';
 import type { NodePath } from '@babel/traverse';
 
-import { isExpandable, negate } from '../../astUtils';
+import { isExpandable, negate } from '../../AstUtils';
 
 // TODO: move these two
 interface LogicalANDExpression extends t.LogicalExpression {

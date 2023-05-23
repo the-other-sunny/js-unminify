@@ -1,7 +1,7 @@
 import * as t from '@babel/types';
 import type { NodePath } from '@babel/traverse';
 
-import { isExpandable, isBoolean, negate, isBooleanSequence} from '../../astUtils';
+import { isExpandable, isBoolean, negate, isBooleanSequence} from '../../AstUtils';
 
 interface AssignmentExpression<
     T extends t.AssignmentExpression['left'],

@@ -1,7 +1,7 @@
 import * as t from '@babel/types';
 import type { NodePath } from '@babel/traverse';
 
-import { isExpandable } from '../../astUtils';
+import { isExpandable } from '../../AstUtils';
 
 interface ThrowStatement<T extends t.Expression> extends t.ThrowStatement {
     argument: T

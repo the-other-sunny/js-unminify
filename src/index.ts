@@ -13,7 +13,7 @@ function main() {
     program.parse();
 
     const options = program.opts();
-    console.log(options);
+
     const { inputFile, outputFile } = options;
     const inputContent = fs.readFileSync(inputFile, 'utf-8');
     

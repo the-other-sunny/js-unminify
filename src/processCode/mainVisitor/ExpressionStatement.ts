@@ -21,6 +21,14 @@ interface ExpressionStatement<T extends t.Expression> extends t.ExpressionStatem
     expression: T;
 }
 
+function negatedCallExpression(
+    path: NodePath<ExpressionStatement<t.UnaryExpression>>
+) {
+    const newExpression = path.node.expression.argument;
+
+    path.get('expression').replaceWith(newExpression);
+}
+
 function sequenceExpression(
     path: NodePath<ExpressionStatement<t.SequenceExpression>>
 ) {
@@ -165,6 +173,16 @@ function assignConditional(
 export default function(path: NodePath<t.ExpressionStatement>) {
     const expression = path.node.expression;
 
+    if (t.isUnaryExpression(expression) &&
+        expression.operator === "!" &&
+        t.isCallExpression(expression.argument)
+    ) {
+        negatedCallExpression(
+            path as NodePath<ExpressionStatement<t.UnaryExpression>>
+        );
+        return;
+    }
+    
     if (t.isSequenceExpression(expression)) {
         sequenceExpression(
             path as NodePath<ExpressionStatement<t.SequenceExpression>>

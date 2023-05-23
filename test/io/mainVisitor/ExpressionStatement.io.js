@@ -50,3 +50,11 @@ test5: {
     a = value;
   }
 }
+test6: {
+  input: {
+    !function a() {} ();
+  }
+  expected_output: {
+    (function a() {})();
+  }
+}

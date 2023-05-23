@@ -43,5 +43,3 @@ function testParser(inputPath: string) {
 }
 
 export default testParser;
-const r = testParser(String.raw`test\io\mainVisitor\ExpressionStatement.io.js`);
-debugger;

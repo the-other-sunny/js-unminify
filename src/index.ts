@@ -6,7 +6,7 @@ import processCode from "./processCode";
 
 function main() {
   program
-    .name("unminify")
+    .name("js-unminify")
     .requiredOption("-i, --input-file <path>", "input file")
     .requiredOption("-o, --output-file <path>", "output file");
 

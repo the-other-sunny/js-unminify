@@ -1,5 +1,5 @@
 {
-  "name": "unminify",
+  "name": "js-unminify",
   "version": "0.0.1",
   "author": "the-other-sunny",
   "main": "./build/src/index.js",

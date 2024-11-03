@@ -13,5 +13,5 @@ unminify --input-file <path> --output-file <path>
 ```sh
 git clone https://github.com/the-other-sunny/unminify.git
 cd unminify
-yarn install
+npm install
 ```
